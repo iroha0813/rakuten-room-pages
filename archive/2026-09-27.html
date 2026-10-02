@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-09-27</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-09-27 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="tokatsu-foods:10000209">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/tokatsu-foods/cabinet/osechi/27_yorokobi2013-p.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【早割10%OFF】おせち 2027 おせち料理 和洋中おせち 絢爛鳳凰 (けんらんほうおう) 8寸 3段重 52品入 おせち 4人前 5人前 人気 ランキング 冷凍 冷凍おせち 和 洋 中 高級おせち 和風おせち お節 2026 正月 新年 惣菜 ギフト トオカツフーズ のむら ノムラフーズ</p>
+        <p class="meta"><span class="price">15,980円</span> ・ ★4.39 (1415件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ トオカツフーズ</p>
+      </div>
+    </div>
+    <div class="pitch">元日の朝、テーブルに並べるだけ。✨
+黒豆から洋風のチキンまで、
+何か欲しい時に目の前にある。
+
+食べたいものが必ずある52品だから、
+親戚が来ても「どれにしようかな」という時間が生まれる。💕
+実は、家族の会話が増える瞬間なんです。🎍
+
+気になったらチェックしてみてね。
+
+#おせち料理 #2027年 #お正月 #和洋中 #冷凍おせち #家族時間 #ギフト #高級おせち</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=tokatsu-foods:10000209" target="_blank" rel="noopener" data-pitch="元日の朝、テーブルに並べるだけ。✨
+黒豆から洋風のチキンまで、
+何か欲しい時に目の前にある。
+
+食べたいものが必ずある52品だから、
+親戚が来ても「どれにしようかな」という時間が生まれる。💕
+実は、家族の会話が増える瞬間なんです。🎍
+
+気になったらチェックしてみてね。
+
+#おせち料理 #2027年 #お正月 #和洋中 #冷凍おせち #家族時間 #ギフト #高級おせち">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="元日の朝、テーブルに並べるだけ。✨
+黒豆から洋風のチキンまで、
+何か欲しい時に目の前にある。
+
+食べたいものが必ずある52品だから、
+親戚が来ても「どれにしようかな」という時間が生まれる。💕
+実は、家族の会話が増える瞬間なんです。🎍
+
+気になったらチェックしてみてね。
+
+#おせち料理 #2027年 #お正月 #和洋中 #冷凍おせち #家族時間 #ギフト #高級おせち">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/tokatsu-foods/yorokobi2013/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="hokkkaido:10000639">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/hokkkaido/cabinet/mem_banner/15point-09/imgrc0127613667.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【3日間限定500円OFFクーポン！9/27 23:59まで】コカ・コーラ 選べる よりどり 綾鷹 爽健美茶 やかんの麦茶 アクエリアス 紅茶花伝 等 410ml 440ml 500ml 525ml 600ml 650ml ペットボトル 24本入り×2ケース【送料無料】</p>
+        <p class="meta"><span class="price">5,480円</span> ・ ★4.78 (2604件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 北海道サービスショップ楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">家族や友達が集まるBBQやキャンプ、飲み物の本数足りなくなったことありませんか？
+
+選べるよりどりなら、好きな銘柄を自由に組み合わせて48本が一気に届くんです ✨ 綾鷹、爽健美茶、アクエリアスなど、コカ・コーラの人気ドリンクが揃ってますよ。
+
+2604件のレビューで4.78つという高評価も、この使いやすさの証だと思います💕
+
+#コカ・コーラ #よりどり #ケース買い #ドリンク #BBQ #キャンプ #まとめ買い #お得</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=hokkkaido:10000639" target="_blank" rel="noopener" data-pitch="家族や友達が集まるBBQやキャンプ、飲み物の本数足りなくなったことありませんか？
+
+選べるよりどりなら、好きな銘柄を自由に組み合わせて48本が一気に届くんです ✨ 綾鷹、爽健美茶、アクエリアスなど、コカ・コーラの人気ドリンクが揃ってますよ。
+
+2604件のレビューで4.78つという高評価も、この使いやすさの証だと思います💕
+
+#コカ・コーラ #よりどり #ケース買い #ドリンク #BBQ #キャンプ #まとめ買い #お得">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="家族や友達が集まるBBQやキャンプ、飲み物の本数足りなくなったことありませんか？
+
+選べるよりどりなら、好きな銘柄を自由に組み合わせて48本が一気に届くんです ✨ 綾鷹、爽健美茶、アクエリアスなど、コカ・コーラの人気ドリンクが揃ってますよ。
+
+2604件のレビューで4.78つという高評価も、この使いやすさの証だと思います💕
+
+#コカ・コーラ #よりどり #ケース買い #ドリンク #BBQ #キャンプ #まとめ買い #お得">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/hokkkaido/5p_2/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="keitai:10814347">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/keitai/cabinet/item/41_12/41-979_26.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">iFace 公式 iphone 18Pro ケース 18ProMax iPhone17 ケース 17e 17Pro 17ProMax Air iPhone16 16Pro 16e 16Plus 16ProMax iPhone15 14 13 Reflection 強化ガラス クリアケース 【 ストラップホール iphoneケース スマホケース 透明 クリア 耐衝撃 】</p>
+        <p class="meta"><span class="price">3,960円</span> ・ ★4.48 (2160件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ Hamee（ハミィ）</p>
+      </div>
+    </div>
+    <div class="pitch">正直なところ、クリアケースは傷が目立つんじゃないかって心配だったんです。
+
+でも強化ガラスの背面だから傷に強くて、透明感を活かしながら衝撃からしっかり守ってくれる🛡️
+
+ストラップホール付きで推し活にも最適💕
+
+2000件超のレビューで支持されてるのも納得です。
+
+気になったらチェックしてみてね。
+
+#iPhoneケース #クリアケース #強化ガラス #推し活 #スマホケース #耐衝撃 #ガジェット #Hamee</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=keitai:10814347" target="_blank" rel="noopener" data-pitch="正直なところ、クリアケースは傷が目立つんじゃないかって心配だったんです。
+
+でも強化ガラスの背面だから傷に強くて、透明感を活かしながら衝撃からしっかり守ってくれる🛡️
+
+ストラップホール付きで推し活にも最適💕
+
+2000件超のレビューで支持されてるのも納得です。
+
+気になったらチェックしてみてね。
+
+#iPhoneケース #クリアケース #強化ガラス #推し活 #スマホケース #耐衝撃 #ガジェット #Hamee">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="正直なところ、クリアケースは傷が目立つんじゃないかって心配だったんです。
+
+でも強化ガラスの背面だから傷に強くて、透明感を活かしながら衝撃からしっかり守ってくれる🛡️
+
+ストラップホール付きで推し活にも最適💕
+
+2000件超のレビューで支持されてるのも納得です。
+
+気になったらチェックしてみてね。
+
+#iPhoneケース #クリアケース #強化ガラス #推し活 #スマホケース #耐衝撃 #ガジェット #Hamee">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/keitai/41-979/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="livingut:10016364">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/livingut/cabinet/maker_thermos15/uni464531.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">サーモス 水筒 350ml 500ml 600ml 750ml 1L 真空断熱ケータイマグ JNL （ THERMOS 保温 保冷 軽量 直飲み ステンレスボトル コンパクト ワンタッチ マグ スポーツドリンク ボトル 真空断熱 ダイレクトボトル 直のみ ワンプッシュ ）</p>
+        <p class="meta"><span class="price">3,180円</span> ・ ★4.66 (795件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ リビングート　楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">毎日使うものだからこそ、贈り物で喜ばれるんですよ✨
+
+・ 食洗機対応で手入れがラク
+・ 超軽量だから毎日持ち運びやすい
+・ 真空断熱で朝入れたら夜まであったか
+
+795件のレビューで高い評価を得ているのも、実用性で選ばれている証。相手のライフスタイルに合わせてサイズを選べるのも贈り物としていいですよね💕
+
+チェックしてみてね。
+
+#水筒 #ステンレスボトル #サーモス #保温 #保冷 #ギフト #プレゼント #軽量 #食洗機対応 #一人暮らし</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=livingut:10016364" target="_blank" rel="noopener" data-pitch="毎日使うものだからこそ、贈り物で喜ばれるんですよ✨
+
+・ 食洗機対応で手入れがラク
+・ 超軽量だから毎日持ち運びやすい
+・ 真空断熱で朝入れたら夜まであったか
+
+795件のレビューで高い評価を得ているのも、実用性で選ばれている証。相手のライフスタイルに合わせてサイズを選べるのも贈り物としていいですよね💕
+
+チェックしてみてね。
+
+#水筒 #ステンレスボトル #サーモス #保温 #保冷 #ギフト #プレゼント #軽量 #食洗機対応 #一人暮らし">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日使うものだからこそ、贈り物で喜ばれるんですよ✨
+
+・ 食洗機対応で手入れがラク
+・ 超軽量だから毎日持ち運びやすい
+・ 真空断熱で朝入れたら夜まであったか
+
+795件のレビューで高い評価を得ているのも、実用性で選ばれている証。相手のライフスタイルに合わせてサイズを選べるのも贈り物としていいですよね💕
+
+チェックしてみてね。
+
+#水筒 #ステンレスボトル #サーモス #保温 #保冷 #ギフト #プレゼント #軽量 #食洗機対応 #一人暮らし">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/livingut/4580244680702/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="cookware-carote:10000114">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/cookware-carote/cabinet/10467677/11788936/11.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【激安★18点が11680円⇒9380円だけ！】CAROTE カローテ フライパン セット 18点 鍋セット IH対応 PFOA PFOS フリー 取っ手が取れる 卵焼き 鍋セット16点+三徳包丁2点 マーブルコート くっつきにくい 一年保証 ICE CREAM ベージュ（16+2点・エッグパン単品）</p>
+        <p class="meta"><span class="price">3,998円</span> ・ ★4.51 (3848件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ CAROTEキッチン用品 shop</p>
+      </div>
+    </div>
+    <div class="pitch">18点セットが今だけお手頃価格になってる🎁
+
+取っ手が外れるから、狭いキッチンでも収納に困らないんです✨
+鍋・フライパン・卵焼き・包丁まで揃ってるのに、この価格は本当にお得💕
+3800件以上のレビューで4.5点という信頼度も、選んだ理由になりますよ。
+
+気になったらのぞいてみてね。
+
+#フライパンセット #鍋セット #取っ手が取れる #IH対応 #一人暮らし #新生活 #キッチン用品 #おしゃれ #セット買い #ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=cookware-carote:10000114" target="_blank" rel="noopener" data-pitch="18点セットが今だけお手頃価格になってる🎁
+
+取っ手が外れるから、狭いキッチンでも収納に困らないんです✨
+鍋・フライパン・卵焼き・包丁まで揃ってるのに、この価格は本当にお得💕
+3800件以上のレビューで4.5点という信頼度も、選んだ理由になりますよ。
+
+気になったらのぞいてみてね。
+
+#フライパンセット #鍋セット #取っ手が取れる #IH対応 #一人暮らし #新生活 #キッチン用品 #おしゃれ #セット買い #ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="18点セットが今だけお手頃価格になってる🎁
+
+取っ手が外れるから、狭いキッチンでも収納に困らないんです✨
+鍋・フライパン・卵焼き・包丁まで揃ってるのに、この価格は本当にお得💕
+3800件以上のレビューで4.5点という信頼度も、選んだ理由になりますよ。
+
+気になったらのぞいてみてね。
+
+#フライパンセット #鍋セット #取っ手が取れる #IH対応 #一人暮らし #新生活 #キッチン用品 #おしゃれ #セット買い #ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/cookware-carote/j05836/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="tuhan-ya-2:10126054">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/tuhan-ya-2/cabinet/tmb/0392344_01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【送料無料】コモライフ ステンレス製の防臭ワン 排水口 排水トラップ 取替用 臭気 害虫 対策 置くだけ キッチン 排水管</p>
+        <p class="meta"><span class="price">2,198円</span> ・ ★4.41 (54件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 通販奉行</p>
+      </div>
+    </div>
+    <div class="pitch">排水口の臭いと虫が、ステンレス製ならずっと防げるんですよ。🙌
+
+置くだけで簡単だから、古いのと取り替えるだけ。ヌメリにくくてお手入れもラク✨
+
+気になったらチェックしてみてね！
+
+#排水口対策 #防臭防虫 #キッチン雑貨 #シンク #家事時短</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=tuhan-ya-2:10126054" target="_blank" rel="noopener" data-pitch="排水口の臭いと虫が、ステンレス製ならずっと防げるんですよ。🙌
+
+置くだけで簡単だから、古いのと取り替えるだけ。ヌメリにくくてお手入れもラク✨
+
+気になったらチェックしてみてね！
+
+#排水口対策 #防臭防虫 #キッチン雑貨 #シンク #家事時短">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="排水口の臭いと虫が、ステンレス製ならずっと防げるんですよ。🙌
+
+置くだけで簡単だから、古いのと取り替えるだけ。ヌメリにくくてお手入れもラク✨
+
+気になったらチェックしてみてね！
+
+#排水口対策 #防臭防虫 #キッチン雑貨 #シンク #家事時短">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/tuhan-ya-2/392344/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="tiger-online:10005028">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/tiger-online/cabinet/mmz-w050_ra260710.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【タイガー魔法瓶 楽天市場店】水筒 食洗機対応 パッキン一体 らくらくキャップ 真空断熱 ボトル 350ml 500ml 600ml MMZ-W035 MMZ-W050 MMZ-W060 コンパクト 軽量 保温 保冷 直飲み おしゃれ ステンレスボトル サハラ 食洗機 ブラック ホワイト タイガー</p>
+        <p class="meta"><span class="price">2,680円</span> ・ ★4.7 (811件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ タイガー魔法瓶 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">せんとパッキンが一体だから、毎日のお手入れが本当に楽。
+
+朝の支度で片手に、
+
+オフィスのデスクに、
+
+帰宅後は食器洗い乾燥機へ。
+
+バラバラにならない、
+
+ネジネジも不要。
+
+細かいパーツの管理がないって、
+
+こんなに快適だったんだ ✨💕
+
+毎日使うものだから、
+
+手間が減るだけで
+
+ストレスも減る 🙌
+
+#水筒 #ステンレスボトル #食洗機対応 #軽量 #毎日使う #オフィス #新生活 #保温保冷</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=tiger-online:10005028" target="_blank" rel="noopener" data-pitch="せんとパッキンが一体だから、毎日のお手入れが本当に楽。
+
+朝の支度で片手に、
+
+オフィスのデスクに、
+
+帰宅後は食器洗い乾燥機へ。
+
+バラバラにならない、
+
+ネジネジも不要。
+
+細かいパーツの管理がないって、
+
+こんなに快適だったんだ ✨💕
+
+毎日使うものだから、
+
+手間が減るだけで
+
+ストレスも減る 🙌
+
+#水筒 #ステンレスボトル #食洗機対応 #軽量 #毎日使う #オフィス #新生活 #保温保冷">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="せんとパッキンが一体だから、毎日のお手入れが本当に楽。
+
+朝の支度で片手に、
+
+オフィスのデスクに、
+
+帰宅後は食器洗い乾燥機へ。
+
+バラバラにならない、
+
+ネジネジも不要。
+
+細かいパーツの管理がないって、
+
+こんなに快適だったんだ ✨💕
+
+毎日使うものだから、
+
+手間が減るだけで
+
+ストレスも減る 🙌
+
+#水筒 #ステンレスボトル #食洗機対応 #軽量 #毎日使う #オフィス #新生活 #保温保冷">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/tiger-online/mmz-w050/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="nelture:10000165">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/nelture/cabinet/08301551/260403_638_02_01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">今治睡眠用タオル2【王様のブランチ|めざましどようび紹介】今治睡眠用タオル2 枕 まくら マクラ 睡眠 今治枕 今治タオル 首枕 今治 タオル タオルまくら 綿100％ パイル地 国産 日本製 こり ストレートネック 低め 低い 高さ 調整 洗える</p>
+        <p class="meta"><span class="price">10,780円</span> ・ ★4.24 (1464件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ Nelture楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">枕の高さって自分好みに変えられたらいいのに、ありませんか？
+
+この枕は専用ポールで調整できちゃうんです。朝は低めで、疲れてる日は高めにと、その日の首の状態に合わせられる✨
+
+綿100%だから洗えるし、肩こりやストレートネック対策としても選ばれてる。1464件のレビューで支持されてる理由がわかります💭
+
+気になったらチェックしてみてね。
+
+#今治タオル #枕 #睡眠 #ストレートネック #肩こり #寝具 #洗える枕 #高さ調整</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=nelture:10000165" target="_blank" rel="noopener" data-pitch="枕の高さって自分好みに変えられたらいいのに、ありませんか？
+
+この枕は専用ポールで調整できちゃうんです。朝は低めで、疲れてる日は高めにと、その日の首の状態に合わせられる✨
+
+綿100%だから洗えるし、肩こりやストレートネック対策としても選ばれてる。1464件のレビューで支持されてる理由がわかります💭
+
+気になったらチェックしてみてね。
+
+#今治タオル #枕 #睡眠 #ストレートネック #肩こり #寝具 #洗える枕 #高さ調整">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="枕の高さって自分好みに変えられたらいいのに、ありませんか？
+
+この枕は専用ポールで調整できちゃうんです。朝は低めで、疲れてる日は高めにと、その日の首の状態に合わせられる✨
+
+綿100%だから洗えるし、肩こりやストレートネック対策としても選ばれてる。1464件のレビューで支持されてる理由がわかります💭
+
+気になったらチェックしてみてね。
+
+#今治タオル #枕 #睡眠 #ストレートネック #肩こり #寝具 #洗える枕 #高さ調整">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/nelture/az638_02/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="e-kurashi:10048739">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/e-kurashi/cabinet/rank-img/021/main-s6z70-03.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">天板 水に強い 耐荷重10kg ズレない 板 中が透けない 壁付き チェスト 専用 チェスト用 収納ケース用 収納ボックス用 シェルフ 棚 【天板のみ ※本体別売り】 山善 YAMAZEN 【送料無料】</p>
+        <p class="meta"><span class="price">2,299円</span> ・ ★4.52 (1758件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ くらしのeショップ</p>
+      </div>
+    </div>
+    <div class="pitch">天板だけの販売って正直迷ったんですが、既存のチェストを活かしたい人にはぴったり。
+
+デスク周りの小物を飾りながら収納したいときも、ズレない仕様だから安心✨耐荷重10kgあるので、本や観葉植物も平気。中が透けない素材で棚の中身をスッキリ見せられるのが好き。
+
+送料無料だし、気軽に試せる価格なのも嬉しい💕
+
+#壁付きチェスト #天板 #収納 #インテリア #デスク周り #棚DIY #おうち時間 #シェルフ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=e-kurashi:10048739" target="_blank" rel="noopener" data-pitch="天板だけの販売って正直迷ったんですが、既存のチェストを活かしたい人にはぴったり。
+
+デスク周りの小物を飾りながら収納したいときも、ズレない仕様だから安心✨耐荷重10kgあるので、本や観葉植物も平気。中が透けない素材で棚の中身をスッキリ見せられるのが好き。
+
+送料無料だし、気軽に試せる価格なのも嬉しい💕
+
+#壁付きチェスト #天板 #収納 #インテリア #デスク周り #棚DIY #おうち時間 #シェルフ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="天板だけの販売って正直迷ったんですが、既存のチェストを活かしたい人にはぴったり。
+
+デスク周りの小物を飾りながら収納したいときも、ズレない仕様だから安心✨耐荷重10kgあるので、本や観葉植物も平気。中が透けない素材で棚の中身をスッキリ見せられるのが好き。
+
+送料無料だし、気軽に試せる価格なのも嬉しい💕
+
+#壁付きチェスト #天板 #収納 #インテリア #デスク周り #棚DIY #おうち時間 #シェルフ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/e-kurashi/s1y43/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="tansu:10045046">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/tansu/cabinet/koukoku/26700013_10.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">楽天1位 布団セット 中綿増量1.6kg 固綿入り 敷布団 掛け布団 洗える 抗菌 防臭 防カビ 収納ケース 掛布団 カバー付き シングル セミダブル ダブル 組布団 寝具セット 布団 来客用 来客用布団セット 7点セット 9点セット コンパクト</p>
+        <p class="meta"><span class="price">5,999円</span> ・ ★4.36 (3569件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ タンスのゲン Design the Future</p>
+      </div>
+    </div>
+    <div class="pitch">来客用の布団が欲しいけど置き場所がない、そんな時間がないあなたへ。
+
+・届いてすぐ使える、カバー付きの完全セット
+・全て洗えるから、衛生面も安心✨
+・収納ケース付きでコンパクトに片付く
+
+3000件以上のレビューで支持されてるのも納得。急な来客も、これ1セットあれば慌てずに済みますよ😊
+
+#布団セット #来客用布団 #寝具 #一人暮らし #新生活 #洗える布団 #抗菌防臭 #敷布団 #掛け布団 #布団収納</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=tansu:10045046" target="_blank" rel="noopener" data-pitch="来客用の布団が欲しいけど置き場所がない、そんな時間がないあなたへ。
+
+・届いてすぐ使える、カバー付きの完全セット
+・全て洗えるから、衛生面も安心✨
+・収納ケース付きでコンパクトに片付く
+
+3000件以上のレビューで支持されてるのも納得。急な来客も、これ1セットあれば慌てずに済みますよ😊
+
+#布団セット #来客用布団 #寝具 #一人暮らし #新生活 #洗える布団 #抗菌防臭 #敷布団 #掛け布団 #布団収納">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="来客用の布団が欲しいけど置き場所がない、そんな時間がないあなたへ。
+
+・届いてすぐ使える、カバー付きの完全セット
+・全て洗えるから、衛生面も安心✨
+・収納ケース付きでコンパクトに片付く
+
+3000件以上のレビューで支持されてるのも納得。急な来客も、これ1セットあれば慌てずに済みますよ😊
+
+#布団セット #来客用布団 #寝具 #一人暮らし #新生活 #洗える布団 #抗菌防臭 #敷布団 #掛け布団 #布団収納">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/tansu/26700013/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-09-27";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>

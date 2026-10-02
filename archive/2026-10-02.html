@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-10-02</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-10-02 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="sfd-ymt:10000345">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sfd-ymt/cabinet/00661828/2023bt-sku-firsta.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">＼10/4AM9:59まで超早割／【楽天総合1位】特大タラバ蟹1kg 2kg 3kg 5kg 独自のワンフローズン カニ タラバガニ たらば かに たらば蟹 たらばかに 贈答 ギフト 母の日 父の日 お中元 敬老の日 お歳暮 年末年始 お年賀 新年 祝い 誕生日</p>
+        <p class="meta"><span class="price">9,999円</span> ・ ★4.24 (24415件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 海の幸なのにYAMATO</p>
+      </div>
+    </div>
+    <div class="pitch">贈り物で「本当に喜ばれるもの」って何ですか？😊
+
+それは、相手が自分では買わないちょっと贅沢な食べ物。このタラバ蟹は、特大サイズで豪華だし、ボイル済みだからすぐに食べられるんです✨
+
+24,000件超のレビューで支持されてるのも、喜ばれる証拠。お中元、お歳暮、誕生日…どの場面でも「え、本当にありがとう！」ってなる逆転ギフトです。
+
+楽天市場でチェックしてみてね。
+
+#タラバガニ #カニ贈答 #贈り物 #特別な食卓 #父の日ギフト #母の日ギフト #敬老の日 #お歳暮</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sfd-ymt:10000345" target="_blank" rel="noopener" data-pitch="贈り物で「本当に喜ばれるもの」って何ですか？😊
+
+それは、相手が自分では買わないちょっと贅沢な食べ物。このタラバ蟹は、特大サイズで豪華だし、ボイル済みだからすぐに食べられるんです✨
+
+24,000件超のレビューで支持されてるのも、喜ばれる証拠。お中元、お歳暮、誕生日…どの場面でも「え、本当にありがとう！」ってなる逆転ギフトです。
+
+楽天市場でチェックしてみてね。
+
+#タラバガニ #カニ贈答 #贈り物 #特別な食卓 #父の日ギフト #母の日ギフト #敬老の日 #お歳暮">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="贈り物で「本当に喜ばれるもの」って何ですか？😊
+
+それは、相手が自分では買わないちょっと贅沢な食べ物。このタラバ蟹は、特大サイズで豪華だし、ボイル済みだからすぐに食べられるんです✨
+
+24,000件超のレビューで支持されてるのも、喜ばれる証拠。お中元、お歳暮、誕生日…どの場面でも「え、本当にありがとう！」ってなる逆転ギフトです。
+
+楽天市場でチェックしてみてね。
+
+#タラバガニ #カニ贈答 #贈り物 #特別な食卓 #父の日ギフト #母の日ギフト #敬老の日 #お歳暮">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sfd-ymt/869808/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="onestep:10052052">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/onestep/cabinet/life/life12/693039n.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">トイレットペーパー シングル 芯なし 業務用 150m 48ロール(6ロール×8パック) コアレス ロング『送料無料（一部地域除く）』</p>
+        <p class="meta"><span class="price">4,972円</span> ・ ★4.59 (8088件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ よろずやマルシェ</p>
+      </div>
+    </div>
+    <div class="pitch">通常の3倍長いから、交換がほんとに楽😭💕
+芯もないのでゴミも減らせるし、一度買ったらしばらく持ちます✨
+
+#トイレットペーパー #業務用 #節約 #ロングタイプ #エコ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=onestep:10052052" target="_blank" rel="noopener" data-pitch="通常の3倍長いから、交換がほんとに楽😭💕
+芯もないのでゴミも減らせるし、一度買ったらしばらく持ちます✨
+
+#トイレットペーパー #業務用 #節約 #ロングタイプ #エコ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="通常の3倍長いから、交換がほんとに楽😭💕
+芯もないのでゴミも減らせるし、一度買ったらしばらく持ちます✨
+
+#トイレットペーパー #業務用 #節約 #ロングタイプ #エコ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/onestep/693039/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="2-itamae:10000394">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_gold/2-itamae/img/2027/item/131300-thmb_rakuten.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【エントリーでポイント10倍】おせち 早割 2027 予約『板前魂の花籠』おせち 和洋風 和風 洋風 3段重［34品 3人前 お節］新春 豪華 毎年完売 おせち料理［おせち 送料無料］2026 お正月 御節料理 冷凍</p>
+        <p class="meta"><span class="price">9,730円</span> ・ ★4.3 (14386件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 板前魂 おせち</p>
+      </div>
+    </div>
+    <div class="pitch">毎年完売する理由、やっぱり食べればわかる✨
+
+累計380万セット達成の板前魂のおせち。4人の匠が全国から厳選した食材で監修した、34品目の豪華な和洋風三段重です。子どもも大人も満足できる品揃え、だから家族で選ばれ続けているんですよ。
+
+ポイント10倍のエントリーがお得です。気になったらチェックしてみてね🎁
+
+#おせち料理 #2027年 #お正月 #和洋風 #おせち予約 #三段重 #早割 #新春 #家族向け #冷凍</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=2-itamae:10000394" target="_blank" rel="noopener" data-pitch="毎年完売する理由、やっぱり食べればわかる✨
+
+累計380万セット達成の板前魂のおせち。4人の匠が全国から厳選した食材で監修した、34品目の豪華な和洋風三段重です。子どもも大人も満足できる品揃え、だから家族で選ばれ続けているんですよ。
+
+ポイント10倍のエントリーがお得です。気になったらチェックしてみてね🎁
+
+#おせち料理 #2027年 #お正月 #和洋風 #おせち予約 #三段重 #早割 #新春 #家族向け #冷凍">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎年完売する理由、やっぱり食べればわかる✨
+
+累計380万セット達成の板前魂のおせち。4人の匠が全国から厳選した食材で監修した、34品目の豪華な和洋風三段重です。子どもも大人も満足できる品揃え、だから家族で選ばれ続けているんですよ。
+
+ポイント10倍のエントリーがお得です。気になったらチェックしてみてね🎁
+
+#おせち料理 #2027年 #お正月 #和洋風 #おせち予約 #三段重 #早割 #新春 #家族向け #冷凍">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/2-itamae/sandannp/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="m-style2021:10000350">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/m-style2021/cabinet/apparel/aa014/01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【期間限定！25%OFFクーポン】 正規品 ふわとろ毛布 冷房対策 敬老の日 毛布 ブランケット もこもこ毛布 VERILADY ★1位獲得★全17色「20万枚突破・4.5以上高評価・SNS話題沸騰」 オールシーズン シングル セミダブル ダブル ハーフ 厚手 ひざ掛け 掛け毛布 ソファ毛布</p>
+        <p class="meta"><span class="price">1,388円</span> ・ ★4.59 (2429件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ 【MIONO楽天市場店】</p>
+      </div>
+    </div>
+    <div class="pitch">正直なところ、毛布なんてどれも同じだと思ってたんですが、これは別でした😍
+
+ふわとろの肌触りで、包まれるだけで気持ちよくて。朝まで手放したくなくなっちゃいます✨
+
+オールシーズン使えるから、冷房対策から秋冬まで1枚で重宝するんです。丸洗いもできるし、静電気防止加工だから肌にも優しい。
+
+2429件のレビューで4.59の高評価なのも納得できました。気になったらチェックしてみてね。
+
+#毛布 #ブランケット #冷房対策 #寝具 #ふわふわ #秋冬 #ひざ掛け #おうち時間</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=m-style2021:10000350" target="_blank" rel="noopener" data-pitch="正直なところ、毛布なんてどれも同じだと思ってたんですが、これは別でした😍
+
+ふわとろの肌触りで、包まれるだけで気持ちよくて。朝まで手放したくなくなっちゃいます✨
+
+オールシーズン使えるから、冷房対策から秋冬まで1枚で重宝するんです。丸洗いもできるし、静電気防止加工だから肌にも優しい。
+
+2429件のレビューで4.59の高評価なのも納得できました。気になったらチェックしてみてね。
+
+#毛布 #ブランケット #冷房対策 #寝具 #ふわふわ #秋冬 #ひざ掛け #おうち時間">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="正直なところ、毛布なんてどれも同じだと思ってたんですが、これは別でした😍
+
+ふわとろの肌触りで、包まれるだけで気持ちよくて。朝まで手放したくなくなっちゃいます✨
+
+オールシーズン使えるから、冷房対策から秋冬まで1枚で重宝するんです。丸洗いもできるし、静電気防止加工だから肌にも優しい。
+
+2429件のレビューで4.59の高評価なのも納得できました。気になったらチェックしてみてね。
+
+#毛布 #ブランケット #冷房対策 #寝具 #ふわふわ #秋冬 #ひざ掛け #おうち時間">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/m-style2021/aa014/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="lifinique:10000079">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/lifinique/cabinet/kitchen_goods/tableware/drc-v/drc2_sn_01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【深型入荷！】電子レンジ調理器 簡単 便利 焼き魚 焼き目 焼く 炒める 蒸す 炊く 煮る 茹でる 食洗器対応 取っ手付き 時短 楽チン ずぼら かわいい おしゃれ シンプル スクエア サークル スチーム 深型</p>
+        <p class="meta"><span class="price">2,980円</span> ・ ★4.57 (580件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ LIFINIQUE 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">焼き魚の香りが立のぼる。
+でもコンロの前には誰もいない。
+レンジにぽんと入れて、あとは待つだけ。
+
+焼き目までついちゃう✨
+
+火を使わないから、夏の台所も涼しい😌
+洗い物も楽ちん🙌
+
+毎日の調理がこんなに簡単になるなんて💕
+
+#電子レンジ調理器 #時短調理 #火を使わない #焼き魚 #キッチングッズ #時短家事 #楽ちん調理 #おうち時間</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=lifinique:10000079" target="_blank" rel="noopener" data-pitch="焼き魚の香りが立のぼる。
+でもコンロの前には誰もいない。
+レンジにぽんと入れて、あとは待つだけ。
+
+焼き目までついちゃう✨
+
+火を使わないから、夏の台所も涼しい😌
+洗い物も楽ちん🙌
+
+毎日の調理がこんなに簡単になるなんて💕
+
+#電子レンジ調理器 #時短調理 #火を使わない #焼き魚 #キッチングッズ #時短家事 #楽ちん調理 #おうち時間">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="焼き魚の香りが立のぼる。
+でもコンロの前には誰もいない。
+レンジにぽんと入れて、あとは待つだけ。
+
+焼き目までついちゃう✨
+
+火を使わないから、夏の台所も涼しい😌
+洗い物も楽ちん🙌
+
+毎日の調理がこんなに簡単になるなんて💕
+
+#電子レンジ調理器 #時短調理 #火を使わない #焼き魚 #キッチングッズ #時短家事 #楽ちん調理 #おうち時間">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/lifinique/drc-v/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="anker:10002086">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1664_normal.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【10/1限定 最大10%OFFクーポン&amp;P10倍】Anker MagGo Power Bank (10000mAh, Slim) Qi2認証 ワイヤレス充電 最大出力15W MagSafe対応 マグネット式ワイヤレス充電対応 コンパクト 薄型 小型 iPhone 15 / 14 / 13 / 12 シリーズ専用</p>
+        <p class="meta"><span class="price">9,990円</span> ・ ★4.55 (535件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ アンカー・ダイレクト楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">マグネット式だからケーブルの煩わしさから解放されるんですよ。✨
+
+・スマホを握ったまま操作できる 🙌
+・ポケットに入る薄さ（約15mm）なのに2回分充電可能 💪
+・USB-Cで30W急速充電もいけるから有線派も満足 ⚡
+
+ワイヤレス充電は遅いって思ってた人にこそ試してほしい。ポイント10倍のこの機会に、チェックしてみてね！💕
+
+#モバイルバッテリー #ワイヤレス充電 #MagSafe対応 #iPhone充電 #Anker #ガジェット #コンパクト #薄型 #持ち運び #スマホアクセサリー</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=anker:10002086" target="_blank" rel="noopener" data-pitch="マグネット式だからケーブルの煩わしさから解放されるんですよ。✨
+
+・スマホを握ったまま操作できる 🙌
+・ポケットに入る薄さ（約15mm）なのに2回分充電可能 💪
+・USB-Cで30W急速充電もいけるから有線派も満足 ⚡
+
+ワイヤレス充電は遅いって思ってた人にこそ試してほしい。ポイント10倍のこの機会に、チェックしてみてね！💕
+
+#モバイルバッテリー #ワイヤレス充電 #MagSafe対応 #iPhone充電 #Anker #ガジェット #コンパクト #薄型 #持ち運び #スマホアクセサリー">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="マグネット式だからケーブルの煩わしさから解放されるんですよ。✨
+
+・スマホを握ったまま操作できる 🙌
+・ポケットに入る薄さ（約15mm）なのに2回分充電可能 💪
+・USB-Cで30W急速充電もいけるから有線派も満足 ⚡
+
+ワイヤレス充電は遅いって思ってた人にこそ試してほしい。ポイント10倍のこの機会に、チェックしてみてね！💕
+
+#モバイルバッテリー #ワイヤレス充電 #MagSafe対応 #iPhone充電 #Anker #ガジェット #コンパクト #薄型 #持ち運び #スマホアクセサリー">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/anker/a1664/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="gardens-1:10000495">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/gardens-1/cabinet/biiino/item/main-image-5/20260716140215_1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">fog linen work リネンカレンダー2027キッチンクロス 新色 麻 100% リトアニア | 食器拭き 北欧 アンティーク ナチュラル カフェ 丁寧な暮らし インテリア 雑貨 ギフト 贈り物 ギフトイザベル ボワノ タペストリー 壁掛け フランス フォグリネンワーク</p>
+        <p class="meta"><span class="price">3,850円</span> ・ ★4.99 (74件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ GARDENS（ガーデンズ）</p>
+      </div>
+    </div>
+    <div class="pitch">毎日のキッチンで、思わず手に取りたくなるような1枚、ありませんか？
+
+fog linen workのリネンカレンダーなら、上質な麻100%だから使うたびに肌に馴染んでいく心地よさ✨ イザベル・ボワノのイラストやフランスの素敵な世界観が、日々の家事をちょっと特別にしてくれます💕
+
+毎日のふきん時間が、楽しみに変わる🧵
+
+#fog linen work #キッチンクロス #リネンカレンダー #北欧雑貨 #インテリア #丁寧な暮らし #ギフト #カフェ雑貨</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=gardens-1:10000495" target="_blank" rel="noopener" data-pitch="毎日のキッチンで、思わず手に取りたくなるような1枚、ありませんか？
+
+fog linen workのリネンカレンダーなら、上質な麻100%だから使うたびに肌に馴染んでいく心地よさ✨ イザベル・ボワノのイラストやフランスの素敵な世界観が、日々の家事をちょっと特別にしてくれます💕
+
+毎日のふきん時間が、楽しみに変わる🧵
+
+#fog linen work #キッチンクロス #リネンカレンダー #北欧雑貨 #インテリア #丁寧な暮らし #ギフト #カフェ雑貨">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日のキッチンで、思わず手に取りたくなるような1枚、ありませんか？
+
+fog linen workのリネンカレンダーなら、上質な麻100%だから使うたびに肌に馴染んでいく心地よさ✨ イザベル・ボワノのイラストやフランスの素敵な世界観が、日々の家事をちょっと特別にしてくれます💕
+
+毎日のふきん時間が、楽しみに変わる🧵
+
+#fog linen work #キッチンクロス #リネンカレンダー #北欧雑貨 #インテリア #丁寧な暮らし #ギフト #カフェ雑貨">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/gardens-1/10000566/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rakutensokuhaimart:10018329">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rakutensokuhaimart/cabinet/rakuten24/450/4903301351450.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">NANOX one ニオイ専用 高濃度 洗濯洗剤 詰め替え 大容量 業務用 4kg 【NANOXone】 洗濯洗剤　ノズル有（付属品）</p>
+        <p class="meta"><span class="price">3,115円</span> ・ ★4.74 (99件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 楽天24エクスプレス</p>
+      </div>
+    </div>
+    <div class="pitch">ニオイに悩む人へのプレゼント、これが正解です✨
+部屋干し臭も加齢臭も無臭化するから、贈った相手も絶対喜ぶ。4kgの大容量なので気遣いも伝わります💕
+
+#洗濯洗剤 #ギフト #ニオイ対策 #部屋干し #大容量</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rakutensokuhaimart:10018329" target="_blank" rel="noopener" data-pitch="ニオイに悩む人へのプレゼント、これが正解です✨
+部屋干し臭も加齢臭も無臭化するから、贈った相手も絶対喜ぶ。4kgの大容量なので気遣いも伝わります💕
+
+#洗濯洗剤 #ギフト #ニオイ対策 #部屋干し #大容量">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ニオイに悩む人へのプレゼント、これが正解です✨
+部屋干し臭も加齢臭も無臭化するから、贈った相手も絶対喜ぶ。4kgの大容量なので気遣いも伝わります💕
+
+#洗濯洗剤 #ギフト #ニオイ対策 #部屋干し #大容量">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rakutensokuhaimart/4903301351450/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="ease-space:10009401">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/ease-space/cabinet/13773299/61140240_10.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【正午~5%引クーポン】 新タイプ登場! 掛け布団 洗える 布団 シンサレート 両面フランネル or ピーチスキン 暖かい 蓄熱イージーウォーム 洗濯 丸洗い 掛布団 シングル セミダブル ダブル 全面使用 抗菌 防臭 軽い 冬用掛け布団 フランネル 掛け毛布 冬 毛布</p>
+        <p class="meta"><span class="price">2,799円</span> ・ ★4.39 (9397件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ ベッド寝具専門店 イーズスペース</p>
+      </div>
+    </div>
+    <div class="pitch">洗える掛け布団なのに、真冬でも暖かいって本当？✨
+
+シンサレート高機能素材と蓄熱素材の2層構造だから、軽いのに逃げた熱をキャッチしてくれるんです。9000件以上のレビューで支持されてる理由、ここにあります💕
+
+自宅で丸洗いできるから、清潔に保つのも簡単。気になったらチェックしてみて。
+
+#掛け布団 #洗える布団 #冬用掛け布団 #暖かい #軽い #シンサレート #丸洗い #冬寝具 #あったか #新生活</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=ease-space:10009401" target="_blank" rel="noopener" data-pitch="洗える掛け布団なのに、真冬でも暖かいって本当？✨
+
+シンサレート高機能素材と蓄熱素材の2層構造だから、軽いのに逃げた熱をキャッチしてくれるんです。9000件以上のレビューで支持されてる理由、ここにあります💕
+
+自宅で丸洗いできるから、清潔に保つのも簡単。気になったらチェックしてみて。
+
+#掛け布団 #洗える布団 #冬用掛け布団 #暖かい #軽い #シンサレート #丸洗い #冬寝具 #あったか #新生活">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="洗える掛け布団なのに、真冬でも暖かいって本当？✨
+
+シンサレート高機能素材と蓄熱素材の2層構造だから、軽いのに逃げた熱をキャッチしてくれるんです。9000件以上のレビューで支持されてる理由、ここにあります💕
+
+自宅で丸洗いできるから、清潔に保つのも簡単。気になったらチェックしてみて。
+
+#掛け布団 #洗える布団 #冬用掛け布団 #暖かい #軽い #シンサレート #丸洗い #冬寝具 #あったか #新生活">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/ease-space/61140240/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="tansu:10056893">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/tansu/cabinet/00042380/43300155_10ra2.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【正午〜5%引クーポン】 楽天1位 ワンランク上の 高反発 Goo3D《グッスリード》 マットレス 三つ折り 10cm 3ゾーン 体圧分散 ベッドマット 高反発マットレス 三つ折りマットレス セミシングル シングル セミダブル ダブル クイーンキング 硬め 折りたたみ 敷布団</p>
+        <p class="meta"><span class="price">5,999円</span> ・ ★4.54 (890件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ タンスのゲン Design the Future</p>
+      </div>
+    </div>
+    <div class="pitch">高反発マットレスって結構いろいろあるし、迷いますよね💭
+でもこの子は890件のレビューで4.54点をキープし続けてるのが、信頼の証。
+
+3ゾーン設計で体をしっかり支えて、厚みも10cmあるから寝心地がワンランク違うんです。三つ折りだからお手入れも楽だし✨
+硬めが好きな方や、今の寝具に満足できてない方こそ試す価値ありですよ。
+
+気になったらチェック👍
+
+#高反発マットレス #マットレス #寝具 #三つ折り #腰痛対策 #快眠 #新生活 #ベッド</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=tansu:10056893" target="_blank" rel="noopener" data-pitch="高反発マットレスって結構いろいろあるし、迷いますよね💭
+でもこの子は890件のレビューで4.54点をキープし続けてるのが、信頼の証。
+
+3ゾーン設計で体をしっかり支えて、厚みも10cmあるから寝心地がワンランク違うんです。三つ折りだからお手入れも楽だし✨
+硬めが好きな方や、今の寝具に満足できてない方こそ試す価値ありですよ。
+
+気になったらチェック👍
+
+#高反発マットレス #マットレス #寝具 #三つ折り #腰痛対策 #快眠 #新生活 #ベッド">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="高反発マットレスって結構いろいろあるし、迷いますよね💭
+でもこの子は890件のレビューで4.54点をキープし続けてるのが、信頼の証。
+
+3ゾーン設計で体をしっかり支えて、厚みも10cmあるから寝心地がワンランク違うんです。三つ折りだからお手入れも楽だし✨
+硬めが好きな方や、今の寝具に満足できてない方こそ試す価値ありですよ。
+
+気になったらチェック👍
+
+#高反発マットレス #マットレス #寝具 #三つ折り #腰痛対策 #快眠 #新生活 #ベッド">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/tansu/43300155/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-10-02";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
