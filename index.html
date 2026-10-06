@@ -62,15 +62,13 @@
     margin: 0 0 16px;
   }
   .card.done { opacity: .5; }
-  .head { display: flex; gap: 12px; align-items: flex-start; }
-  .thumb {
-    width: 84px; height: 84px; flex: 0 0 84px;
-    object-fit: contain; background: #fff; border-radius: 8px;
-    border: 1px solid var(--border);
+  .head { display: flex; gap: 8px; align-items: flex-start; }
+  .name { font-size: .95rem; font-weight: 600; margin: 0; flex: 1 1 auto; }
+  .mark {
+    flex: 0 0 auto; font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
   }
-  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
-  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
-  .price { color: var(--accent); font-weight: 700; }
   .pitch {
     white-space: pre-wrap;
     background: var(--bg);
@@ -95,8 +93,6 @@
   .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
   .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
   .done-row label { cursor: pointer; user-select: none; }
-  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
-  footer a { color: var(--muted); }
   .empty { text-align: center; color: var(--muted); padding: 48px 0; }
 </style>
 </head>
@@ -109,12 +105,8 @@
   </header>
   <article class="card" data-key="omuraisu-n:10000000">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/omuraisu-n/cabinet/item/8p/omeletrice_thum1.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">絶品オムライス210g×8袋 オムライス 仕送り 冷凍 冷凍食品 惣菜 夏休み 子供 電子レンジ 時短 レンチン ランチ 洋食 おかず ストック 仕送り 買い置き 置きオム オムレツ 簡単 便利 夕食</p>
-        <p class="meta"><span class="price">5,998円</span> ・ ★4.51 (1593件)</p>
-        <p class="meta">食品・飲料・ふるさと納税 ・ オムライスの西川</p>
-      </div>
+      <p class="name">絶品オムライス210g×8袋 オムライス 仕送り 冷凍 冷凍食品 惣菜 夏休み …</p>
+      <span class="mark">要確認</span>
     </div>
     <div class="pitch">正直、冷凍のオムライスは卵が固くなると思ってたんです。
 
@@ -146,12 +138,8 @@
   </article>
   <article class="card" data-key="kouragumi:10001546">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouragumi/cabinet/10531638/imgrc0114998442.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">今夜23:59まで楽天カードでP5倍★半額クーポンで11,960円⇒送料無料5,980円！【背ワタなし】希少な特大むきえび業務用たっぷり2kg食べ放題♪（1kg/解凍後800g×2袋入り） 【海老】【むきえび】【ムキエビ】 【P半】</p>
-        <p class="meta"><span class="price">11,960円</span> ・ ★4.64 (2456件)</p>
-        <p class="meta">食品・飲料・ふるさと納税 ・ 越前かに職人甲羅組（DENSHOKU）</p>
-      </div>
+      <p class="name">今夜23:59まで楽天カードでP5倍★半額クーポンで11,960円⇒送料無料5,…</p>
+      
     </div>
     <div class="pitch">背ワタなし、下処理なしで、そのまま調理できる✨
 2kg届いたら子どもたちが大喜び間違いなし🦐
@@ -174,12 +162,8 @@
   </article>
   <article class="card" data-key="justral:10000310">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/justral/cabinet/phone/s060/11181744/s060_00.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">【マラソン限定★10％OFF】iphone18Pro 18promax ケース ショルダー付き iPhone17 iphone17e 17pro iPhone16e iPhone16 16 pro ケース ショルダー スマホケース iphone15 15Pro 携帯ケース iPhone14 14pro iPhone13 12 11 Pro iphonese2 se3第三世代 ミラー カード収納</p>
-        <p class="meta"><span class="price">2,280円</span> ・ ★4.41 (6120件)</p>
-        <p class="meta">ガジェット・PC周辺 ・ JUSTRAL</p>
-      </div>
+      <p class="name">【マラソン限定★10％OFF】iphone18Pro 18promax ケース …</p>
+      
     </div>
     <div class="pitch">スマホと一緒に荷物が持ち運べる😊
 
@@ -217,12 +201,8 @@ iPhone18から11まで幅広く対応してるし、鏡やリング付きなど�
   </article>
   <article class="card" data-key="exception5251:10000495">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/exception5251/cabinet/11219683/11219687/main_image/f-00089new.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">【楽天ランキング1位】正規品 高品質 毛布 ふわとろ毛布 もこもこ毛布 ブランケット モコモコ とろとろ ふわふわ ハーフ シングル セミダブル ダブル ふわもこ ひざ掛け おしゃれ 暖かい 厚手 軽量 洗濯可 秋冬 冷房対策 旅行 ギフト 全4色</p>
-        <p class="meta"><span class="price">8,860円</span> ・ ★4.46 (494件)</p>
-        <p class="meta">インテリア・寝具・収納 ・ EXCEPTION本店</p>
-      </div>
+      <p class="name">【楽天ランキング1位】正規品 高品質 毛布 ふわとろ毛布 もこもこ毛布 ブランケ…</p>
+      <span class="mark">要確認</span>
     </div>
     <div class="pitch">毛布選びで「結局これ!」ってなりませんか？✨
 
@@ -260,12 +240,8 @@ iPhone18から11まで幅広く対応してるし、鏡やリング付きなど�
   </article>
   <article class="card" data-key="decori:10000583">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/decori/cabinet/13798318/imgrc0122352609.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">【10/4 20:00～限定】対象商品2点以上購入で1点あたり60%OFF！NISHIZARC 隙間掃除ブラシ J字型 ロングハンドル ナイロンブラシ スチールワイヤーブラシ 銅線ブラシ 細部掃除 狭い場所 キッチン 浴室 洗面台 排水口 蛇口 サッシ 溝 角 水回り 掃除ブラシ</p>
-        <p class="meta"><span class="price">1,280円</span> ・ ★4.59 (103件)</p>
-        <p class="meta">日用品・キッチン雑貨 ・ atOne アットワン</p>
-      </div>
+      <p class="name">【10/4 20:00～限定】対象商品2点以上購入で1点あたり60%OFF！NI…</p>
+      
     </div>
     <div class="pitch">対象商品2点以上で1点60%OFF✨
 ・J字型で排水口や蛇口の奥までしっかり届く
@@ -300,12 +276,8 @@ iPhone18から11まで幅広く対応してるし、鏡やリング付きなど�
   </article>
   <article class="card" data-key="auc-risecreation:10005320">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-risecreation/cabinet/product/top-2/r0667_01h.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">【72パック50％OFF先着クーポン 10/4 20:00-10/5 23:59迄】 ＼送料無料／ ティッシュペーパー ソフトパックティッシュ ティシュ まとめ買い 24パック 72パック 320枚 160組 ティッシュ 箱なし 大容量 ローリングストック コンパクト 生活用品 雑貨 日用品 紙 常備品 備蓄</p>
-        <p class="meta"><span class="price">3,580円</span> ・ ★4.62 (662件)</p>
-        <p class="meta">日用品・キッチン雑貨 ・ atRise（アットライズ）</p>
-      </div>
+      <p class="name">【72パック50％OFF先着クーポン 10/4 20:00-10/5 23:59…</p>
+      
     </div>
     <div class="pitch">キッチンに置いても、そのままでいい。✨
 
@@ -355,12 +327,8 @@ iPhone18から11まで幅広く対応してるし、鏡やリング付きなど�
   </article>
   <article class="card" data-key="kurashi-zakka:10002336">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kurashi-zakka/cabinet/jin-501_thum2605.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">＼50％OFFクーポン！10/1〜10/12／「sakuraku 水切りラック 伸縮かご」シンク上 お皿が立つ スリム 水切りかご 大容量 食器 水切り 伸縮 キッチン ラック シンク 洗い物 同色水切りトレー 食器 立てる【意匠登録出願済】</p>
-        <p class="meta"><span class="price">9,900円</span> ・ ★4.5 (1574件)</p>
-        <p class="meta">日用品・キッチン雑貨 ・ くらしの雑貨屋さん</p>
-      </div>
+      <p class="name">＼50％OFFクーポン！10/1〜10/12／「sakuraku 水切りラック …</p>
+      <span class="mark">要確認</span>
     </div>
     <div class="pitch">正直なところ、水切りかごって地味だし後付けでいいかなって思ってたんです😅でも毎日のシンク周りがごちゃごちゃしてるのが気になって…これ、お皿が立てて置けるから奥行きが短くて済むんですよ。伸縮できるからシンクの幅に合わせられるし、見た目もスッキリ✨
 
@@ -386,12 +354,8 @@ iPhone18から11まで幅広く対応してるし、鏡やリング付きなど�
   </article>
   <article class="card" data-key="auc-kaei-trading:10000746">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-kaei-trading/cabinet/cutb01/zk-cutb03/new-zk-cutb01-main.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">人気絶頂！即納【50％オフクーポン！】 D型まな板 フチ付きまな板 食洗器OK 3色 3サイズ まな板 かまぼこ型 キッチン雑貨 エラストマー製 丸型 耐熱 熱湯消毒 やわらかい おしゃれ まないた キッチン 台所 食器</p>
-        <p class="meta"><span class="price">1,950円</span> ・ ★4.69 (1991件)</p>
-        <p class="meta">日用品・キッチン雑貨 ・ フリーライフ</p>
-      </div>
+      <p class="name">人気絶頂！即納【50％オフクーポン！】 D型まな板 フチ付きまな板 食洗器OK …</p>
+      
     </div>
     <div class="pitch">食洗器OKで熱湯消毒もできるから、毎日ズボラに洗える🙌
 
@@ -417,12 +381,8 @@ iPhone18から11まで幅広く対応してるし、鏡やリング付きなど�
   </article>
   <article class="card" data-key="kaiminya:10000039">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kaiminya/cabinet/fzt/202/031150-1/m2.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">★期間お得！3点目50%OFF★ ふわり 掛け布団カバー 冬 布団カバー あったか シングル 羽毛布団カバー 暖かい 掛け布団カバー ふわふわ もこもこ 毛布カバー 暖かい 冬用 ベットカバー 冬用 掛け布団カバー かわいい おしゃれ ダブル セミダブル クイーン キング NENEKO</p>
-        <p class="meta"><span class="price">2,980円</span> ・ ★4.54 (861件)</p>
-        <p class="meta">インテリア・寝具・収納 ・ 快眠屋</p>
-      </div>
+      <p class="name">★期間お得！3点目50%OFF★ ふわり 掛け布団カバー 冬 布団カバー あった…</p>
+      
     </div>
     <div class="pitch">もこもこで肌触りよく、毎日使いたくなる布団カバーは喜ばれます💕
 
@@ -454,12 +414,8 @@ SNSで人気なのは、ふわふわの質感だけじゃなくて、シング�
   </article>
   <article class="card" data-key="classort:10001458">
     <div class="head">
-      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/classort/cabinet/image-item/fae007-c.jpg?_ex=128x128" alt="" loading="lazy">
-      <div>
-        <p class="name">＼最大15%OFFクーポン！／ 楽天1位 ランドリーバスケット 2段 3段 ラック スリム 70L 81L 大容量 布 カバー 隠せる キャスター付き オシャレ ランドリー収納 ランドリーラック ランドリーワゴン ワイヤーバスケット 洗濯物入れ 洗濯かご 脱衣かご 湿気対策 まとめ洗い</p>
-        <p class="meta"><span class="price">4,980円</span> ・ ★4.4 (884件)</p>
-        <p class="meta">インテリア・寝具・収納 ・ Classort楽天市場店</p>
-      </div>
+      <p class="name">＼最大15%OFFクーポン！／ 楽天1位 ランドリーバスケット 2段 3段 ラッ…</p>
+      
     </div>
     <div class="pitch">洗濯物の分別や湿気のニオイ、毎日のめんどくささありませんか？
 
@@ -492,10 +448,6 @@ SNSで人気なのは、ふわふわの質感だけじゃなくて、シング�
       <label><input type="checkbox"> ROOMに投稿した</label>
     </div>
   </article>
-  <footer>
-    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
-       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
-  </footer>
 </div>
 <script>
   var STORAGE_KEY = "room-done-2026-10-06";
