@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-10-17</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-10-17 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="gourmetcoffee:10001806">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/gourmetcoffee/cabinet/2600/2619r.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">送料無料 コーヒー豆 コーヒー 2kg 怒涛の珈琲豆　粉 (G500×4) 加藤珈琲/グルメコーヒー豆専門加藤珈琲店　スペシャルティ</p>
+        <p class="meta"><span class="price">5,398円</span> ・ ★4.6 (43136件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ グルメコーヒー豆専門！加藤珈琲店</p>
+      </div>
+    </div>
+    <div class="pitch">毎日飲むコーヒーだからこそ、2kg単位の大容量買いが正解なんです ☕
+
+一度開封すると劣化が進むコーヒー豆。小分けパックなら、いつも新鮮な状態で飲める✨ 500g×4袋だから、使い切るペースに合わせて開ければOK。
+
+それにマイルドな味わいは毎日飲んでも飽きない。お手頃価格だから、毎日のルーティンに組み込みやすいのも推しです💕
+
+#コーヒー豆 #コーヒー #毎日コーヒー #珈琲 #スペシャルティコーヒー #送料無料 #コスパ良好 #コーヒー好きさんと繋がりたい #おうちカフェ #毎日飲む</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=gourmetcoffee:10001806" target="_blank" rel="noopener" data-pitch="毎日飲むコーヒーだからこそ、2kg単位の大容量買いが正解なんです ☕
+
+一度開封すると劣化が進むコーヒー豆。小分けパックなら、いつも新鮮な状態で飲める✨ 500g×4袋だから、使い切るペースに合わせて開ければOK。
+
+それにマイルドな味わいは毎日飲んでも飽きない。お手頃価格だから、毎日のルーティンに組み込みやすいのも推しです💕
+
+#コーヒー豆 #コーヒー #毎日コーヒー #珈琲 #スペシャルティコーヒー #送料無料 #コスパ良好 #コーヒー好きさんと繋がりたい #おうちカフェ #毎日飲む">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日飲むコーヒーだからこそ、2kg単位の大容量買いが正解なんです ☕
+
+一度開封すると劣化が進むコーヒー豆。小分けパックなら、いつも新鮮な状態で飲める✨ 500g×4袋だから、使い切るペースに合わせて開ければOK。
+
+それにマイルドな味わいは毎日飲んでも飽きない。お手頃価格だから、毎日のルーティンに組み込みやすいのも推しです💕
+
+#コーヒー豆 #コーヒー #毎日コーヒー #珈琲 #スペシャルティコーヒー #送料無料 #コスパ良好 #コーヒー好きさんと繋がりたい #おうちカフェ #毎日飲む">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/gourmetcoffee/2619/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="sanwa-junkei:10000536">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sanwa-junkei/cabinet/2025/a.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【期間限定30%OFF】名古屋コーチン つくね 1kg 2kg 冷凍 惣菜 おかず おつまみ 冷凍食品 肉団子 鶏肉 お取り寄せ グルメ 鍋 弁当 業務用 大容量 名古屋 お土産 送料無料 鶏三和 三和 さんわ 三和の純鶏名古屋コーチン</p>
+        <p class="meta"><span class="price">2,086円</span> ・ ★4.78 (3848件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 名古屋コーチン・鶏肉専門鶏三和</p>
+      </div>
+    </div>
+    <div class="pitch">鍋に落とす、フタをする。
+朝、お弁当に詰める。
+夜、レンジでチン。
+焼いてビール🍺
+
+毎日のどこかで活躍するから、3000件以上のレビューで選ばれ続けてるんですよ✨
+温めるだけで名古屋コーチンの旨味が引き立つ、手軽さが秘訣。
+
+気になったらチェック👇
+
+#名古屋コーチン #つくね #冷凍食品 #時短ごはん #鍋の具 #お弁当 #おつまみ #大容量</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sanwa-junkei:10000536" target="_blank" rel="noopener" data-pitch="鍋に落とす、フタをする。
+朝、お弁当に詰める。
+夜、レンジでチン。
+焼いてビール🍺
+
+毎日のどこかで活躍するから、3000件以上のレビューで選ばれ続けてるんですよ✨
+温めるだけで名古屋コーチンの旨味が引き立つ、手軽さが秘訣。
+
+気になったらチェック👇
+
+#名古屋コーチン #つくね #冷凍食品 #時短ごはん #鍋の具 #お弁当 #おつまみ #大容量">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="鍋に落とす、フタをする。
+朝、お弁当に詰める。
+夜、レンジでチン。
+焼いてビール🍺
+
+毎日のどこかで活躍するから、3000件以上のレビューで選ばれ続けてるんですよ✨
+温めるだけで名古屋コーチンの旨味が引き立つ、手軽さが秘訣。
+
+気になったらチェック👇
+
+#名古屋コーチン #つくね #冷凍食品 #時短ごはん #鍋の具 #お弁当 #おつまみ #大容量">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sanwa-junkei/t-018/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="alldocube:10000116">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/alldocube/cabinet/13926142/13926144/000.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【発売記念クーポンで20,999円】ALLDOCUBE iPlay 80E Android 17 タブレット 11インチ 2.5K 90Hz SIMフリー 8コア 4G LTE GPS 2560×1600解像度 8800mAh 18W急速充電 4スピーカー Widevine L1 8GB+128GB 1TB拡張 タブレット 電子コンパス 顔認証 自動輝度 18ヶ月保証</p>
+        <p class="meta"><span class="price">28,999円</span> ・ ★4.75 (116件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ ALLDOCUBE公式 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">11インチのタブレットって、本当に使いこなせるのか不安ですよね。でも Android 17 のバブル機能なら、調べものしながらメッセージ返信とか複数作業がスイスイ進むんです 💭
+
+8 コア CPU と 8GB メモリのおかげで動画も勉強も快適 ✨ microSDで最大 1TB まで拡張できるから、写真や動画もたっぷり保存できる 📱
+
+高評価が 116 件集まってるのも、その実力の証ですよ。
+
+気になったらチェックしてみてね。
+
+#11インチタブレット #Android17 #SIMフリータブレット #在宅ワーク #タブレット #学習用 #GPS搭載 #高性能</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=alldocube:10000116" target="_blank" rel="noopener" data-pitch="11インチのタブレットって、本当に使いこなせるのか不安ですよね。でも Android 17 のバブル機能なら、調べものしながらメッセージ返信とか複数作業がスイスイ進むんです 💭
+
+8 コア CPU と 8GB メモリのおかげで動画も勉強も快適 ✨ microSDで最大 1TB まで拡張できるから、写真や動画もたっぷり保存できる 📱
+
+高評価が 116 件集まってるのも、その実力の証ですよ。
+
+気になったらチェックしてみてね。
+
+#11インチタブレット #Android17 #SIMフリータブレット #在宅ワーク #タブレット #学習用 #GPS搭載 #高性能">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="11インチのタブレットって、本当に使いこなせるのか不安ですよね。でも Android 17 のバブル機能なら、調べものしながらメッセージ返信とか複数作業がスイスイ進むんです 💭
+
+8 コア CPU と 8GB メモリのおかげで動画も勉強も快適 ✨ microSDで最大 1TB まで拡張できるから、写真や動画もたっぷり保存できる 📱
+
+高評価が 116 件集まってるのも、その実力の証ですよ。
+
+気になったらチェックしてみてね。
+
+#11インチタブレット #Android17 #SIMフリータブレット #在宅ワーク #タブレット #学習用 #GPS搭載 #高性能">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/alldocube/iplay80e/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="good-item:10000868">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/good-item/cabinet/13014448/compass1790671335.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">ランキング1位！3冠達成！【送料無料】finish ビッグパック 大容量 150個入り 1袋 2袋 フィニッシュ　タブレット 食洗機用洗剤 パワーキューブ 食器洗い機用洗剤 キッチン用洗剤 　食洗機用洗剤　 食器洗浄機用　洗剤　食器洗い機用 5g × 150粒 750g 台所用合成洗剤</p>
+        <p class="meta"><span class="price">1,899円</span> ・ ★4.78 (1681件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ GOOD ITEM</p>
+      </div>
+    </div>
+    <div class="pitch">食洗機の洗浄力に満足できていませんか？
+
+フィニッシュのパワーキューブなら、ポンと入れるだけで99.9%除菌✨
+凝縮された洗浄成分が頑固な汚れもスッキリ落とします。
+
+150個の大容量だから、毎日使っても長持ち💪
+1681件のレビューで平均4.78点と、多くの人に選ばれてるんです。
+
+送料無料だからお手軽に試せますよ。
+
+#食洗機用洗剤 #フィニッシュ #パワーキューブ #大容量 #除菌 #時短家事 #キッチン用品 #日用品</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=good-item:10000868" target="_blank" rel="noopener" data-pitch="食洗機の洗浄力に満足できていませんか？
+
+フィニッシュのパワーキューブなら、ポンと入れるだけで99.9%除菌✨
+凝縮された洗浄成分が頑固な汚れもスッキリ落とします。
+
+150個の大容量だから、毎日使っても長持ち💪
+1681件のレビューで平均4.78点と、多くの人に選ばれてるんです。
+
+送料無料だからお手軽に試せますよ。
+
+#食洗機用洗剤 #フィニッシュ #パワーキューブ #大容量 #除菌 #時短家事 #キッチン用品 #日用品">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="食洗機の洗浄力に満足できていませんか？
+
+フィニッシュのパワーキューブなら、ポンと入れるだけで99.9%除菌✨
+凝縮された洗浄成分が頑固な汚れもスッキリ落とします。
+
+150個の大容量だから、毎日使っても長持ち💪
+1681件のレビューで平均4.78点と、多くの人に選ばれてるんです。
+
+送料無料だからお手軽に試せますよ。
+
+#食洗機用洗剤 #フィニッシュ #パワーキューブ #大容量 #除菌 #時短家事 #キッチン用品 #日用品">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/good-item/co-126/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="vanilla:10003321">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/vanilla/cabinet/03608264/set/ch-anv/500-ch23box_top_p.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【感謝の40%OFF！】ショーコラ23周年記念BOX(送料無料)[11/9着迄] バニラビーンズ ショーコラ プレゼント チョコレート サンド チョコ お菓子 スイーツ クッキー 個包装 詰め合わせ おしゃれ 洋菓子 チョコサンド ショコラサンド お試し 福袋 お買い得</p>
+        <p class="meta"><span class="price">4,490円</span> ・ ★4.69 (599件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 横浜チョコレートのバニラビーンズ</p>
+      </div>
+    </div>
+    <div class="pitch">退職される同僚へのお礼、何を渡そうか迷ってませんか？💭
+
+・横浜の有名店の詰め合わせなら、高級感があって喜ばれる✨
+・個包装だから、職場でシェアしやすい😊
+・23周年記念で40%OFFだから、お手頃価格で贈れる💕
+
+599件のレビューで支持されてるのも理由です。
+気になったらチェックしてみてね。
+
+#チョコレート #スイーツギフト #お返し #退職祝い #職場へのギフト #横浜 #お菓子 #個包装 #詰め合わせ #プレゼント</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=vanilla:10003321" target="_blank" rel="noopener" data-pitch="退職される同僚へのお礼、何を渡そうか迷ってませんか？💭
+
+・横浜の有名店の詰め合わせなら、高級感があって喜ばれる✨
+・個包装だから、職場でシェアしやすい😊
+・23周年記念で40%OFFだから、お手頃価格で贈れる💕
+
+599件のレビューで支持されてるのも理由です。
+気になったらチェックしてみてね。
+
+#チョコレート #スイーツギフト #お返し #退職祝い #職場へのギフト #横浜 #お菓子 #個包装 #詰め合わせ #プレゼント">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="退職される同僚へのお礼、何を渡そうか迷ってませんか？💭
+
+・横浜の有名店の詰め合わせなら、高級感があって喜ばれる✨
+・個包装だから、職場でシェアしやすい😊
+・23周年記念で40%OFFだから、お手頃価格で贈れる💕
+
+599件のレビューで支持されてるのも理由です。
+気になったらチェックしてみてね。
+
+#チョコレート #スイーツギフト #お返し #退職祝い #職場へのギフト #横浜 #お菓子 #個包装 #詰め合わせ #プレゼント">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/vanilla/ch-ps-k-6/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="minamihorie-market:10000936">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/minamihorie-market/cabinet/09993098/imgrc0102932147.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【10/15発売】イコイコプレミアム福袋 今月はキャラクター片手鍋入り★ 訳アリキッチン生活雑貨が2点以上入ってます 訳アリ 福袋 お得 キッチン雑貨 安い 格安 アウトレット 展示見本使用 未使用品 送料無料</p>
+        <p class="meta"><span class="price">2,515円</span> ・ ★4.47 (1495件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 南堀江マーケット</p>
+      </div>
+    </div>
+    <div class="pitch">何が入ってるかわからないから、もらう人も開ける時にドキドキ💕
+片手鍋とキッチン雑貨が2点以上入った福袋。毎月内容が変わるから、リピートされるほど選んでくれる店長さんのセンスが光ります✨
+
+#福袋 #キッチン雑貨 #贈り物 #母の日ギフト #送料無料</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=minamihorie-market:10000936" target="_blank" rel="noopener" data-pitch="何が入ってるかわからないから、もらう人も開ける時にドキドキ💕
+片手鍋とキッチン雑貨が2点以上入った福袋。毎月内容が変わるから、リピートされるほど選んでくれる店長さんのセンスが光ります✨
+
+#福袋 #キッチン雑貨 #贈り物 #母の日ギフト #送料無料">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="何が入ってるかわからないから、もらう人も開ける時にドキドキ💕
+片手鍋とキッチン雑貨が2点以上入った福袋。毎月内容が変わるから、リピートされるほど選んでくれる店長さんのセンスが光ります✨
+
+#福袋 #キッチン雑貨 #贈り物 #母の日ギフト #送料無料">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/minamihorie-market/moe1020/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="shoppingrhsecond:10000085">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shoppingrhsecond/cabinet/13766765/qb-7799xx7.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">「期間限定！クーポンで最安1,592円〜」毛布 ふわとろ毛布 もこもこ 毛布 ポコポコ 軽量 洗える 洗濯可 秋冬 冬 冷房対策 旅行 厚手 暖かい 冬用掛け布団 かけ布団 ブランケット モコモコ とろとろ ふわふわ シングル ダブル ハーフ ふわもこ ひざ掛け 枕カバー</p>
+        <p class="meta"><span class="price">3,980円</span> ・ ★4.59 (44件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ ショッピングRHセカンド</p>
+      </div>
+    </div>
+    <div class="pitch">お得情報でこの価格なら、ふわふわ毛布は買い！✨
+
+毛羽が3cm近くあるから、一般的な毛布の倍以上のボリュームなんです。軽いのに暖かいから、秋冬はもちろん冷房対策にも使えちゃう。洗濯機で丸洗いできるから、いつも清潔に保てるのも嬉しい💕
+
+気になったらチェックしてみてね。
+
+#毛布 #ブランケット #ふわふわ #暖かい #洗える #秋冬用 #ひざ掛け #かけ布団 #冷房対策 #ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=shoppingrhsecond:10000085" target="_blank" rel="noopener" data-pitch="お得情報でこの価格なら、ふわふわ毛布は買い！✨
+
+毛羽が3cm近くあるから、一般的な毛布の倍以上のボリュームなんです。軽いのに暖かいから、秋冬はもちろん冷房対策にも使えちゃう。洗濯機で丸洗いできるから、いつも清潔に保てるのも嬉しい💕
+
+気になったらチェックしてみてね。
+
+#毛布 #ブランケット #ふわふわ #暖かい #洗える #秋冬用 #ひざ掛け #かけ布団 #冷房対策 #ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="お得情報でこの価格なら、ふわふわ毛布は買い！✨
+
+毛羽が3cm近くあるから、一般的な毛布の倍以上のボリュームなんです。軽いのに暖かいから、秋冬はもちろん冷房対策にも使えちゃう。洗濯機で丸洗いできるから、いつも清潔に保てるのも嬉しい💕
+
+気になったらチェックしてみてね。
+
+#毛布 #ブランケット #ふわふわ #暖かい #洗える #秋冬用 #ひざ掛け #かけ布団 #冷房対策 #ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/shoppingrhsecond/241015as1-fff/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="t-interior:10000338">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/t-interior/cabinet/item/usual/jst0040b.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">[期間限定]10%OFFクーポン10/16 0時～ 【新商品】 ラグ カーペット ラグマット シンプル ミニマル 洗える おしゃれ 絨毯 オールシーズン 洗濯可 北欧 白 ホットカーペット対応 無地 秋 冬 韓国 インテリア ラグ ジャパンディ ヒエロラグ hiero smoo Branchpoint</p>
+        <p class="meta"><span class="price">3,980円</span> ・ ★4.65 (75件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ Branchpoint ブランチポイント</p>
+      </div>
+    </div>
+    <div class="pitch">朝日が入る部屋で、子どもが寝転がってる。
+洗濯機でぐるぐる🌀
+干して、また敷く。
+何度も繰り返せる💕
+
+立体感のあるデザインだから、
+毎シーズン敷き直しても飽きない✨
+
+ホットカーペット対応だから冬も活躍🔥
+実は、ラグって一度敷いたら変えられないって思ってない？
+洗えるから、気軽に模様替えできるんです。
+
+気になったらのぞいてみてね。
+
+#洗えるラグ #ラグマット #ホットカーペット対応 #北欧インテリア #韓国雑貨 #模様替え #一人暮らし #おしゃれ部屋</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=t-interior:10000338" target="_blank" rel="noopener" data-pitch="朝日が入る部屋で、子どもが寝転がってる。
+洗濯機でぐるぐる🌀
+干して、また敷く。
+何度も繰り返せる💕
+
+立体感のあるデザインだから、
+毎シーズン敷き直しても飽きない✨
+
+ホットカーペット対応だから冬も活躍🔥
+実は、ラグって一度敷いたら変えられないって思ってない？
+洗えるから、気軽に模様替えできるんです。
+
+気になったらのぞいてみてね。
+
+#洗えるラグ #ラグマット #ホットカーペット対応 #北欧インテリア #韓国雑貨 #模様替え #一人暮らし #おしゃれ部屋">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="朝日が入る部屋で、子どもが寝転がってる。
+洗濯機でぐるぐる🌀
+干して、また敷く。
+何度も繰り返せる💕
+
+立体感のあるデザインだから、
+毎シーズン敷き直しても飽きない✨
+
+ホットカーペット対応だから冬も活躍🔥
+実は、ラグって一度敷いたら変えられないって思ってない？
+洗えるから、気軽に模様替えできるんです。
+
+気になったらのぞいてみてね。
+
+#洗えるラグ #ラグマット #ホットカーペット対応 #北欧インテリア #韓国雑貨 #模様替え #一人暮らし #おしゃれ部屋">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/t-interior/jst0040/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="angelingg:10001028">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/angelingg/cabinet/ag-r-00175/ag-r-00175.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【最大40%オフクーポン★お買い物マラソン】水切りワイパー スクイージー ガラスワイパー ミニモップ 吸水モップ 水滴 水はね 洗面台 キッチン シンク 浴室 お風呂 鏡 窓 結露取り コンロ 油汚れ 飲みこぼし 水回り 絞れるモップ 洗えるモップ</p>
+        <p class="meta"><span class="price">1,000円</span> ・ ★4.22 (79件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ Angeling（エンジェリング）</p>
+      </div>
+    </div>
+    <div class="pitch">水回りの小さな汚れのたびに雑巾を出すのって、ちょっと面倒だなって思いませんか。
+
+そこで選ばれ続けているのがこのミニモップ。片手でサッと使えて、濡れたスポンジに直接触れずに済むから、毎日がラクになるんです✨ 吸水性に優れたPVAスポンジは洗って繰り返し使えるし、コンパクトだから洗面台やキッチンに置きっぱなしでも邪魔にならない😊
+
+79件のレビューで支持され続けているのは、こういう日々の便利さが積み重なるからなんです。
+
+気になったらチェックしてみてね💕
+
+#ミニモップ #水切りワイパー #掃除グッズ #水回り #キッチン雑貨 #時短家事 #便利グッズ #おうち時間</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=angelingg:10001028" target="_blank" rel="noopener" data-pitch="水回りの小さな汚れのたびに雑巾を出すのって、ちょっと面倒だなって思いませんか。
+
+そこで選ばれ続けているのがこのミニモップ。片手でサッと使えて、濡れたスポンジに直接触れずに済むから、毎日がラクになるんです✨ 吸水性に優れたPVAスポンジは洗って繰り返し使えるし、コンパクトだから洗面台やキッチンに置きっぱなしでも邪魔にならない😊
+
+79件のレビューで支持され続けているのは、こういう日々の便利さが積み重なるからなんです。
+
+気になったらチェックしてみてね💕
+
+#ミニモップ #水切りワイパー #掃除グッズ #水回り #キッチン雑貨 #時短家事 #便利グッズ #おうち時間">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="水回りの小さな汚れのたびに雑巾を出すのって、ちょっと面倒だなって思いませんか。
+
+そこで選ばれ続けているのがこのミニモップ。片手でサッと使えて、濡れたスポンジに直接触れずに済むから、毎日がラクになるんです✨ 吸水性に優れたPVAスポンジは洗って繰り返し使えるし、コンパクトだから洗面台やキッチンに置きっぱなしでも邪魔にならない😊
+
+79件のレビューで支持され続けているのは、こういう日々の便利さが積み重なるからなんです。
+
+気になったらチェックしてみてね💕
+
+#ミニモップ #水切りワイパー #掃除グッズ #水回り #キッチン雑貨 #時短家事 #便利グッズ #おうち時間">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/angelingg/ag-r-00175/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rakuten24:11164781">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/030/405030.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【1種類を選べる】ジョイ W除菌 食器用洗剤 詰め替え 超ジャンボ(1550ml×5セット)【ジョイ(Joy)】</p>
+        <p class="meta"><span class="price">4,988円</span> ・ ★4.76 (918件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 楽天24</p>
+      </div>
+    </div>
+    <div class="pitch">毎日の食器洗い、もっとラクにできたらいいなって思いませんか？
+
+ジョイのW除菌なら、油汚れもバイ菌もしっかり落とせるから、ストレスなくサッと洗える ✨
+詰め替え超ジャンボなら、1550mlが5セットで長持ちするし、詰め替え回数も減らせちゃう。
+918件のレビューで高評価なのも納得です 💕
+
+気になったらチェックしてみてね。
+
+#食器用洗剤 #詰め替え #キッチン用品 #時短 #毎日使うもの #台所用洗剤 #W除菌 #日用品</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rakuten24:11164781" target="_blank" rel="noopener" data-pitch="毎日の食器洗い、もっとラクにできたらいいなって思いませんか？
+
+ジョイのW除菌なら、油汚れもバイ菌もしっかり落とせるから、ストレスなくサッと洗える ✨
+詰め替え超ジャンボなら、1550mlが5セットで長持ちするし、詰め替え回数も減らせちゃう。
+918件のレビューで高評価なのも納得です 💕
+
+気になったらチェックしてみてね。
+
+#食器用洗剤 #詰め替え #キッチン用品 #時短 #毎日使うもの #台所用洗剤 #W除菌 #日用品">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日の食器洗い、もっとラクにできたらいいなって思いませんか？
+
+ジョイのW除菌なら、油汚れもバイ菌もしっかり落とせるから、ストレスなくサッと洗える ✨
+詰め替え超ジャンボなら、1550mlが5セットで長持ちするし、詰め替え回数も減らせちゃう。
+918件のレビューで高評価なのも納得です 💕
+
+気になったらチェックしてみてね。
+
+#食器用洗剤 #詰め替え #キッチン用品 #時短 #毎日使うもの #台所用洗剤 #W除菌 #日用品">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rakuten24/405030/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-10-17";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
