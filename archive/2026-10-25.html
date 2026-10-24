@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-10-25</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-10-25 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="tendofoods:10000186">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/tendofoods/cabinet/02576787/rice/2026/tsuya_r8_5x2.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">新米 令和8年産 送料無料 10kg 山形県産 つや姫 10kg(5kg×2) 精米 ※一部地域は別途送料追加 rts1007</p>
+        <p class="meta"><span class="price">5,980円</span> ・ ★4.71 (940件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ てんどうフーズうまいもの通販</p>
+      </div>
+    </div>
+    <div class="pitch">送料無料で新米が届く✨
+
+炊きたてをほおばる。
+つやつや、ふっくら。
+何もかけずに食べたくなる。
+おかわり、また一杯。
+
+山形県産つや姫は、つやと甘みが特徴。
+だからご飯だけで満足できるんです💕
+
+#新米 #つや姫 #山形県産 #送料無料 #お米 #ごはん #ギフト #食卓</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=tendofoods:10000186" target="_blank" rel="noopener" data-pitch="送料無料で新米が届く✨
+
+炊きたてをほおばる。
+つやつや、ふっくら。
+何もかけずに食べたくなる。
+おかわり、また一杯。
+
+山形県産つや姫は、つやと甘みが特徴。
+だからご飯だけで満足できるんです💕
+
+#新米 #つや姫 #山形県産 #送料無料 #お米 #ごはん #ギフト #食卓">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="送料無料で新米が届く✨
+
+炊きたてをほおばる。
+つやつや、ふっくら。
+何もかけずに食べたくなる。
+おかわり、また一杯。
+
+山形県産つや姫は、つやと甘みが特徴。
+だからご飯だけで満足できるんです💕
+
+#新米 #つや姫 #山形県産 #送料無料 #お米 #ごはん #ギフト #食卓">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/tendofoods/tuya602/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="sorekani:10000055">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sorekani/cabinet/sale/260925/eb2thumb.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【エントリーでP10倍】＼ 早割5,880円〜 ／【 プレミアム ズワイガニ 太脚棒肉のみ100% 500g〜1.5kg 】 カニ フルポーション ポーション 刺身OK 本ズワイガニ ずわいがに 蟹しゃぶ カニ 蟹 かに むき身 刺身 生食用 それカニ お歳暮 年末</p>
+        <p class="meta"><span class="price">5,880円</span> ・ ★4.5 (897件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ それでもカニを喰らう。</p>
+      </div>
+    </div>
+    <div class="pitch">蟹のむき身って、ボイル済みのイメージが強くないですか？😊
+
+このシリーズは太脚の棒肉100%だから、生食用でそのまま刺身にしたり蟹しゃぶにしたりできるんです✨
+
+解凍してすぐ食べられるから、わざわざ調理する手間もなし。レビューも897件で高評価だから、贈り物としても安心ですよ。
+
+早割だからお手頃に手に入るのもポイント。気になったらチェックしてみてね💕
+
+#ズワイガニ #蟹しゃぶ #刺身 #むき身 #ポーション #ご馳走 #贈り物 #年末年始</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sorekani:10000055" target="_blank" rel="noopener" data-pitch="蟹のむき身って、ボイル済みのイメージが強くないですか？😊
+
+このシリーズは太脚の棒肉100%だから、生食用でそのまま刺身にしたり蟹しゃぶにしたりできるんです✨
+
+解凍してすぐ食べられるから、わざわざ調理する手間もなし。レビューも897件で高評価だから、贈り物としても安心ですよ。
+
+早割だからお手頃に手に入るのもポイント。気になったらチェックしてみてね💕
+
+#ズワイガニ #蟹しゃぶ #刺身 #むき身 #ポーション #ご馳走 #贈り物 #年末年始">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="蟹のむき身って、ボイル済みのイメージが強くないですか？😊
+
+このシリーズは太脚の棒肉100%だから、生食用でそのまま刺身にしたり蟹しゃぶにしたりできるんです✨
+
+解凍してすぐ食べられるから、わざわざ調理する手間もなし。レビューも897件で高評価だから、贈り物としても安心ですよ。
+
+早割だからお手頃に手に入るのもポイント。気になったらチェックしてみてね💕
+
+#ズワイガニ #蟹しゃぶ #刺身 #むき身 #ポーション #ご馳走 #贈り物 #年末年始">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sorekani/item-04-3/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="a-price:11181650">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/a-price/cabinet/pics/1261/0-4571495439034.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【期間限定5%OFFクーポン 10/27 10時まで】 テレビ 24型 スマートテレビ Wチューナー 地上・BS・110度CSデジタル 壁掛け HDR スマホ連動 外付けHDD録画機能 HDMI2系統 YouTube メーカー1年保証 液晶テレビ MAXZEN マクスゼン MV24CH07</p>
+        <p class="meta"><span class="price">25,980円</span> ・ ★4.38 (134件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ XPRICE楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">スマホの動画を大画面で見たいって時に、これほんとうに活躍するんですよね✨
+
+・ChromeCast機能でスマホ画面をテレビに飛ばせる📱
+・Netflix、YouTube等のアプリが最初から入ってる🎬
+・Wチューナーで裏番組も同時録画できちゃう📺
+
+一台あるだけで、ネット動画も地上波も好きなもの全部楽しめます💕気になったらチェックしてみてね。
+
+#スマートテレビ #24型テレビ #液晶テレビ #YouTube #Netflix #ゲーム #HDR #壁掛けテレビ #外付けHDD対応 #新生活</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=a-price:11181650" target="_blank" rel="noopener" data-pitch="スマホの動画を大画面で見たいって時に、これほんとうに活躍するんですよね✨
+
+・ChromeCast機能でスマホ画面をテレビに飛ばせる📱
+・Netflix、YouTube等のアプリが最初から入ってる🎬
+・Wチューナーで裏番組も同時録画できちゃう📺
+
+一台あるだけで、ネット動画も地上波も好きなもの全部楽しめます💕気になったらチェックしてみてね。
+
+#スマートテレビ #24型テレビ #液晶テレビ #YouTube #Netflix #ゲーム #HDR #壁掛けテレビ #外付けHDD対応 #新生活">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="スマホの動画を大画面で見たいって時に、これほんとうに活躍するんですよね✨
+
+・ChromeCast機能でスマホ画面をテレビに飛ばせる📱
+・Netflix、YouTube等のアプリが最初から入ってる🎬
+・Wチューナーで裏番組も同時録画できちゃう📺
+
+一台あるだけで、ネット動画も地上波も好きなもの全部楽しめます💕気になったらチェックしてみてね。
+
+#スマートテレビ #24型テレビ #液晶テレビ #YouTube #Netflix #ゲーム #HDR #壁掛けテレビ #外付けHDD対応 #新生活">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/a-price/4571495435005/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="oimoya:10003619">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/oimoya/cabinet/kago4/petitgift_ooiri_k01c.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">＼芋フェス★限定クーポン／ プチギフト 退職 お菓子 お世話になりました お世話になりましたお菓子 24本 48本 個包装 大量 大入り チョコレート クッキー メッセージ プレゼント お礼 産休 お配り スイーツ ありがとう おいもの栞 最強翌日配送 おいもや</p>
+        <p class="meta"><span class="price">2,980円</span> ・ ★4.67 (1118件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ おいもや</p>
+      </div>
+    </div>
+    <div class="pitch">退職や異動で、バラまくお菓子に何を選びませんか？
+
+この子は焼き芋のおいしさをチョコで包んだクッキーなんです。芋好きさんはもちろん、普通のお菓子が好きな人にも喜ばれるから、幅広い職場に使いやすいんですよ🍠
+
+何より個包装で配りやすくて、1ヶ月日持ちするのもポイント。感謝の気持ちをさらっと渡せるから、思いがけず便利です💛
+
+#プチギフト #退職祝い #お菓子ギフト #焼き菓子 #個包装 #職場 #大量配布 #感謝の気持ち</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=oimoya:10003619" target="_blank" rel="noopener" data-pitch="退職や異動で、バラまくお菓子に何を選びませんか？
+
+この子は焼き芋のおいしさをチョコで包んだクッキーなんです。芋好きさんはもちろん、普通のお菓子が好きな人にも喜ばれるから、幅広い職場に使いやすいんですよ🍠
+
+何より個包装で配りやすくて、1ヶ月日持ちするのもポイント。感謝の気持ちをさらっと渡せるから、思いがけず便利です💛
+
+#プチギフト #退職祝い #お菓子ギフト #焼き菓子 #個包装 #職場 #大量配布 #感謝の気持ち">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="退職や異動で、バラまくお菓子に何を選びませんか？
+
+この子は焼き芋のおいしさをチョコで包んだクッキーなんです。芋好きさんはもちろん、普通のお菓子が好きな人にも喜ばれるから、幅広い職場に使いやすいんですよ🍠
+
+何より個包装で配りやすくて、1ヶ月日持ちするのもポイント。感謝の気持ちをさらっと渡せるから、思いがけず便利です💛
+
+#プチギフト #退職祝い #お菓子ギフト #焼き菓子 #個包装 #職場 #大量配布 #感謝の気持ち">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/oimoya/5132401/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="aftershokz-official:10000061">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/aftershokz-official/cabinet/14039277/14073220/imgrc0161363562.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【Shokz | 『ジョジョ』限定コラボモデル】Shokz OpenRun Pro2/OpenRun Pro2 Mini 大迫傑モデル ショックス 骨伝導イヤホン ワイヤレス 耳を塞がない オープンイヤー 防塵防水 スポーツイヤホン 送料無料 あす楽 24ヶ月通常保証 おすすめ 延長保証購入可能</p>
+        <p class="meta"><span class="price">27,880円</span> ・ ★4.59 (254件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ Shokz Official Store</p>
+      </div>
+    </div>
+    <div class="pitch">ジョジョとのコラボだから、推し活の相棒として喜ばれちゃう。✨
+
+耳が自由だから、推し活中も周囲を感知できて安全。
+これはファンへの贈り物として、刺さるやつです。💕
+
+#骨伝導イヤホン #ジョジョの奇妙な冒険 #推し活 #ギフト #オタ活アイテム</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=aftershokz-official:10000061" target="_blank" rel="noopener" data-pitch="ジョジョとのコラボだから、推し活の相棒として喜ばれちゃう。✨
+
+耳が自由だから、推し活中も周囲を感知できて安全。
+これはファンへの贈り物として、刺さるやつです。💕
+
+#骨伝導イヤホン #ジョジョの奇妙な冒険 #推し活 #ギフト #オタ活アイテム">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ジョジョとのコラボだから、推し活の相棒として喜ばれちゃう。✨
+
+耳が自由だから、推し活中も周囲を感知できて安全。
+これはファンへの贈り物として、刺さるやつです。💕
+
+#骨伝導イヤホン #ジョジョの奇妙な冒険 #推し活 #ギフト #オタ活アイテム">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/aftershokz-official/skz-sp-000102/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kaguin:10102179">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kaguin/cabinet/eigyou2/12870898/imgrc0105214321.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">《500円OFFクーポン！27日14時》ラグ 洗える 厚手 1.5畳 2畳 3畳 北欧 おしゃれ 韓国 ラグマット 洗えるラグ オールシーズン カーペット 滑り止め付 絨毯 抗菌 防臭 防ダニ 静電気防止加工 ホットカーペット対応 床暖房対応 らぐ フランネルラグ *[cp10]</p>
+        <p class="meta"><span class="price">2,880円</span> ・ ★4.53 (371件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ 家具インテリア館</p>
+      </div>
+    </div>
+    <div class="pitch">洗えるラグなら、ペットのいる家でも気兼ねなく使えますよ✨
+
+フランネル素材だからふんわり柔らかいのに、汚れたらおうちで洗濯するだけで常に清潔に保てるんです。抗菌防臭防ダニ加工も施されてるので、小さなお子さんがいる家庭でも安心💕
+
+滑り止め付きだから床暖房にも対応して、季節を選ばず使えますよ。
+
+気になったらチェックしてみてね。
+
+#洗える
+#ラグ
+#ラグマット
+#北欧
+#韓国インテリア
+#滑り止め
+#ペット
+#子育て
+#床暖房
+#おうち時間</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kaguin:10102179" target="_blank" rel="noopener" data-pitch="洗えるラグなら、ペットのいる家でも気兼ねなく使えますよ✨
+
+フランネル素材だからふんわり柔らかいのに、汚れたらおうちで洗濯するだけで常に清潔に保てるんです。抗菌防臭防ダニ加工も施されてるので、小さなお子さんがいる家庭でも安心💕
+
+滑り止め付きだから床暖房にも対応して、季節を選ばず使えますよ。
+
+気になったらチェックしてみてね。
+
+#洗える
+#ラグ
+#ラグマット
+#北欧
+#韓国インテリア
+#滑り止め
+#ペット
+#子育て
+#床暖房
+#おうち時間">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="洗えるラグなら、ペットのいる家でも気兼ねなく使えますよ✨
+
+フランネル素材だからふんわり柔らかいのに、汚れたらおうちで洗濯するだけで常に清潔に保てるんです。抗菌防臭防ダニ加工も施されてるので、小さなお子さんがいる家庭でも安心💕
+
+滑り止め付きだから床暖房にも対応して、季節を選ばず使えますよ。
+
+気になったらチェックしてみてね。
+
+#洗える
+#ラグ
+#ラグマット
+#北欧
+#韓国インテリア
+#滑り止め
+#ペット
+#子育て
+#床暖房
+#おうち時間">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kaguin/7258781/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="chicafuji-kikaku:10000003">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/chicafuji-kikaku/cabinet/11932681/imgrc0086897149.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">テーブルクロス 撥水 布 無地 厚手 シンプル 北欧 テーブルカバー 食卓カバー おしゃれ 布製 ポリエステル 洗える ダイニング 2人掛け 4人掛け 6人掛け対応 正方形 長方形 滑り止め 汚れ防止 防水 丸洗いOK モダン インテリア 来客対応 季節</p>
+        <p class="meta"><span class="price">1,480円</span> ・ ★4.71 (425件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ テーブルクロスのちかふじ企画</p>
+      </div>
+    </div>
+    <div class="pitch">子どもがこぼした麦茶も、ペンのインクも、焦げた食べかすも、さっと拭くだけで大丈夫。✨
+
+布なのに撥水してくれるから、
+ビニール製みたいに冷たくない。💙
+
+毎日の食卓が、ずっと快適。
+
+だから425件のレビューで支持され続けてるんです。
+
+チェックしてみてね！
+
+#テーブルクロス #撥水 #汚れ防止 #食卓カバー #北欧インテリア #おしゃれ #布製 #洗える</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=chicafuji-kikaku:10000003" target="_blank" rel="noopener" data-pitch="子どもがこぼした麦茶も、ペンのインクも、焦げた食べかすも、さっと拭くだけで大丈夫。✨
+
+布なのに撥水してくれるから、
+ビニール製みたいに冷たくない。💙
+
+毎日の食卓が、ずっと快適。
+
+だから425件のレビューで支持され続けてるんです。
+
+チェックしてみてね！
+
+#テーブルクロス #撥水 #汚れ防止 #食卓カバー #北欧インテリア #おしゃれ #布製 #洗える">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="子どもがこぼした麦茶も、ペンのインクも、焦げた食べかすも、さっと拭くだけで大丈夫。✨
+
+布なのに撥水してくれるから、
+ビニール製みたいに冷たくない。💙
+
+毎日の食卓が、ずっと快適。
+
+だから425件のレビューで支持され続けてるんです。
+
+チェックしてみてね！
+
+#テーブルクロス #撥水 #汚れ防止 #食卓カバー #北欧インテリア #おしゃれ #布製 #洗える">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/chicafuji-kikaku/poly1/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="roomy:10015243">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/roomy/cabinet/500cart_all/500cart_11g/p5n-8/ymz5505-tr037-0_gt01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【アメトークで紹介】特典付き［ コンロ横調味料ラック タワー ／ 調味料ラック シリーズ ］山崎実業 tower 隠せる調味料ラック 調味料 油 醤油 引き出し キッチン収納 隙間収納 調味料入れ 調味料ストッカー 2段 棚 マグネット スパイスラック 大容量 汚れ防止 シンク上</p>
+        <p class="meta"><span class="price">6,820円</span> ・ ★4.71 (2678件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ インテリアショップ roomy</p>
+      </div>
+    </div>
+    <div class="pitch">コンロ横に調味料ラック置きたいけど、狭いスペースに入るか心配…って思ってませんか？
+このtowerのラックなら、スリムなサイズだからコンロ横にぴったり収まるんです💕引き出し式で油はねや汚れからも守ってくれるから、キッチンを清潔に保てちゃいます。
+高さは3タイプから選べるので、あなたのスペースにぴったりなものが見つかりますよ。2678件のレビューで評価も高いから、みんなの満足度もお墨付き🎯
+
+気になったらチェックしてみて！
+
+#調味料ラック #キッチン収納 #tower #隙間収納 #スパイスラック #コンロ横 #調味料ストッカー #キッチン雑貨</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=roomy:10015243" target="_blank" rel="noopener" data-pitch="コンロ横に調味料ラック置きたいけど、狭いスペースに入るか心配…って思ってませんか？
+このtowerのラックなら、スリムなサイズだからコンロ横にぴったり収まるんです💕引き出し式で油はねや汚れからも守ってくれるから、キッチンを清潔に保てちゃいます。
+高さは3タイプから選べるので、あなたのスペースにぴったりなものが見つかりますよ。2678件のレビューで評価も高いから、みんなの満足度もお墨付き🎯
+
+気になったらチェックしてみて！
+
+#調味料ラック #キッチン収納 #tower #隙間収納 #スパイスラック #コンロ横 #調味料ストッカー #キッチン雑貨">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="コンロ横に調味料ラック置きたいけど、狭いスペースに入るか心配…って思ってませんか？
+このtowerのラックなら、スリムなサイズだからコンロ横にぴったり収まるんです💕引き出し式で油はねや汚れからも守ってくれるから、キッチンを清潔に保てちゃいます。
+高さは3タイプから選べるので、あなたのスペースにぴったりなものが見つかりますよ。2678件のレビューで評価も高いから、みんなの満足度もお墨付き🎯
+
+気になったらチェックしてみて！
+
+#調味料ラック #キッチン収納 #tower #隙間収納 #スパイスラック #コンロ横 #調味料ストッカー #キッチン雑貨">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/roomy/ymz23may30h03/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rack-kan:10102276">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rack-kan/cabinet/eigyou01/11601399/imgrc0109450961.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【ポイント5倍★23日20時?27日10時迄】★超激アツ★チェスト 3段 4段 5段 白 スリム/ワイド 収納ケース 引き出し 幅30.9/53cm 高さ62.5/81/99.5cm 奥行39.5cm タンス 衣装ケース プラスチック アイリスオーヤマ タンス 衣類収納 クローゼット 寝室[RNG]</p>
+        <p class="meta"><span class="price">3,980円</span> ・ ★4.1 (1186件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ 収納・家具・寝具の収納宅配館</p>
+      </div>
+    </div>
+    <div class="pitch">クローゼットを圧倒的に使いやすくできるチェスト✨
+
+・工具不要で組み立てもラク😊
+・スリム・ワイド・段数が選べて間取りに合わせやすい
+・プラスチック素材だから水拭きOK🙌
+
+天板がたわまない設計だから、上にバッグとか載せても安心。何段にするか迷ったら、実際に買った人たちのレビュー見てみてね💕
+
+#チェスト #収納ボックス #衣装ケース #クローゼット収納 #一人暮らし #寝室 #引き出し #収納 #家具 #アイリスオーヤマ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rack-kan:10102276" target="_blank" rel="noopener" data-pitch="クローゼットを圧倒的に使いやすくできるチェスト✨
+
+・工具不要で組み立てもラク😊
+・スリム・ワイド・段数が選べて間取りに合わせやすい
+・プラスチック素材だから水拭きOK🙌
+
+天板がたわまない設計だから、上にバッグとか載せても安心。何段にするか迷ったら、実際に買った人たちのレビュー見てみてね💕
+
+#チェスト #収納ボックス #衣装ケース #クローゼット収納 #一人暮らし #寝室 #引き出し #収納 #家具 #アイリスオーヤマ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クローゼットを圧倒的に使いやすくできるチェスト✨
+
+・工具不要で組み立てもラク😊
+・スリム・ワイド・段数が選べて間取りに合わせやすい
+・プラスチック素材だから水拭きOK🙌
+
+天板がたわまない設計だから、上にバッグとか載せても安心。何段にするか迷ったら、実際に買った人たちのレビュー見てみてね💕
+
+#チェスト #収納ボックス #衣装ケース #クローゼット収納 #一人暮らし #寝室 #引き出し #収納 #家具 #アイリスオーヤマ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rack-kan/283244/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="aooka:10000433">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/aooka/cabinet/09189944/09196452/09201450/imgrc0081993978.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">【20時～クーポンで15％引】★楽天1位受賞★高級ホテル仕様 掛け布団 羽毛のように軽くて暖かい 健康 快眠 世界が認めた質の高い眠り シングル セミダブル ダブル クイーン キング マス立体キルト あったか 軽い 暖かい 洗える 抗菌防臭 防ダニ 熟睡 高級人工羽毛布団 秋冬用</p>
+        <p class="meta"><span class="price">6,999円</span> ・ ★4.61 (1397件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ Aooka</p>
+      </div>
+    </div>
+    <div class="pitch">真冬の朝、布団から出るのが辛くないですか？
+
+羽毛布団の臭いが気になる人や、アレルギーがある人にぴったりなのがこれ🌙
+インビスタ®の高級人工羽毛なら、羽毛のように軽くて暖かいのに、獣臭ゼロ✨
+洗えるから、いつでも清潔に使い続けられるんです。
+
+1397件のレビューで高く支持されている理由、試してみてね。
+
+#掛け布団 #高級寝具 #秋冬用 #快眠 #アレルギー対応 #ホテル仕様 #洗える布団 #冬支度</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=aooka:10000433" target="_blank" rel="noopener" data-pitch="真冬の朝、布団から出るのが辛くないですか？
+
+羽毛布団の臭いが気になる人や、アレルギーがある人にぴったりなのがこれ🌙
+インビスタ®の高級人工羽毛なら、羽毛のように軽くて暖かいのに、獣臭ゼロ✨
+洗えるから、いつでも清潔に使い続けられるんです。
+
+1397件のレビューで高く支持されている理由、試してみてね。
+
+#掛け布団 #高級寝具 #秋冬用 #快眠 #アレルギー対応 #ホテル仕様 #洗える布団 #冬支度">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="真冬の朝、布団から出るのが辛くないですか？
+
+羽毛布団の臭いが気になる人や、アレルギーがある人にぴったりなのがこれ🌙
+インビスタ®の高級人工羽毛なら、羽毛のように軽くて暖かいのに、獣臭ゼロ✨
+洗えるから、いつでも清潔に使い続けられるんです。
+
+1397件のレビューで高く支持されている理由、試してみてね。
+
+#掛け布団 #高級寝具 #秋冬用 #快眠 #アレルギー対応 #ホテル仕様 #洗える布団 #冬支度">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/aooka/comforter-s/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-10-25";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
