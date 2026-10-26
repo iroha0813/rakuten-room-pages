@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-10-27</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-10-27 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="sonoshokuan:10000346">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sonoshokuan/cabinet/item/dried-fruit/imgrc0098876659.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">10/28/23:59まで★半額クーポンで2,160円⇒送料無料1,080円！無添加＆砂糖不使用！ドライレーズンたっぷり900g食べf放題♪ ドライフルーツ ウズベキスタン産 大容量 お徳用 業務用【P半】</p>
+        <p class="meta"><span class="price">2,160円</span> ・ ★4.71 (1444件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 祖の食庵</p>
+      </div>
+    </div>
+    <div class="pitch">ドライレーズンって固くなったり、砂糖がコーティングされてるのが気になりませんか？💭
+このウズベキスタン産は無添加・砂糖不使用だから、素材本来の甘さが味わえるんです✨
+しかも水分が低めで固まりにくいから、そのままつまめる 🍇
+
+栄養たっぷりな上に、半額クーポンで送料無料になるのは今だけ 🎉
+900gたっぷり入ってるから、朝食やおやつ、お菓子作りまで幅広く使えますよ💕
+
+#ドライレーズン #ドライフルーツ #無添加食品 #栄養満点 #お得用 #無漂白 #砂糖不使用 #クーポン対象</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sonoshokuan:10000346" target="_blank" rel="noopener" data-pitch="ドライレーズンって固くなったり、砂糖がコーティングされてるのが気になりませんか？💭
+このウズベキスタン産は無添加・砂糖不使用だから、素材本来の甘さが味わえるんです✨
+しかも水分が低めで固まりにくいから、そのままつまめる 🍇
+
+栄養たっぷりな上に、半額クーポンで送料無料になるのは今だけ 🎉
+900gたっぷり入ってるから、朝食やおやつ、お菓子作りまで幅広く使えますよ💕
+
+#ドライレーズン #ドライフルーツ #無添加食品 #栄養満点 #お得用 #無漂白 #砂糖不使用 #クーポン対象">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ドライレーズンって固くなったり、砂糖がコーティングされてるのが気になりませんか？💭
+このウズベキスタン産は無添加・砂糖不使用だから、素材本来の甘さが味わえるんです✨
+しかも水分が低めで固まりにくいから、そのままつまめる 🍇
+
+栄養たっぷりな上に、半額クーポンで送料無料になるのは今だけ 🎉
+900gたっぷり入ってるから、朝食やおやつ、お菓子作りまで幅広く使えますよ💕
+
+#ドライレーズン #ドライフルーツ #無添加食品 #栄養満点 #お得用 #無漂白 #砂糖不使用 #クーポン対象">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sonoshokuan/900097-l/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="f272132-izumisano:10006785">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/f272132-izumisano/cabinet/f-item28/g4232r_1_1002.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【ふるさと納税】総合1位 人気 銀鮭 切り身 訳あり 甘塩 塩分控えめ 減塩 選べる 定番 / 厚切り 1kg〜5kg サイズ 不揃い 規格外 バター焼き 海鮮 魚介 鮭 朝食 バラ凍結 簡単調理 発送月 大阪府 泉佐野市 送料無料 年内配送</p>
+        <p class="meta"><span class="price">8,000円</span> ・ ★4.41 (4975件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 大阪府泉佐野市</p>
+      </div>
+    </div>
+    <div class="pitch">毎日の魚、どうやって用意してますか？🐟
+
+冷凍庫にストックしておけば、焼くだけで完成。塩分控えめだからお好みの味付けもできるし、朝食もお弁当も夕食も対応できます。
+
+近5000件のレビューで支持され続けてるのは、使いやすさと美味しさが両立してるから。冷めても硬くならないから作り置きにもぴったりです✨
+
+気になったらチェックしてみてね。
+
+#ふるさと納税 #銀鮭 #冷凍食品 #簡単調理 #朝食 #お弁当 #訳あり #海鮮</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=f272132-izumisano:10006785" target="_blank" rel="noopener" data-pitch="毎日の魚、どうやって用意してますか？🐟
+
+冷凍庫にストックしておけば、焼くだけで完成。塩分控えめだからお好みの味付けもできるし、朝食もお弁当も夕食も対応できます。
+
+近5000件のレビューで支持され続けてるのは、使いやすさと美味しさが両立してるから。冷めても硬くならないから作り置きにもぴったりです✨
+
+気になったらチェックしてみてね。
+
+#ふるさと納税 #銀鮭 #冷凍食品 #簡単調理 #朝食 #お弁当 #訳あり #海鮮">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日の魚、どうやって用意してますか？🐟
+
+冷凍庫にストックしておけば、焼くだけで完成。塩分控えめだからお好みの味付けもできるし、朝食もお弁当も夕食も対応できます。
+
+近5000件のレビューで支持され続けてるのは、使いやすさと美味しさが両立してるから。冷めても硬くならないから作り置きにもぴったりです✨
+
+気になったらチェックしてみてね。
+
+#ふるさと納税 #銀鮭 #冷凍食品 #簡単調理 #朝食 #お弁当 #訳あり #海鮮">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/f272132-izumisano/010b1198/?rafcid=wsc_i_is_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kihachi:10000007">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kihachi/cabinet/ban/deal/k12013_deal20_261025.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【スーパーDEAL 20％ポイントバック】 お歳暮 2026 お返し プレゼント 百貨店で人気 お菓子 【パティスリーキハチ 公式】 人気 おしゃれ 高級 ギフト ランキング 洋菓子 内祝い お返し キハチ 焼き菓子 焼菓子 8種20個入 手土産 スイーツ 詰め合わせ</p>
+        <p class="meta"><span class="price">3,390円</span> ・ ★4.59 (2956件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ キハチオンラインショップ</p>
+      </div>
+    </div>
+    <div class="pitch">職場の退職者へのお礼菓子、何を選ぶ？🍰
+
+・百貨店で選ばれる上質な焼き菓子 ✨
+・8種類20個で配りやすい詰め合わせ 💝
+・2956件のレビューで高評価を獲得 ⭐
+
+大切な方への感謝の気持ちを、ちゃんと伝わるお菓子で。グルメ大賞受賞の品を、ぜひ。
+
+#お歳暮 #ギフト #焼き菓子 #退職祝い #手土産 #内祝い #詰め合わせ #高級菓子 #職場のお礼 #おしゃれなお菓子</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kihachi:10000007" target="_blank" rel="noopener" data-pitch="職場の退職者へのお礼菓子、何を選ぶ？🍰
+
+・百貨店で選ばれる上質な焼き菓子 ✨
+・8種類20個で配りやすい詰め合わせ 💝
+・2956件のレビューで高評価を獲得 ⭐
+
+大切な方への感謝の気持ちを、ちゃんと伝わるお菓子で。グルメ大賞受賞の品を、ぜひ。
+
+#お歳暮 #ギフト #焼き菓子 #退職祝い #手土産 #内祝い #詰め合わせ #高級菓子 #職場のお礼 #おしゃれなお菓子">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="職場の退職者へのお礼菓子、何を選ぶ？🍰
+
+・百貨店で選ばれる上質な焼き菓子 ✨
+・8種類20個で配りやすい詰め合わせ 💝
+・2956件のレビューで高評価を獲得 ⭐
+
+大切な方への感謝の気持ちを、ちゃんと伝わるお菓子で。グルメ大賞受賞の品を、ぜひ。
+
+#お歳暮 #ギフト #焼き菓子 #退職祝い #手土産 #内祝い #詰め合わせ #高級菓子 #職場のお礼 #おしゃれなお菓子">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kihachi/k12013/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="irisplaza-r:10136708">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/irisplaza-r/cabinet/11073544/13495764/imgrc0123298967.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【公式】水 500ml 48本 送料無料 天然水 ミネラルウォーター ラベルレス 48本 富士山の天然水 まとめ買い 水 ストック 軟水 【代引不可】</p>
+        <p class="meta"><span class="price">2,480円</span> ・ ★4.62 (6269件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ アイリスオーヤマ公式 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">毎日飲む水だから、安心できるものを選びたいですよね💧
+
+富士山の天然水で、水道基準51項目すべてをクリア。PFAS対策もしっかりしていて、6000件以上のレビューで支持され続けているのも納得です。
+
+ラベルレスでごみも減らせるし、送料無料だから常備しやすい。ローリングストックにも最適です✨
+
+#ミネラルウォーター #天然水 #ラベルレス #送料無料 #備蓄 #富士山の水 #軟水 #安心 #家族 #常備</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=irisplaza-r:10136708" target="_blank" rel="noopener" data-pitch="毎日飲む水だから、安心できるものを選びたいですよね💧
+
+富士山の天然水で、水道基準51項目すべてをクリア。PFAS対策もしっかりしていて、6000件以上のレビューで支持され続けているのも納得です。
+
+ラベルレスでごみも減らせるし、送料無料だから常備しやすい。ローリングストックにも最適です✨
+
+#ミネラルウォーター #天然水 #ラベルレス #送料無料 #備蓄 #富士山の水 #軟水 #安心 #家族 #常備">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日飲む水だから、安心できるものを選びたいですよね💧
+
+富士山の天然水で、水道基準51項目すべてをクリア。PFAS対策もしっかりしていて、6000件以上のレビューで支持され続けているのも納得です。
+
+ラベルレスでごみも減らせるし、送料無料だから常備しやすい。ローリングストックにも最適です✨
+
+#ミネラルウォーター #天然水 #ラベルレス #送料無料 #備蓄 #富士山の水 #軟水 #安心 #家族 #常備">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/irisplaza-r/310999-cp/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="miyazikan:10000112">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/miyazikan/cabinet/06828680/imgrc0124127365.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">高級 甘さ控えめつぶあん 800g 砂糖25％カット 無添加 お歳暮 ギフト のし対応 国産 老舗の味 粒餡 つぶあん ツブアン 餡子 あんこ 小豆 あずき 北海道十勝産 雅 銅釜直火炊き 保存料不使用 手造り ぜんざい 小倉トースト ネコポス</p>
+        <p class="meta"><span class="price">2,450円</span> ・ ★4.84 (2504件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 宮地館</p>
+      </div>
+    </div>
+    <div class="pitch">小倉トーストにのせて。✨
+
+ぜんざいのお椀に入れて。
+
+朝パンの上で、ホクホク。🍞
+
+おやつの時間に、スプーンで。😋
+
+甘さ控えめだから、何にのせても合う💚
+
+砂糖25％カットなのに、北海道産小豆の味わいはしっかり。手作りだからこそ、毎日食べたくなる。
+
+気になったらチェックしてみてね。
+
+#つぶあん #あんこ #小豆 #無添加 #北海道産 #ギフト #和のおやつ #送料無料</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=miyazikan:10000112" target="_blank" rel="noopener" data-pitch="小倉トーストにのせて。✨
+
+ぜんざいのお椀に入れて。
+
+朝パンの上で、ホクホク。🍞
+
+おやつの時間に、スプーンで。😋
+
+甘さ控えめだから、何にのせても合う💚
+
+砂糖25％カットなのに、北海道産小豆の味わいはしっかり。手作りだからこそ、毎日食べたくなる。
+
+気になったらチェックしてみてね。
+
+#つぶあん #あんこ #小豆 #無添加 #北海道産 #ギフト #和のおやつ #送料無料">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="小倉トーストにのせて。✨
+
+ぜんざいのお椀に入れて。
+
+朝パンの上で、ホクホク。🍞
+
+おやつの時間に、スプーンで。😋
+
+甘さ控えめだから、何にのせても合う💚
+
+砂糖25％カットなのに、北海道産小豆の味わいはしっかり。手作りだからこそ、毎日食べたくなる。
+
+気になったらチェックしてみてね。
+
+#つぶあん #あんこ #小豆 #無添加 #北海道産 #ギフト #和のおやつ #送料無料">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/miyazikan/10000043/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kouta:10000274">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouta/cabinet/10981204/imgrc0166423454.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">＼20％OFF&amp;全品ポイント最大8倍！／【訳あり】 幸田商店 べにはるか 平干しほしいも 茨城県産 国産 紅はるか 規格外品 食品添加物不使用 砂糖不使用 800g 400g×2袋 ねっとり甘い 干しいも ほし芋 さつまいも おやつ 送料無料 わけあり お菓子</p>
+        <p class="meta"><span class="price">2,100円</span> ・ ★4.58 (5041件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ ほしいも屋幸田商店</p>
+      </div>
+    </div>
+    <div class="pitch">甘いおやつが食べたいときの、ちょっとした贈り物に最高。
+
+ねっとり甘い干し芋が800gで気軽に試せる価格だから、もらった人も喜ぶんですよ💕5000件以上のリピーターがいるのもうなずける✨
+
+気になったらチェックしてみてね。
+
+#干し芋
+#茨城県産
+#訳あり商品
+#ギフト
+#おやつ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kouta:10000274" target="_blank" rel="noopener" data-pitch="甘いおやつが食べたいときの、ちょっとした贈り物に最高。
+
+ねっとり甘い干し芋が800gで気軽に試せる価格だから、もらった人も喜ぶんですよ💕5000件以上のリピーターがいるのもうなずける✨
+
+気になったらチェックしてみてね。
+
+#干し芋
+#茨城県産
+#訳あり商品
+#ギフト
+#おやつ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="甘いおやつが食べたいときの、ちょっとした贈り物に最高。
+
+ねっとり甘い干し芋が800gで気軽に試せる価格だから、もらった人も喜ぶんですよ💕5000件以上のリピーターがいるのもうなずける✨
+
+気になったらチェックしてみてね。
+
+#干し芋
+#茨城県産
+#訳あり商品
+#ギフト
+#おやつ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kouta/cs2680r/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="ennshopstore:10000094">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/ennshopstore/cabinet/pt52/t52zt_0930.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">楽天総合1位【1,990円・秋の特価】 モバイルバッテリー 軽量 小型 24800mAh 22.5W 急速充電 軽量 薄い バッテリー 大容量 3台同時充電 充電器 22cmケーブル内蔵 携帯充電器 SCP 22.5W/PD 20W/QC 3.0最速 機内持込 防災グッズ ハンディファン 2026年NEW</p>
+        <p class="meta"><span class="price">4,390円</span> ・ ★4.52 (1291件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ Rakuhome</p>
+      </div>
+    </div>
+    <div class="pitch">モバイルバッテリーって、けっこう荷物になるし、充電が遅いのもイヤだなあ…😕
+そう思ってる人に、これ。24800mAhの大容量なのに薄くて軽い設計◎ケーブルも本体に内蔵されてるから、バッグに何も足さなくて済みます。
+3台同時充電できるから、スマホにイヤホン、タブレットまで一気に潤える✨1291件のレビューで高評価を集めてるのも信頼できる理由。秋の特価なのでチェックしてみてね。
+
+#モバイルバッテリー #急速充電 #軽量 #旅行グッズ #防災グッズ #出張 #通勤通学 #ガジェット</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=ennshopstore:10000094" target="_blank" rel="noopener" data-pitch="モバイルバッテリーって、けっこう荷物になるし、充電が遅いのもイヤだなあ…😕
+そう思ってる人に、これ。24800mAhの大容量なのに薄くて軽い設計◎ケーブルも本体に内蔵されてるから、バッグに何も足さなくて済みます。
+3台同時充電できるから、スマホにイヤホン、タブレットまで一気に潤える✨1291件のレビューで高評価を集めてるのも信頼できる理由。秋の特価なのでチェックしてみてね。
+
+#モバイルバッテリー #急速充電 #軽量 #旅行グッズ #防災グッズ #出張 #通勤通学 #ガジェット">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="モバイルバッテリーって、けっこう荷物になるし、充電が遅いのもイヤだなあ…😕
+そう思ってる人に、これ。24800mAhの大容量なのに薄くて軽い設計◎ケーブルも本体に内蔵されてるから、バッグに何も足さなくて済みます。
+3台同時充電できるから、スマホにイヤホン、タブレットまで一気に潤える✨1291件のレビューで高評価を集めてるのも信頼できる理由。秋の特価なのでチェックしてみてね。
+
+#モバイルバッテリー #急速充電 #軽量 #旅行グッズ #防災グッズ #出張 #通勤通学 #ガジェット">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/ennshopstore/pt52/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kitchenavi:10000419">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kitchenavi/cabinet/vakuen/net/vakuennet_sl_1_1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【公式】VAKUEN専用 水切りトレイ 水切りネット BPAフリー 冷蔵 冷凍 コンテナ タッパー キャニスター 真空容器 野菜 フルーツ チーズ VAKUEN バクエン 水切り おしゃれ 保存容器 韓国製</p>
+        <p class="meta"><span class="price">1,000円</span> ・ ★4.7 (618件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ KitcheNavi楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">野菜やチーズ、保存したものが水っぽくなるのに困っていませんか？
+
+VAKUEN対応のこの水切りトレイなら、食材が水に触れるのを防いでくれるんです💧野菜の鮮度や食感、チーズの風味まで長くキープできちゃう✨
+
+小さなサイズから大きめまで揃ってるから、自分のコンテナに合わせてぴったり選べますよ😊
+
+気になったらチェックしてみてね！
+
+#保存容器 #水切りトレイ #野菜保存 #冷蔵庫収納 #キッチン雑貨 #食材保存 #おしゃれ雑貨 #生鮮食品</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kitchenavi:10000419" target="_blank" rel="noopener" data-pitch="野菜やチーズ、保存したものが水っぽくなるのに困っていませんか？
+
+VAKUEN対応のこの水切りトレイなら、食材が水に触れるのを防いでくれるんです💧野菜の鮮度や食感、チーズの風味まで長くキープできちゃう✨
+
+小さなサイズから大きめまで揃ってるから、自分のコンテナに合わせてぴったり選べますよ😊
+
+気になったらチェックしてみてね！
+
+#保存容器 #水切りトレイ #野菜保存 #冷蔵庫収納 #キッチン雑貨 #食材保存 #おしゃれ雑貨 #生鮮食品">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="野菜やチーズ、保存したものが水っぽくなるのに困っていませんか？
+
+VAKUEN対応のこの水切りトレイなら、食材が水に触れるのを防いでくれるんです💧野菜の鮮度や食感、チーズの風味まで長くキープできちゃう✨
+
+小さなサイズから大きめまで揃ってるから、自分のコンテナに合わせてぴったり選べますよ😊
+
+気になったらチェックしてみてね！
+
+#保存容器 #水切りトレイ #野菜保存 #冷蔵庫収納 #キッチン雑貨 #食材保存 #おしゃれ雑貨 #生鮮食品">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kitchenavi/2498-001030/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="exception5251:10000379">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/exception5251/cabinet/11219683/11219687/main_image/imgrc0114783368.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【楽天ランキング1位】総合1位 収納ボックス キャスター付き 5面開閉 折りたたみ 収納ケース フタ付き おしゃれ 中身が見える 衣装ケース 押入れ クローゼット 衣類 布団 積み重ね コンパクト 27L/40L/53L/82L f-00003</p>
+        <p class="meta"><span class="price">4,280円</span> ・ ★4.51 (5581件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ EXCEPTION本店</p>
+      </div>
+    </div>
+    <div class="pitch">5面全部開くから、奥のものも取り出しやすい🙌
+
+・キャスター付きで押入れから出し入れもラクラク
+・透明だから中身が一目瞭然、何が入ってるかすぐわかる
+・サイズ選べるから衣類も布団も自分の物に合わせて収納できる
+
+5000件超のレビューで支持され続けてるのも納得です。気になったらチェックしてみてね✨
+
+#収納ボックス #収納ケース #衣装ケース #クローゼット収納 #押入れ収納 #折りたたみ #キャスター付き #おしゃれ収納 #新生活 #整理整頓</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=exception5251:10000379" target="_blank" rel="noopener" data-pitch="5面全部開くから、奥のものも取り出しやすい🙌
+
+・キャスター付きで押入れから出し入れもラクラク
+・透明だから中身が一目瞭然、何が入ってるかすぐわかる
+・サイズ選べるから衣類も布団も自分の物に合わせて収納できる
+
+5000件超のレビューで支持され続けてるのも納得です。気になったらチェックしてみてね✨
+
+#収納ボックス #収納ケース #衣装ケース #クローゼット収納 #押入れ収納 #折りたたみ #キャスター付き #おしゃれ収納 #新生活 #整理整頓">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="5面全部開くから、奥のものも取り出しやすい🙌
+
+・キャスター付きで押入れから出し入れもラクラク
+・透明だから中身が一目瞭然、何が入ってるかすぐわかる
+・サイズ選べるから衣類も布団も自分の物に合わせて収納できる
+
+5000件超のレビューで支持され続けてるのも納得です。気になったらチェックしてみてね✨
+
+#収納ボックス #収納ケース #衣装ケース #クローゼット収納 #押入れ収納 #折りたたみ #キャスター付き #おしゃれ収納 #新生活 #整理整頓">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/exception5251/f-00003/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rakuten24:11163653">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/025/405025.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【1種類を選べる】アリエール 洗濯洗剤 液体 詰め替え(1950g×6セット)【アリエール 液体】[洗剤 洗濯 アリエール ジェル ウルトラジャンボ]</p>
+        <p class="meta"><span class="price">8,602円</span> ・ ★4.79 (571件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 楽天24</p>
+      </div>
+    </div>
+    <div class="pitch">家族が多いと洗濯の量が半端じゃないですよね。✨
+
+このジェルは1950gが6セット入ってるから、詰め替えの手間がぐんと減っちゃいます。💕毎回ボトルを用意する手間がないって、こんなに楽なんだ…って感じますよ。571件のレビューで4.79の評価を得てるのは、汚れ落ちと使い続けやすさが評価されてる証拠。😊
+
+毎日の洗濯ストレスを減らしたいなら、チェックしてみてね。
+
+#アリエール #液体洗剤 #洗濯洗剤 #詰め替え #家事時短 #毎日の洗濯 #大容量 #洗濯用品 #ジェル洗剤 #子育て中</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rakuten24:11163653" target="_blank" rel="noopener" data-pitch="家族が多いと洗濯の量が半端じゃないですよね。✨
+
+このジェルは1950gが6セット入ってるから、詰め替えの手間がぐんと減っちゃいます。💕毎回ボトルを用意する手間がないって、こんなに楽なんだ…って感じますよ。571件のレビューで4.79の評価を得てるのは、汚れ落ちと使い続けやすさが評価されてる証拠。😊
+
+毎日の洗濯ストレスを減らしたいなら、チェックしてみてね。
+
+#アリエール #液体洗剤 #洗濯洗剤 #詰め替え #家事時短 #毎日の洗濯 #大容量 #洗濯用品 #ジェル洗剤 #子育て中">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="家族が多いと洗濯の量が半端じゃないですよね。✨
+
+このジェルは1950gが6セット入ってるから、詰め替えの手間がぐんと減っちゃいます。💕毎回ボトルを用意する手間がないって、こんなに楽なんだ…って感じますよ。571件のレビューで4.79の評価を得てるのは、汚れ落ちと使い続けやすさが評価されてる証拠。😊
+
+毎日の洗濯ストレスを減らしたいなら、チェックしてみてね。
+
+#アリエール #液体洗剤 #洗濯洗剤 #詰め替え #家事時短 #毎日の洗濯 #大容量 #洗濯用品 #ジェル洗剤 #子育て中">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rakuten24/405025/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-10-27";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
