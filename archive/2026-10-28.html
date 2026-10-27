@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-10-28</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-10-28 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="akol:10000484">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/akol/cabinet/06635893/07531328/imgrc0112807065.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">保存水 備蓄水 10年保存水 1.8l 6本入 2ケース 12本 10年保存可能 防災 防災グッズ 非常時 災害 ミネラルウォーター 軟水 国産 海洋深層水 飲料水 非常食 地震 自然災害 法人 オフィス 学校 病院 自治体 災害備蓄</p>
+        <p class="meta"><span class="price">3,860円</span> ・ ★4.75 (1353件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 海洋深層水のアコール</p>
+      </div>
+    </div>
+    <div class="pitch">防災の贈り物って何を選ぶか悩むけど、これなら絶対に喜ばれます 💧
+
+・10年保存できるから、ストックの入れ替えが少なくて済む
+
+・軟水で飲みやすいので、家族全員で備蓄しやすい
+
+・高知県の海洋深層水で国産、安心感が違う ✨
+
+相手のことを真剣に考えてる感じが伝わる贈り物になりますよ。チェックしてみてね。
+
+#防災グッズ #保存水 #備蓄水 #防災 #贈り物 #地震対策 #災害備蓄 #家族 #非常食 #安心</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=akol:10000484" target="_blank" rel="noopener" data-pitch="防災の贈り物って何を選ぶか悩むけど、これなら絶対に喜ばれます 💧
+
+・10年保存できるから、ストックの入れ替えが少なくて済む
+
+・軟水で飲みやすいので、家族全員で備蓄しやすい
+
+・高知県の海洋深層水で国産、安心感が違う ✨
+
+相手のことを真剣に考えてる感じが伝わる贈り物になりますよ。チェックしてみてね。
+
+#防災グッズ #保存水 #備蓄水 #防災 #贈り物 #地震対策 #災害備蓄 #家族 #非常食 #安心">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="防災の贈り物って何を選ぶか悩むけど、これなら絶対に喜ばれます 💧
+
+・10年保存できるから、ストックの入れ替えが少なくて済む
+
+・軟水で飲みやすいので、家族全員で備蓄しやすい
+
+・高知県の海洋深層水で国産、安心感が違う ✨
+
+相手のことを真剣に考えてる感じが伝わる贈り物になりますよ。チェックしてみてね。
+
+#防災グッズ #保存水 #備蓄水 #防災 #贈り物 #地震対策 #災害備蓄 #家族 #非常食 #安心">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/akol/1011801/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="yonekyu:10000040">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yonekyu/cabinet/events/261014_14thm.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【出店26周年祭!!26%OFF+送料無料】 豚肉の味噌煮込み 贈答用2本 セット お歳暮 ギフト お歳暮ギフト 御歳暮 肉 柔らか 角煮 クリスマス おせち お取り寄せグルメ お取り寄せ グルメ ご飯のお供 ごはんのおとも のし お返し 贈り物 食べ物 実用的 人気 おかず おつまみ</p>
+        <p class="meta"><span class="price">3,515円</span> ・ ★4.57 (9343件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 感動を創る　米久</p>
+      </div>
+    </div>
+    <div class="pitch">26%OFF＆送料無料だから、ギフトに選びやすい✨
+
+お盆のテーブルに、箱ごと置かれて。
+親戚が一口食べて、目を丸くする😋
+箸でほぐれるほど柔らかい豚肉。
+ご飯にかけて、また一杯。
+グルメ大賞14回受賞、累計688万本選ばれ続けてるから、間違いない🙌
+
+#お歳暮
+#豚肉
+#角煮
+#グルメギフト
+#ご飯のお供
+#贈り物
+#お取り寄せグルメ
+#クリスマス</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=yonekyu:10000040" target="_blank" rel="noopener" data-pitch="26%OFF＆送料無料だから、ギフトに選びやすい✨
+
+お盆のテーブルに、箱ごと置かれて。
+親戚が一口食べて、目を丸くする😋
+箸でほぐれるほど柔らかい豚肉。
+ご飯にかけて、また一杯。
+グルメ大賞14回受賞、累計688万本選ばれ続けてるから、間違いない🙌
+
+#お歳暮
+#豚肉
+#角煮
+#グルメギフト
+#ご飯のお供
+#贈り物
+#お取り寄せグルメ
+#クリスマス">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="26%OFF＆送料無料だから、ギフトに選びやすい✨
+
+お盆のテーブルに、箱ごと置かれて。
+親戚が一口食べて、目を丸くする😋
+箸でほぐれるほど柔らかい豚肉。
+ご飯にかけて、また一杯。
+グルメ大賞14回受賞、累計688万本選ばれ続けてるから、間違いない🙌
+
+#お歳暮
+#豚肉
+#角煮
+#グルメギフト
+#ご飯のお供
+#贈り物
+#お取り寄せグルメ
+#クリスマス">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/yonekyu/43490-0821126/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="yoshinoya-shop:10000945">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yoshinoya-shop/cabinet/gyuudon/666508.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">吉野家 公式 【冷凍】大盛牛丼の具(160g)×30袋セット【送料込】 簡単 便利 夜食 おつまみ 昼ごはん ストック 冷凍食品 お弁当 おかず クール宅急便 取り寄せ グルメ 牛丼</p>
+        <p class="meta"><span class="price">9,882円</span> ・ ★4.79 (117件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 吉野家公式ショップ楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">仕事で疲れた夜、ご飯に迷う朝も、レンジ5分でお店クオリティが食卓に🍱
+並盛の1.3倍ボリュームだから、がっつり食べたい時にぴったり。117件のレビューで平均4.79点、吉野家の味そのままが30袋ストックできるから、いつでも頼れます✨
+
+#冷凍牛丼 #牛丼 #吉野家 #お手軽グルメ #夜食 #お弁当 #ストック食 #時短ごはん</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=yoshinoya-shop:10000945" target="_blank" rel="noopener" data-pitch="仕事で疲れた夜、ご飯に迷う朝も、レンジ5分でお店クオリティが食卓に🍱
+並盛の1.3倍ボリュームだから、がっつり食べたい時にぴったり。117件のレビューで平均4.79点、吉野家の味そのままが30袋ストックできるから、いつでも頼れます✨
+
+#冷凍牛丼 #牛丼 #吉野家 #お手軽グルメ #夜食 #お弁当 #ストック食 #時短ごはん">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="仕事で疲れた夜、ご飯に迷う朝も、レンジ5分でお店クオリティが食卓に🍱
+並盛の1.3倍ボリュームだから、がっつり食べたい時にぴったり。117件のレビューで平均4.79点、吉野家の味そのままが30袋ストックできるから、いつでも頼れます✨
+
+#冷凍牛丼 #牛丼 #吉野家 #お手軽グルメ #夜食 #お弁当 #ストック食 #時短ごはん">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/yoshinoya-shop/666508/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="sawaicoffee-tea:10004781">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sawaicoffee-tea/cabinet/raknewthum/261024/sale/gs-set-img1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">澤井珈琲｜送料無料 コーヒー コーヒー豆 珈琲豆 豆のまま コーヒー粉 &quot;おうちカフェを格上げするプレミアム2種飲み比べ&quot; 金と銀のブレンド ソルブレンド ルナブレンド 400g×4袋 ワンランク上 贅沢 人気 ブラジル グアテマラ 中深煎り 深煎り メキシコ 160杯分 【RD】【TS】</p>
+        <p class="meta"><span class="price">10,398円</span> ・ ★4.69 (6498件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 澤井珈琲Beans＆Leaf</p>
+      </div>
+    </div>
+    <div class="pitch">おうちカフェを本気で格上げしたいなら、この2種飲み比べで決まり。☕️
+
+6000件超のレビューが支えてくれる、毎朝が贅沢になるコーヒーです。✨
+
+#コーヒー豆 #おうちカフェ #コーヒー好きさんと繋がりたい #ギフト #リラックスタイム</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sawaicoffee-tea:10004781" target="_blank" rel="noopener" data-pitch="おうちカフェを本気で格上げしたいなら、この2種飲み比べで決まり。☕️
+
+6000件超のレビューが支えてくれる、毎朝が贅沢になるコーヒーです。✨
+
+#コーヒー豆 #おうちカフェ #コーヒー好きさんと繋がりたい #ギフト #リラックスタイム">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="おうちカフェを本気で格上げしたいなら、この2種飲み比べで決まり。☕️
+
+6000件超のレビューが支えてくれる、毎朝が贅沢になるコーヒーです。✨
+
+#コーヒー豆 #おうちカフェ #コーヒー好きさんと繋がりたい #ギフト #リラックスタイム">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sawaicoffee-tea/solandluna/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="pitakaofficial:10000023">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/pitakaofficial/cabinet/phonecase/13848196/214.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">＼5倍ポイント／ iPhone Duo ケース MagSafe 極薄 軽量 薄型 PITAKA 浮織ケース 極薄ケース アラミド 繊維 カーボン 耐衝撃 マグネット スリム オシャレ 浮光躍金</p>
+        <p class="meta"><span class="price">8,499円</span> ・ ★4.95 (37件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ PITAKAofficial</p>
+      </div>
+    </div>
+    <div class="pitch">iPhoneのケース、厚さと重さで悩むならこれで解決🎯
+
+PITAKAの浮織ケースは、アラミド繊維とカーボンを使った極薄設計なのに耐衝撃性もちゃんと備えてる。ボタンや画面もしっかり保護しつつ、ポケットにスッと入る軽さが魅力💪
+
+37件のレビューで平均4.95という高評価に、その実力が表れてますよ。
+
+#iPhoneケース #MagSafe対応 #薄型ケース #軽量 #耐衝撃 #iPhoneDuo #ガジェット好きさんと繋がりたい #高級ケース #おしゃれ #スマホアクセサリー</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=pitakaofficial:10000023" target="_blank" rel="noopener" data-pitch="iPhoneのケース、厚さと重さで悩むならこれで解決🎯
+
+PITAKAの浮織ケースは、アラミド繊維とカーボンを使った極薄設計なのに耐衝撃性もちゃんと備えてる。ボタンや画面もしっかり保護しつつ、ポケットにスッと入る軽さが魅力💪
+
+37件のレビューで平均4.95という高評価に、その実力が表れてますよ。
+
+#iPhoneケース #MagSafe対応 #薄型ケース #軽量 #耐衝撃 #iPhoneDuo #ガジェット好きさんと繋がりたい #高級ケース #おしゃれ #スマホアクセサリー">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="iPhoneのケース、厚さと重さで悩むならこれで解決🎯
+
+PITAKAの浮織ケースは、アラミド繊維とカーボンを使った極薄設計なのに耐衝撃性もちゃんと備えてる。ボタンや画面もしっかり保護しつつ、ポケットにスッと入る軽さが魅力💪
+
+37件のレビューで平均4.95という高評価に、その実力が表れてますよ。
+
+#iPhoneケース #MagSafe対応 #薄型ケース #軽量 #耐衝撃 #iPhoneDuo #ガジェット好きさんと繋がりたい #高級ケース #おしゃれ #スマホアクセサリー">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/pitakaofficial/mci17-011000301-jp/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="f452025-miyakonojo:10004061">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/f452025-miyakonojo/cabinet/08218569/08257100/mj-3314_ssn_0623.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【ふるさと納税】国産若鶏バラエティセット【部位＋カット＋重量＋発送時期が選べる！】- 鶏肉 1.5kg〜8kg もも肉 むね肉 小分け 真空パック 冷凍 カット済み/未カット 時短 お弁当 ストック 唐揚げ チキン南蛮 おかず 送料無料 SKU-3326【宮崎県都城市】</p>
+        <p class="meta"><span class="price">7,000円</span> ・ ★4.82 (5961件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 宮崎県都城市</p>
+      </div>
+    </div>
+    <div class="pitch">鶏肉のストックで、毎日の献立に困ってませんか？✨
+
+この返礼品が選ばれ続けてる理由は、自分好みにカスタマイズできるから。部位・カット・量・発送時期が選べるんです。唐揚げ用にカット済みを選んだり、BBQ用に未カット大容量を選んだり。
+
+冷凍小分けだから、使いたい時にサッと調理できる。6000件近いレビューで支持されてるのも、そのシンプルな使いやすさなんだと思います🍗
+
+#ふるさと納税
+#鶏肉
+#時短料理
+#冷凍食品
+#BBQ
+#唐揚げ
+#ストック食材
+#家族向け</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=f452025-miyakonojo:10004061" target="_blank" rel="noopener" data-pitch="鶏肉のストックで、毎日の献立に困ってませんか？✨
+
+この返礼品が選ばれ続けてる理由は、自分好みにカスタマイズできるから。部位・カット・量・発送時期が選べるんです。唐揚げ用にカット済みを選んだり、BBQ用に未カット大容量を選んだり。
+
+冷凍小分けだから、使いたい時にサッと調理できる。6000件近いレビューで支持されてるのも、そのシンプルな使いやすさなんだと思います🍗
+
+#ふるさと納税
+#鶏肉
+#時短料理
+#冷凍食品
+#BBQ
+#唐揚げ
+#ストック食材
+#家族向け">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="鶏肉のストックで、毎日の献立に困ってませんか？✨
+
+この返礼品が選ばれ続けてる理由は、自分好みにカスタマイズできるから。部位・カット・量・発送時期が選べるんです。唐揚げ用にカット済みを選んだり、BBQ用に未カット大容量を選んだり。
+
+冷凍小分けだから、使いたい時にサッと調理できる。6000件近いレビューで支持されてるのも、そのシンプルな使いやすさなんだと思います🍗
+
+#ふるさと納税
+#鶏肉
+#時短料理
+#冷凍食品
+#BBQ
+#唐揚げ
+#ストック食材
+#家族向け">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/f452025-miyakonojo/mj-3314/?rafcid=wsc_i_is_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="f272132-izumisano:10003733">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/f272132-izumisano/cabinet/f-item28/mrz0360r_1_1006.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【ふるさと納税】国産 牛肉 切り落とし 選べる 600g ～ 1.8kg 国産牛 味付け肉 赤身 冷凍 小分け 訳あり サイズ不揃い まとめ買い 発送月 肉じゃが すき焼き すきしゃぶ しゃぶしゃぶ 家族 最短翌日発送 肉 普段使い お弁当 年内配送 大阪府 泉佐野市 送料無料 肉の泉佐野</p>
+        <p class="meta"><span class="price">8,000円</span> ・ ★4.32 (5756件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 大阪府泉佐野市</p>
+      </div>
+    </div>
+    <div class="pitch">下味付きだから、解凍するだけで調理が完成しちゃう🍖
+
+・小分けパックなので冷凍庫がスッキリ
+・切り落としは軽めの味付けでアレンジ自在
+・赤身とばら肉ブレンドはコクと甘みのバランスが絶妙
+
+5700件超のレビューで支持され続けてる理由は、手間がかからないのに本当に美味しいから。忙しい日の夜ご飯や、お弁当のおかずにも重宝しますよ✨
+
+気になったらチェックしてみてね。
+
+#ふるさと納税 #国産牛肉 #牛肉 #切り落とし #訳あり #冷凍肉 #下味付き #すき焼き #時短料理 #家庭用食材</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=f272132-izumisano:10003733" target="_blank" rel="noopener" data-pitch="下味付きだから、解凍するだけで調理が完成しちゃう🍖
+
+・小分けパックなので冷凍庫がスッキリ
+・切り落としは軽めの味付けでアレンジ自在
+・赤身とばら肉ブレンドはコクと甘みのバランスが絶妙
+
+5700件超のレビューで支持され続けてる理由は、手間がかからないのに本当に美味しいから。忙しい日の夜ご飯や、お弁当のおかずにも重宝しますよ✨
+
+気になったらチェックしてみてね。
+
+#ふるさと納税 #国産牛肉 #牛肉 #切り落とし #訳あり #冷凍肉 #下味付き #すき焼き #時短料理 #家庭用食材">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="下味付きだから、解凍するだけで調理が完成しちゃう🍖
+
+・小分けパックなので冷凍庫がスッキリ
+・切り落としは軽めの味付けでアレンジ自在
+・赤身とばら肉ブレンドはコクと甘みのバランスが絶妙
+
+5700件超のレビューで支持され続けてる理由は、手間がかからないのに本当に美味しいから。忙しい日の夜ご飯や、お弁当のおかずにも重宝しますよ✨
+
+気になったらチェックしてみてね。
+
+#ふるさと納税 #国産牛肉 #牛肉 #切り落とし #訳あり #冷凍肉 #下味付き #すき焼き #時短料理 #家庭用食材">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/f272132-izumisano/010b618/?rafcid=wsc_i_is_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="auc-kaei-trading:10000770">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-kaei-trading/cabinet/zk-hasami01/hasami-main2026.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【50％オフクーポン】 多機能キッチンバサミ キッチンバサミ 分解できる オールステンレス 食洗器対応 化粧箱付き はさみ 栓抜き 缶開け 殻割り オープナー ギフト 料理ハサミ 軽量</p>
+        <p class="meta"><span class="price">3,460円</span> ・ ★4.61 (312件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ フリーライフ</p>
+      </div>
+    </div>
+    <div class="pitch">50％オフクーポン使えば、もっとお得に贈れる✨
+
+料理好きな友人へ。
+
+箱を開けると、ピカピカのステンレス。
+
+野菜もスパッと。瓶も、缶も、貝も。
+
+分解して丸洗いできるから、清潔に保てる。
+
+食洗器もOK。
+
+実用的で、毎日活躍する一本。
+
+312件のレビューで支持され続けるのも納得💕
+
+#キッチンバサミ #ギフト #贈り物 #調理ハサミ #料理好きさんへ #オールステンレス #多機能 #キッチン雑貨</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=auc-kaei-trading:10000770" target="_blank" rel="noopener" data-pitch="50％オフクーポン使えば、もっとお得に贈れる✨
+
+料理好きな友人へ。
+
+箱を開けると、ピカピカのステンレス。
+
+野菜もスパッと。瓶も、缶も、貝も。
+
+分解して丸洗いできるから、清潔に保てる。
+
+食洗器もOK。
+
+実用的で、毎日活躍する一本。
+
+312件のレビューで支持され続けるのも納得💕
+
+#キッチンバサミ #ギフト #贈り物 #調理ハサミ #料理好きさんへ #オールステンレス #多機能 #キッチン雑貨">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="50％オフクーポン使えば、もっとお得に贈れる✨
+
+料理好きな友人へ。
+
+箱を開けると、ピカピカのステンレス。
+
+野菜もスパッと。瓶も、缶も、貝も。
+
+分解して丸洗いできるから、清潔に保てる。
+
+食洗器もOK。
+
+実用的で、毎日活躍する一本。
+
+312件のレビューで支持され続けるのも納得💕
+
+#キッチンバサミ #ギフト #贈り物 #調理ハサミ #料理好きさんへ #オールステンレス #多機能 #キッチン雑貨">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/auc-kaei-trading/zk-hasami01/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="esurf-ec:10000008">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/esurf-ec/cabinet/10820720/imgrc0112962647.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">ダニ捕りシート 3枚入り 10枚入り ダニ捕リラボ ダニシート ダニ取り ダニ捕りマット ダニ捕り ダニとり ダニ退治 防ダニ 医師監修 3か月持続 駆除 ダニ駆除 だにとりシート 家 ベッド 布団 ソファ ダニ 退治 ダニよけ ペット 赤ちゃん 安全 日本製</p>
+        <p class="meta"><span class="price">1,000円</span> ・ ★4.48 (221件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ E-Surfショップ 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">ダニシートって本当に効くのか、試す勇気が出ない…💭
+でも医師監修で97.9%の誘引率だから、その心配は無用なんです。
+化学殺虫成分ゼロだから赤ちゃんやペットがいる家でも安心して使える。
+返金保証付きだから試してみる価値あり✨
+
+#ダニ対策 #布団ケア #赤ちゃん用品 #ペット用品 #ベッド用品 #家事の悩み #日本製 #アレルギー対策</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=esurf-ec:10000008" target="_blank" rel="noopener" data-pitch="ダニシートって本当に効くのか、試す勇気が出ない…💭
+でも医師監修で97.9%の誘引率だから、その心配は無用なんです。
+化学殺虫成分ゼロだから赤ちゃんやペットがいる家でも安心して使える。
+返金保証付きだから試してみる価値あり✨
+
+#ダニ対策 #布団ケア #赤ちゃん用品 #ペット用品 #ベッド用品 #家事の悩み #日本製 #アレルギー対策">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ダニシートって本当に効くのか、試す勇気が出ない…💭
+でも医師監修で97.9%の誘引率だから、その心配は無用なんです。
+化学殺虫成分ゼロだから赤ちゃんやペットがいる家でも安心して使える。
+返金保証付きだから試してみる価値あり✨
+
+#ダニ対策 #布団ケア #赤ちゃん用品 #ペット用品 #ベッド用品 #家事の悩み #日本製 #アレルギー対策">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/esurf-ec/danitorilabo02/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rakuten24:11224272">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/171/405171.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【1種類を選べる】レノア 超消臭 柔軟剤 特大 詰め替え(745ml×6セット)【レノア超消臭】[液体 大容量]</p>
+        <p class="meta"><span class="price">4,748円</span> ・ ★4.7 (379件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 楽天24</p>
+      </div>
+    </div>
+    <div class="pitch">部屋干しの生乾き臭、どうしてもつきまとう😩
+
+レノアの超消臭なら、379件のリピーターが信頼してる理由がわかる✨🌿 詰め替え6セットでストックも楽ちん💕
+
+#部屋干し #消臭 #柔軟剤 #詰め替え #大容量</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rakuten24:11224272" target="_blank" rel="noopener" data-pitch="部屋干しの生乾き臭、どうしてもつきまとう😩
+
+レノアの超消臭なら、379件のリピーターが信頼してる理由がわかる✨🌿 詰め替え6セットでストックも楽ちん💕
+
+#部屋干し #消臭 #柔軟剤 #詰め替え #大容量">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="部屋干しの生乾き臭、どうしてもつきまとう😩
+
+レノアの超消臭なら、379件のリピーターが信頼してる理由がわかる✨🌿 詰め替え6セットでストックも楽ちん💕
+
+#部屋干し #消臭 #柔軟剤 #詰め替え #大容量">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rakuten24/405171/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-10-28";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
