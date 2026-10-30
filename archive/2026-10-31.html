@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-10-31</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-10-31 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="goodfeel:10006412">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/goodfeel/cabinet/01408649/imgrc0068042705.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">ハリオ　ご飯釜　フタがガラスのIH対応ご飯釜雪平　GIS-200　10月末頃発送予定 日本製 雪平 直火対応 煮込み料理にも ご飯釜 ふっくら ごはん お米 フッ素 IH対応 直火 HARIO 新生活 ギフト</p>
+        <p class="meta"><span class="price">8,450円</span> ・ ★4.48 (46件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ Good Feel（グッドフィール）</p>
+      </div>
+    </div>
+    <div class="pitch">ふたを開けるとお米のいい香り。
+ふっくらツヤツヤに炊き上がってる。
+スプーンですくうとするり、こびりつかない ✨
+
+IH対応だし、直火でも使えるから、
+どんなキッチンでも活躍しちゃう。
+ご飯だけじゃなく、煮込み料理だって。
+だから毎日出番が多くなっちゃうんです。
+
+チェックしてみてね💕
+
+#ご飯釜 #IH対応 #HARIO #毎日のご飯 #キッチン #新生活 #ギフト #日本製</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=goodfeel:10006412" target="_blank" rel="noopener" data-pitch="ふたを開けるとお米のいい香り。
+ふっくらツヤツヤに炊き上がってる。
+スプーンですくうとするり、こびりつかない ✨
+
+IH対応だし、直火でも使えるから、
+どんなキッチンでも活躍しちゃう。
+ご飯だけじゃなく、煮込み料理だって。
+だから毎日出番が多くなっちゃうんです。
+
+チェックしてみてね💕
+
+#ご飯釜 #IH対応 #HARIO #毎日のご飯 #キッチン #新生活 #ギフト #日本製">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ふたを開けるとお米のいい香り。
+ふっくらツヤツヤに炊き上がってる。
+スプーンですくうとするり、こびりつかない ✨
+
+IH対応だし、直火でも使えるから、
+どんなキッチンでも活躍しちゃう。
+ご飯だけじゃなく、煮込み料理だって。
+だから毎日出番が多くなっちゃうんです。
+
+チェックしてみてね💕
+
+#ご飯釜 #IH対応 #HARIO #毎日のご飯 #キッチン #新生活 #ギフト #日本製">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/goodfeel/10006412/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="solemood:10000053">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/solemood/cabinet/13857524/imgrc0192837542.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">＼食欲の秋セール★クーポンで20%OFF／楽天1位 ホットプレート 電気 ホット プレート グリルプレート たこ焼き器 コンパクト 4枚 プレート ミニ 深鍋 焼肉 グリル 一人 鍋丸洗い 電気プレート お好み焼き たこ焼き プレート 深型 ヒーター マルチホットプレート SOLEMOOD</p>
+        <p class="meta"><span class="price">8,580円</span> ・ ★4.51 (488件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ solemood</p>
+      </div>
+    </div>
+    <div class="pitch">クーポンで20%OFF、プレート4種で一台四役🔥
+
+・たこ焼き、焼肉、鍋、お好み焼き
+すべて楽しめちゃう
+
+・A4サイズで場所取らない
+一人暮らしにぴったり
+
+・全部外して丸洗いできる
+後片付けらくちん✨
+
+488件のレビューで支持されてるのも納得です。気になったらチェックしてみてね。
+
+#ホットプレート #マルチプレート #一人暮らし #新生活 #卓上調理器 #丸洗い #コンパクト #焼肉 #たこ焼き #敬老の日ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=solemood:10000053" target="_blank" rel="noopener" data-pitch="クーポンで20%OFF、プレート4種で一台四役🔥
+
+・たこ焼き、焼肉、鍋、お好み焼き
+すべて楽しめちゃう
+
+・A4サイズで場所取らない
+一人暮らしにぴったり
+
+・全部外して丸洗いできる
+後片付けらくちん✨
+
+488件のレビューで支持されてるのも納得です。気になったらチェックしてみてね。
+
+#ホットプレート #マルチプレート #一人暮らし #新生活 #卓上調理器 #丸洗い #コンパクト #焼肉 #たこ焼き #敬老の日ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クーポンで20%OFF、プレート4種で一台四役🔥
+
+・たこ焼き、焼肉、鍋、お好み焼き
+すべて楽しめちゃう
+
+・A4サイズで場所取らない
+一人暮らしにぴったり
+
+・全部外して丸洗いできる
+後片付けらくちん✨
+
+488件のレビューで支持されてるのも納得です。気になったらチェックしてみてね。
+
+#ホットプレート #マルチプレート #一人暮らし #新生活 #卓上調理器 #丸洗い #コンパクト #焼肉 #たこ焼き #敬老の日ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/solemood/solemood-hy-6127/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="pioma:10001340">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/pioma/cabinet/08985684/09001447/imgrc0109322733.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【備蓄緊急要請】【11月13日より順次発送】【レビュー特典あり】非常食セット 5年保存 4人用3日分36食 防災 備蓄 保存食 防災食 アルファ米 ごはん パン 尾西食品 携帯おにぎり ひだまりパン 防災食品 災害食 安心米 美味しい 人気 コンパクト フェーズフリー 家族で備える</p>
+        <p class="meta"><span class="price">12,800円</span> ・ ★4.17 (509件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 暮らしの防災 Pioma（ピオマ）</p>
+      </div>
+    </div>
+    <div class="pitch">非常食って、美味しくなさそうだし家族も食べてくれるか心配…そう思いませんか💭
+
+防災士と開発チームがイチオシの味を厳選したセットだから、いざという時も安心できます。ごはん、パン、おにぎりと種類豊富だから飽きずに食べられる。「もしもの時」への備えは、家族みんなが喜んでくれる贈り物になるんです✨
+
+#防災備蓄 #非常食セット #4人家族 #家族で備える #フェーズフリー #防災食 #ギフト #もしもの備え</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=pioma:10001340" target="_blank" rel="noopener" data-pitch="非常食って、美味しくなさそうだし家族も食べてくれるか心配…そう思いませんか💭
+
+防災士と開発チームがイチオシの味を厳選したセットだから、いざという時も安心できます。ごはん、パン、おにぎりと種類豊富だから飽きずに食べられる。「もしもの時」への備えは、家族みんなが喜んでくれる贈り物になるんです✨
+
+#防災備蓄 #非常食セット #4人家族 #家族で備える #フェーズフリー #防災食 #ギフト #もしもの備え">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="非常食って、美味しくなさそうだし家族も食べてくれるか心配…そう思いませんか💭
+
+防災士と開発チームがイチオシの味を厳選したセットだから、いざという時も安心できます。ごはん、パン、おにぎりと種類豊富だから飽きずに食べられる。「もしもの時」への備えは、家族みんなが喜んでくれる贈り物になるんです✨
+
+#防災備蓄 #非常食セット #4人家族 #家族で備える #フェーズフリー #防災食 #ギフト #もしもの備え">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/pioma/usk-288/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="prime-brain:10000071">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/prime-brain/cabinet/12028134/01altl_sutaro/sutaro_thum_9.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【15%OFFクーポン/高吸収だから少量で固まる】 防災グッズ 非常用 簡易トイレ 携帯トイレ スープ 凝固剤 たっぷり吸う太郎 810g 粉末 日本製 消臭 15年保存 ※凝固剤のみ | 防災 災害 断水 地震対策 介護 車中泊 ポータブルトイレ カップ麺 残り汁 処理 プライム製薬</p>
+        <p class="meta"><span class="price">6,980円</span> ・ ★4.56 (263件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ プライム製薬</p>
+      </div>
+    </div>
+    <div class="pitch">災害時のトイレ処理や、カップ麺の汁、車中泊の排水…どうしようって困ったことありませんか？
+
+少量で高吸収だから、あるとほんっとうに便利なんです💡
+粉末タイプで場所も取らず、15年保存できるから防災グッズとしても◎
+
+凝固剤のみなので、用途に合わせてポリ袋や便袋は別途用意が必要ですが、263件のレビューで支持されてる実力派ですよ✨
+
+気になったらチェック！
+
+#簡易トイレ #防災グッズ #凝固剤 #非常用 #災害対策 #介護グッズ #車中泊 #備蓄</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=prime-brain:10000071" target="_blank" rel="noopener" data-pitch="災害時のトイレ処理や、カップ麺の汁、車中泊の排水…どうしようって困ったことありませんか？
+
+少量で高吸収だから、あるとほんっとうに便利なんです💡
+粉末タイプで場所も取らず、15年保存できるから防災グッズとしても◎
+
+凝固剤のみなので、用途に合わせてポリ袋や便袋は別途用意が必要ですが、263件のレビューで支持されてる実力派ですよ✨
+
+気になったらチェック！
+
+#簡易トイレ #防災グッズ #凝固剤 #非常用 #災害対策 #介護グッズ #車中泊 #備蓄">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="災害時のトイレ処理や、カップ麺の汁、車中泊の排水…どうしようって困ったことありませんか？
+
+少量で高吸収だから、あるとほんっとうに便利なんです💡
+粉末タイプで場所も取らず、15年保存できるから防災グッズとしても◎
+
+凝固剤のみなので、用途に合わせてポリ袋や便袋は別途用意が必要ですが、263件のレビューで支持されてる実力派ですよ✨
+
+気になったらチェック！
+
+#簡易トイレ #防災グッズ #凝固剤 #非常用 #災害対策 #介護グッズ #車中泊 #備蓄">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/prime-brain/01altl_sutaro/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="nagomilab:10000046">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/nagomilab/cabinet/shohin01/50_100sum.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【楽天ランキング1位】【防災士共同開発】簡易トイレ 非常用 トイレ 非常用トイレ 凝固剤 持ち出し袋 50回 100回 緊急簡易トイレ消臭 非常用簡易トイレ 抗菌 滅菌 清潔 臭わない 抗菌消臭簡易トイレ 災害用トイレ 日本製 防災 防災グッズ 防災用品 地震 災害 防災のミカタ</p>
+        <p class="meta"><span class="price">3,980円</span> ・ ★4.5 (439件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 防災グッズ防災セット防災のミカタ</p>
+      </div>
+    </div>
+    <div class="pitch">楽天ランキング1位の簡易トイレが、防災士と一緒に開発した本格派なんです✨凝固剤・トイレ袋・防臭袋の3段階で臭いを徹底ブロック。50回と100回から選べるから、家族の人数に合わせて備えられるのも嬉しい。国産製造で15年長期保管できるから、買ったら安心して置いておけますよ🏠
+
+#防災グッズ #簡易トイレ #非常用トイレ #防災対策 #地震対策 #災害対策 #家族向け #日本製 #防災用品 #キャンプ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=nagomilab:10000046" target="_blank" rel="noopener" data-pitch="楽天ランキング1位の簡易トイレが、防災士と一緒に開発した本格派なんです✨凝固剤・トイレ袋・防臭袋の3段階で臭いを徹底ブロック。50回と100回から選べるから、家族の人数に合わせて備えられるのも嬉しい。国産製造で15年長期保管できるから、買ったら安心して置いておけますよ🏠
+
+#防災グッズ #簡易トイレ #非常用トイレ #防災対策 #地震対策 #災害対策 #家族向け #日本製 #防災用品 #キャンプ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="楽天ランキング1位の簡易トイレが、防災士と一緒に開発した本格派なんです✨凝固剤・トイレ袋・防臭袋の3段階で臭いを徹底ブロック。50回と100回から選べるから、家族の人数に合わせて備えられるのも嬉しい。国産製造で15年長期保管できるから、買ったら安心して置いておけますよ🏠
+
+#防災グッズ #簡易トイレ #非常用トイレ #防災対策 #地震対策 #災害対策 #家族向け #日本製 #防災用品 #キャンプ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/nagomilab/tg11550z/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="takedahamu:10000039">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_gold/takedahamu/01_img/lp/g15-5-30/g15-10/sum/main_01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">選べる！ 味付け 牛焼肉 9パック の3牛士 (120g〜×9パック) ハラミ カルビ プルコギ 食べ比べ 赤身 お肉 味付け肉 バーベキュー BBQ セット 牛肉 熨斗対応 贈答用 ギフト 小分け 冷凍 ストック 冷凍 ハロウィン</p>
+        <p class="meta"><span class="price">7,804円</span> ・ ★4.43 (222件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 武田ハム</p>
+      </div>
+    </div>
+    <div class="pitch">焼肉セットは家族みんなで食べるときだけだと思われがちだけど、一人の夜ご飯にも最高🍖✨
+味付き済みだから、フライパンでさっと焼くだけ。
+小分けだからストックもしやすい。
+
+#焼肉
+#一人暮らし
+#おうち時間
+#ギフト
+#ストック食品</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=takedahamu:10000039" target="_blank" rel="noopener" data-pitch="焼肉セットは家族みんなで食べるときだけだと思われがちだけど、一人の夜ご飯にも最高🍖✨
+味付き済みだから、フライパンでさっと焼くだけ。
+小分けだからストックもしやすい。
+
+#焼肉
+#一人暮らし
+#おうち時間
+#ギフト
+#ストック食品">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="焼肉セットは家族みんなで食べるときだけだと思われがちだけど、一人の夜ご飯にも最高🍖✨
+味付き済みだから、フライパンでさっと焼くだけ。
+小分けだからストックもしやすい。
+
+#焼肉
+#一人暮らし
+#おうち時間
+#ギフト
+#ストック食品">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/takedahamu/g15-10/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="brain-service:10000361">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/brain-service/cabinet/product/compass1766972916/compass1766972916.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【防災士×管理栄養士監修】非常食セット 5人用 3日分 計52品（45食＋おやつ7種） 尾西食品 アルファ米 携帯おにぎり パン 災害用 長期保存 備蓄食料 くらし安心Labo</p>
+        <p class="meta"><span class="price">16,730円</span> ・ ★4.56 (32件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ くらし安心　楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">災害のニュースを見てセット購入する人が多い、選ばれ続ける理由がある。
+
+5人分、3日分。
+水があれば食べられる。
+お湯でもいい。
+そのまま食べられるパンも。
+
+防災士と栄養士が一緒に監修した組み合わせだから、栄養バランスまで考えられてる 🍙✨
+
+気になったらチェックしてみてね。
+
+#非常食 #防災グッズ #災害備蓄 #長期保存食 #家族向け #アルファ米 #おにぎり #備蓄食料</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=brain-service:10000361" target="_blank" rel="noopener" data-pitch="災害のニュースを見てセット購入する人が多い、選ばれ続ける理由がある。
+
+5人分、3日分。
+水があれば食べられる。
+お湯でもいい。
+そのまま食べられるパンも。
+
+防災士と栄養士が一緒に監修した組み合わせだから、栄養バランスまで考えられてる 🍙✨
+
+気になったらチェックしてみてね。
+
+#非常食 #防災グッズ #災害備蓄 #長期保存食 #家族向け #アルファ米 #おにぎり #備蓄食料">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="災害のニュースを見てセット購入する人が多い、選ばれ続ける理由がある。
+
+5人分、3日分。
+水があれば食べられる。
+お湯でもいい。
+そのまま食べられるパンも。
+
+防災士と栄養士が一緒に監修した組み合わせだから、栄養バランスまで考えられてる 🍙✨
+
+気になったらチェックしてみてね。
+
+#非常食 #防災グッズ #災害備蓄 #長期保存食 #家族向け #アルファ米 #おにぎり #備蓄食料">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/brain-service/compass1766972916/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="fastonline:10000941">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/fastonline/cabinet/12105231/imgrc0151992461.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【Lexar国内永久保証】Switch2対応 Lexar PLAY PRO microSDXC Express カード 1TB 512GB Nintendo Switch2 SDカード 最大容量 メモリ スイッチ2 microsd express カード マイクロSD Express カード 高速 SD express カード Switch2メモリーカード メーカー保証付き</p>
+        <p class="meta"><span class="price">9,680円</span> ・ ★4.56 (48件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ ファストオンライン</p>
+      </div>
+    </div>
+    <div class="pitch">Switch2でゲーム沼にハマってるなら、このSDカードは必需品かもしれません✨
+
+・ダウンロードがめちゃ速い
+最大読取900MB/sで待ち時間ストレスなし⚡
+
+・容量がでかい
+1TBあれば好きなゲーム思い切りため込める🎮
+
+・国内永久保証付き
+長く使えるから実はコスパいい💪
+
+Nintendo Switch2を本気で楽しむなら、チェックしてみてね。
+
+#Switch2 #SDカード #microSD #Nintendo #ゲーマー #ゲーム #メモリーカード #高速 #1TB #任天堂</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=fastonline:10000941" target="_blank" rel="noopener" data-pitch="Switch2でゲーム沼にハマってるなら、このSDカードは必需品かもしれません✨
+
+・ダウンロードがめちゃ速い
+最大読取900MB/sで待ち時間ストレスなし⚡
+
+・容量がでかい
+1TBあれば好きなゲーム思い切りため込める🎮
+
+・国内永久保証付き
+長く使えるから実はコスパいい💪
+
+Nintendo Switch2を本気で楽しむなら、チェックしてみてね。
+
+#Switch2 #SDカード #microSD #Nintendo #ゲーマー #ゲーム #メモリーカード #高速 #1TB #任天堂">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="Switch2でゲーム沼にハマってるなら、このSDカードは必需品かもしれません✨
+
+・ダウンロードがめちゃ速い
+最大読取900MB/sで待ち時間ストレスなし⚡
+
+・容量がでかい
+1TBあれば好きなゲーム思い切りため込める🎮
+
+・国内永久保証付き
+長く使えるから実はコスパいい💪
+
+Nintendo Switch2を本気で楽しむなら、チェックしてみてね。
+
+#Switch2 #SDカード #microSD #Nintendo #ゲーマー #ゲーム #メモリーカード #高速 #1TB #任天堂">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/fastonline/lmsplay128g-bnnng/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="coyoli:10000078">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/coyoli/cabinet/13549/26aw_13549_img01_1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【10%OFFクーポン配布中】 敷きパッド シングル セミダブル ダブル クイーン ワイドキング 冬 フランネル マイクロファイバー あったか 布団 冬用 洗濯機OK くすみカラー ホワイト ブラウン グレー ベージュ 13549 敷きパッドならCOYOLI</p>
+        <p class="meta"><span class="price">1,790円</span> ・ ★4.59 (3537件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ インテリアショップ コヨリ</p>
+      </div>
+    </div>
+    <div class="pitch">敷きパッドって、ペラペラだと暖かくないのかも…と心配になりませんか？
+
+このパッドは中綿を従来比約67%増量した新プレミアム仕様なので、ふっくら厚みがあるのに洗濯機で丸洗いできるんです 🛏️✨
+
+3000件以上のレビューで4.59点の理由は、そのあったか感とモコモコの触り心地。
+
+サイズも豊富でお手頃だから、買い替えや家族分も揃えやすいですよ。
+
+今なら10%OFFクーポンが配布中です💕気になったらチェック！
+
+#敷きパッド #あったか寝具 #冬支度 #ベッドパッド #洗える #フランネル #時短家事 #新生活</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=coyoli:10000078" target="_blank" rel="noopener" data-pitch="敷きパッドって、ペラペラだと暖かくないのかも…と心配になりませんか？
+
+このパッドは中綿を従来比約67%増量した新プレミアム仕様なので、ふっくら厚みがあるのに洗濯機で丸洗いできるんです 🛏️✨
+
+3000件以上のレビューで4.59点の理由は、そのあったか感とモコモコの触り心地。
+
+サイズも豊富でお手頃だから、買い替えや家族分も揃えやすいですよ。
+
+今なら10%OFFクーポンが配布中です💕気になったらチェック！
+
+#敷きパッド #あったか寝具 #冬支度 #ベッドパッド #洗える #フランネル #時短家事 #新生活">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="敷きパッドって、ペラペラだと暖かくないのかも…と心配になりませんか？
+
+このパッドは中綿を従来比約67%増量した新プレミアム仕様なので、ふっくら厚みがあるのに洗濯機で丸洗いできるんです 🛏️✨
+
+3000件以上のレビューで4.59点の理由は、そのあったか感とモコモコの触り心地。
+
+サイズも豊富でお手頃だから、買い替えや家族分も揃えやすいですよ。
+
+今なら10%OFFクーポンが配布中です💕気になったらチェック！
+
+#敷きパッド #あったか寝具 #冬支度 #ベッドパッド #洗える #フランネル #時短家事 #新生活">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/coyoli/13549/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="tansu:10050367">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/tansu/cabinet/08070391/5870011624_10b.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【10%引クーポン！本日迄】 楽天1位 やみつきの肌触り Toronel《トロネル》 敷きパッド 高保湿 椿オイル配合 抗菌 防臭 洗える ふわふわ 暖かい 敷毛布 敷パッド 敷きパット パッドシーツ ベッドパッド シーツ シングル セミダブル ダブル クイーン キング</p>
+        <p class="meta"><span class="price">2,499円</span> ・ ★4.64 (396件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ タンスのゲン Design the Future</p>
+      </div>
+    </div>
+    <div class="pitch">冬のギフト、何を選んでいいか迷っていませんか？
+
+この敷きパッドなら、毎晩の寝心地が変わります✨ ふわふわで吸湿発熱、椿オイル配合だから肌にもやさしい。洗えるから清潔に保てるし、396件のレビューで平均4.64点の実績が選ぶ自信になる🛏️
+
+気になったらチェックしてみてね💕
+
+#敷きパッド #ギフト #冬ギフト #寝具 #あったか #洗える #敷毛布 #贈り物</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=tansu:10050367" target="_blank" rel="noopener" data-pitch="冬のギフト、何を選んでいいか迷っていませんか？
+
+この敷きパッドなら、毎晩の寝心地が変わります✨ ふわふわで吸湿発熱、椿オイル配合だから肌にもやさしい。洗えるから清潔に保てるし、396件のレビューで平均4.64点の実績が選ぶ自信になる🛏️
+
+気になったらチェックしてみてね💕
+
+#敷きパッド #ギフト #冬ギフト #寝具 #あったか #洗える #敷毛布 #贈り物">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="冬のギフト、何を選んでいいか迷っていませんか？
+
+この敷きパッドなら、毎晩の寝心地が変わります✨ ふわふわで吸湿発熱、椿オイル配合だから肌にもやさしい。洗えるから清潔に保てるし、396件のレビューで平均4.64点の実績が選ぶ自信になる🛏️
+
+気になったらチェックしてみてね💕
+
+#敷きパッド #ギフト #冬ギフト #寝具 #あったか #洗える #敷毛布 #贈り物">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/tansu/58700116/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-10-31";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
