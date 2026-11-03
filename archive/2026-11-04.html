@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-04</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-04 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="kumamoto-food:10003339">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kumamoto-food/cabinet/00954548/kome/furusatomusen/imgrc0122721798.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【クーポンで20kg⇒6,860円】令和8年産75％以上使用 米 令和8年産 無洗米 白米 選べる 5kg 10kg 20kg 40kg 新米75％使用 ブレンド米 銘柄米 コシヒカリ 森のくまさん ヒノヒカリ お米 国産 送料無料 雑穀米付 防災 備蓄 お買い物マラソン ≪配送予定に記載の日程でお届け≫</p>
+        <p class="meta"><span class="price">2,280円</span> ・ ★4.41 (816件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 【　くまもと風土　】</p>
+      </div>
+    </div>
+    <div class="pitch">無洗米だから、もらった人が洗う手間かけずにすぐ炊ける🍚✨
+
+熊本産の銘柄米が選べて、雑穀米もついてくる。
+実用的なのに、ちゃんと喜ばれるギフト。
+
+#ふるさと納税 #お米 #ギフト #無洗米 #食べ物ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kumamoto-food:10003339" target="_blank" rel="noopener" data-pitch="無洗米だから、もらった人が洗う手間かけずにすぐ炊ける🍚✨
+
+熊本産の銘柄米が選べて、雑穀米もついてくる。
+実用的なのに、ちゃんと喜ばれるギフト。
+
+#ふるさと納税 #お米 #ギフト #無洗米 #食べ物ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="無洗米だから、もらった人が洗う手間かけずにすぐ炊ける🍚✨
+
+熊本産の銘柄米が選べて、雑穀米もついてくる。
+実用的なのに、ちゃんと喜ばれるギフト。
+
+#ふるさと納税 #お米 #ギフト #無洗米 #食べ物ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kumamoto-food/10003339/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="torreya-shop:10000079">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/torreya-shop/cabinet/toilet/imgrc0104456288.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【高評価★4.72】防災トイレ 50回 簡易トイレ 携帯トイレ 防災グッズ 携帯用トイレ 災害グッズ 非常用トイレ 凝固剤 便座カバー 手袋 汚物袋 防臭袋 消臭 抗菌 除菌 大便対応 介護 備蓄 15年保存 簡単 防災 地震 災害 洪水 震災 断水【1年保証＆説明書＆防災ガイドブック付】</p>
+        <p class="meta"><span class="price">4,280円</span> ・ ★4.73 (692件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ Torreya　楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">防災トイレなんて本当に必要？って思ってませんか。実は災害時だけじゃなく、介護やキャンプでも活躍するんですよ。😌
+
+50回分のセットなら家族全員をカバーできるし、15年保存できるから備蓄としても最適。凝固剤も強力で、防臭袋とダブル消臭だから衛生的です。便座カバーや手袋も全部入ってるので、本当に必要な時にすぐ使える ✨
+
+防災士監修の説明書も付いてるから安心。やっぱり備えってあると違いますよ。
+
+#防災トイレ #簡易トイレ #携帯トイレ #防災グッズ #介護用品 #災害対策 #非常用トイレ #備蓄</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=torreya-shop:10000079" target="_blank" rel="noopener" data-pitch="防災トイレなんて本当に必要？って思ってませんか。実は災害時だけじゃなく、介護やキャンプでも活躍するんですよ。😌
+
+50回分のセットなら家族全員をカバーできるし、15年保存できるから備蓄としても最適。凝固剤も強力で、防臭袋とダブル消臭だから衛生的です。便座カバーや手袋も全部入ってるので、本当に必要な時にすぐ使える ✨
+
+防災士監修の説明書も付いてるから安心。やっぱり備えってあると違いますよ。
+
+#防災トイレ #簡易トイレ #携帯トイレ #防災グッズ #介護用品 #災害対策 #非常用トイレ #備蓄">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="防災トイレなんて本当に必要？って思ってませんか。実は災害時だけじゃなく、介護やキャンプでも活躍するんですよ。😌
+
+50回分のセットなら家族全員をカバーできるし、15年保存できるから備蓄としても最適。凝固剤も強力で、防臭袋とダブル消臭だから衛生的です。便座カバーや手袋も全部入ってるので、本当に必要な時にすぐ使える ✨
+
+防災士監修の説明書も付いてるから安心。やっぱり備えってあると違いますよ。
+
+#防災トイレ #簡易トイレ #携帯トイレ #防災グッズ #介護用品 #災害対策 #非常用トイレ #備蓄">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/torreya-shop/100000041/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="alphasyokuhin:10000015">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/alphasyokuhin/cabinet/11838320/11838687/imgrc0095839454.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【公式 アルファー食品】非常食セット 9食 1人 3日分 非常食 防災食 アルファ米 保存食 災害 備蓄食 安心米 防災 食品 アルファ化米 5年保存 長期保存 国産米使用 食物アレルギー対応 白飯 わかめご飯 常温保存 防災グッズ 送料無料</p>
+        <p class="meta"><span class="price">4,536円</span> ・ ★4.66 (395件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 非常食・防災食ならアルファー食品</p>
+      </div>
+    </div>
+    <div class="pitch">お湯か水を入れるだけで、3日分の食事が完成する✨
+
+白飯、わかめご飯、ひじき、舞茸おこわの4種類がセットになってるから、毎日違う味が食べられるんです💕防災用に買ってる人が多いのも、飽きずに食べ続けられるから。5年保存できるから、いざというときも安心ですよ🍚
+
+#非常食 #防災食 #保存食 #防災グッズ #備蓄食 #アルファ米 #家族防災 #お水とお湯で調理 #長期保存 #防災</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=alphasyokuhin:10000015" target="_blank" rel="noopener" data-pitch="お湯か水を入れるだけで、3日分の食事が完成する✨
+
+白飯、わかめご飯、ひじき、舞茸おこわの4種類がセットになってるから、毎日違う味が食べられるんです💕防災用に買ってる人が多いのも、飽きずに食べ続けられるから。5年保存できるから、いざというときも安心ですよ🍚
+
+#非常食 #防災食 #保存食 #防災グッズ #備蓄食 #アルファ米 #家族防災 #お水とお湯で調理 #長期保存 #防災">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="お湯か水を入れるだけで、3日分の食事が完成する✨
+
+白飯、わかめご飯、ひじき、舞茸おこわの4種類がセットになってるから、毎日違う味が食べられるんです💕防災用に買ってる人が多いのも、飽きずに食べ続けられるから。5年保存できるから、いざというときも安心ですよ🍚
+
+#非常食 #防災食 #保存食 #防災グッズ #備蓄食 #アルファ米 #家族防災 #お水とお湯で調理 #長期保存 #防災">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/alphasyokuhin/10000015/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kurumakyu:10000052">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kurumakyu/cabinet/ko/ryuunohitomi_r8b.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【新米】令和8年産 飛騨産 龍の瞳 認定米 1kg 2kg 3kg 5kg 10kg 1キロ 2キロ 3キロ 5キロ 10キロ 玄米 精米 大粒米 甘みが強い もちもち 冷めてもおいしい ご家庭用 ギフト プレゼント 高級米</p>
+        <p class="meta"><span class="price">2,350円</span> ・ ★4.66 (47件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 車久米穀店</p>
+      </div>
+    </div>
+    <div class="pitch">普通のお米で物足りなくなる瞬間がやってくる。✨
+
+炊き立てをふむふむと食べる。
+冷めたおにぎりもうまい。
+塩むすびで、お米本来の甘さが引き出される。
+
+毎日のご飯が、ご馳走に変わる💕
+だから47件のレビューで支持され続けてるんだと思う。
+
+#龍の瞳 #飛騨産 #高級米 #おいしいお米 #新米 #ギフト #お弁当 #おにぎり</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kurumakyu:10000052" target="_blank" rel="noopener" data-pitch="普通のお米で物足りなくなる瞬間がやってくる。✨
+
+炊き立てをふむふむと食べる。
+冷めたおにぎりもうまい。
+塩むすびで、お米本来の甘さが引き出される。
+
+毎日のご飯が、ご馳走に変わる💕
+だから47件のレビューで支持され続けてるんだと思う。
+
+#龍の瞳 #飛騨産 #高級米 #おいしいお米 #新米 #ギフト #お弁当 #おにぎり">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="普通のお米で物足りなくなる瞬間がやってくる。✨
+
+炊き立てをふむふむと食べる。
+冷めたおにぎりもうまい。
+塩むすびで、お米本来の甘さが引き出される。
+
+毎日のご飯が、ご馳走に変わる💕
+だから47件のレビューで支持され続けてるんだと思う。
+
+#龍の瞳 #飛騨産 #高級米 #おいしいお米 #新米 #ギフト #お弁当 #おにぎり">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kurumakyu/10000052/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="nuthyougo:10000002">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/nuthyougo/cabinet/item001.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">アーモンド 1kg 素焼きアーモンド 完全無添加 アメリカ産 高品質 アーモンド 大人気 カリフォルニア産 素焼きナッツ 新鮮 チャック付き おやつ おつまみ 健康 ナッツ『無添加・無塩・植物油不使用』</p>
+        <p class="meta"><span class="price">2,085円</span> ・ ★4.51 (667件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ NUT HYOUGO 商店</p>
+      </div>
+    </div>
+    <div class="pitch">手が止まらなくなるアーモンド、探してませんか？❤️
+
+これです。素焼きだからアーモンド本来の濃い甘みが引き立つんですよね。無添加・無塩・無植物油だから、夜中にポリポリ食べても罪悪感ゼロ✨
+
+667件のレビューで支持されてるのも納得。お酒のおつまみはもちろん、朝のコーヒーと一緒にも合う。
+
+#アーモンド #素焼きナッツ #無添加 #おつまみ #おやつ #健康食 #ナッツ #アンチエイジング</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=nuthyougo:10000002" target="_blank" rel="noopener" data-pitch="手が止まらなくなるアーモンド、探してませんか？❤️
+
+これです。素焼きだからアーモンド本来の濃い甘みが引き立つんですよね。無添加・無塩・無植物油だから、夜中にポリポリ食べても罪悪感ゼロ✨
+
+667件のレビューで支持されてるのも納得。お酒のおつまみはもちろん、朝のコーヒーと一緒にも合う。
+
+#アーモンド #素焼きナッツ #無添加 #おつまみ #おやつ #健康食 #ナッツ #アンチエイジング">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="手が止まらなくなるアーモンド、探してませんか？❤️
+
+これです。素焼きだからアーモンド本来の濃い甘みが引き立つんですよね。無添加・無塩・無植物油だから、夜中にポリポリ食べても罪悪感ゼロ✨
+
+667件のレビューで支持されてるのも納得。お酒のおつまみはもちろん、朝のコーヒーと一緒にも合う。
+
+#アーモンド #素焼きナッツ #無添加 #おつまみ #おやつ #健康食 #ナッツ #アンチエイジング">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/nuthyougo/item001/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="onsensui99:10000119">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/onsensui99/cabinet/item/onsensui99/yubin_30hon.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【ゆうパック配送】温泉水99 500ml ペットボトル×30本★送料無料★SOC 温泉水 500ml 九州 鹿児島 水 アルカリ性 飲料水 天然水 軟水 ミネラルウォーター 500ml アルカリイオン水 飲む 温泉水99 超軟水 お水 ミネラルウオーター 備蓄 水 500ml 24本+6本 アルカリ水</p>
+        <p class="meta"><span class="price">5,666円</span> ・ ★4.86 (2597件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 温泉水99エスオーシー公式ショップ</p>
+      </div>
+    </div>
+    <div class="pitch">毎日飲む水だから、飲みやすさにはこだわりたい。
+
+・硬度1.7の超軟水だから、ゴクゴク飲める💧
+・モンドセレクション最高金賞✨2600件超のレビューで支持され続けてる
+・送料無料のケース売りで、ストック買いが賢い💰
+
+何年も選ばれ続けるには理由があるんだな、と思う一本です。
+
+#温泉水99 #ミネラルウォーター #アルカリイオン水 #備蓄水 #天然水 #軟水 #飲料水 #鹿児島 #送料無料 #水</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=onsensui99:10000119" target="_blank" rel="noopener" data-pitch="毎日飲む水だから、飲みやすさにはこだわりたい。
+
+・硬度1.7の超軟水だから、ゴクゴク飲める💧
+・モンドセレクション最高金賞✨2600件超のレビューで支持され続けてる
+・送料無料のケース売りで、ストック買いが賢い💰
+
+何年も選ばれ続けるには理由があるんだな、と思う一本です。
+
+#温泉水99 #ミネラルウォーター #アルカリイオン水 #備蓄水 #天然水 #軟水 #飲料水 #鹿児島 #送料無料 #水">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日飲む水だから、飲みやすさにはこだわりたい。
+
+・硬度1.7の超軟水だから、ゴクゴク飲める💧
+・モンドセレクション最高金賞✨2600件超のレビューで支持され続けてる
+・送料無料のケース売りで、ストック買いが賢い💰
+
+何年も選ばれ続けるには理由があるんだな、と思う一本です。
+
+#温泉水99 #ミネラルウォーター #アルカリイオン水 #備蓄水 #天然水 #軟水 #飲料水 #鹿児島 #送料無料 #水">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/onsensui99/set-500mlx24/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="zenbofficial:10000158">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/zenbofficial/cabinet/thumb/nomal/mar08_260706.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【訳あり品】ZENB ゼンブ ヌードル 丸麺 16食（4袋）送料無料 パスタ そば ラーメン ｜糖質オフ グルテンフリー 糖質コントロール 小麦粉不使用 タンパク質 食物繊維 鉄分 置き換え 低GI ダイエット時の栄養補給に 黄えんどう豆100%</p>
+        <p class="meta"><span class="price">4,600円</span> ・ ★4.74 (39件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 【公式】ZENB 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">送料無料で試せる、豆100%の低糖質麺✨
+
+黄えんどう豆だけでつくった麺だから、グルテンフリーで糖質オフ💚レンジで調理できるから手軽です🍜
+
+#グルテンフリー #糖質オフ #豆麺 #ダイエット食 #送料無料</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=zenbofficial:10000158" target="_blank" rel="noopener" data-pitch="送料無料で試せる、豆100%の低糖質麺✨
+
+黄えんどう豆だけでつくった麺だから、グルテンフリーで糖質オフ💚レンジで調理できるから手軽です🍜
+
+#グルテンフリー #糖質オフ #豆麺 #ダイエット食 #送料無料">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="送料無料で試せる、豆100%の低糖質麺✨
+
+黄えんどう豆だけでつくった麺だから、グルテンフリーで糖質オフ💚レンジで調理できるから手軽です🍜
+
+#グルテンフリー #糖質オフ #豆麺 #ダイエット食 #送料無料">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/zenbofficial/ndkrk141-l004sg0o/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="bousaisos:10000051">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/bousaisos/cabinet/thum/imgrc0120252863.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">長期保存水 保存水 備蓄水 非常用 災害用 【10年 7年 500mL 2L】 島根県産 国産 アルカリイオン水 災害用水 軟水 防災水 非常用水 安全 防災 備蓄 飲む水使う水 避難 2リットル KFG 7年保存 防災グッズ</p>
+        <p class="meta"><span class="price">2,180円</span> ・ ★4.66 (317件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 水とインテリアの店 Cottori</p>
+      </div>
+    </div>
+    <div class="pitch">防災グッズって、もらっても「いつ使うんだろう」って置きっぱなしになりませんか。
+
+でも保存水なら違うんです。7年・10年保存だから、家族で少しずつ飲んで日常的に使い切れる。だから贈った相手も「あ、これなら活躍する」って思ってくれるんですよ 💧
+
+島根県産で放射能検査済みだから、安心して勧められるのも素敵。防災の備えと日々の水、両立できちゃいます✨
+
+ぜひチェックしてみてね。
+
+#防災グッズ #保存水 #備蓄水 #長期保存 #災害対策 #防災備蓄 #ギフト #プレゼント</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=bousaisos:10000051" target="_blank" rel="noopener" data-pitch="防災グッズって、もらっても「いつ使うんだろう」って置きっぱなしになりませんか。
+
+でも保存水なら違うんです。7年・10年保存だから、家族で少しずつ飲んで日常的に使い切れる。だから贈った相手も「あ、これなら活躍する」って思ってくれるんですよ 💧
+
+島根県産で放射能検査済みだから、安心して勧められるのも素敵。防災の備えと日々の水、両立できちゃいます✨
+
+ぜひチェックしてみてね。
+
+#防災グッズ #保存水 #備蓄水 #長期保存 #災害対策 #防災備蓄 #ギフト #プレゼント">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="防災グッズって、もらっても「いつ使うんだろう」って置きっぱなしになりませんか。
+
+でも保存水なら違うんです。7年・10年保存だから、家族で少しずつ飲んで日常的に使い切れる。だから贈った相手も「あ、これなら活躍する」って思ってくれるんですよ 💧
+
+島根県産で放射能検査済みだから、安心して勧められるのも素敵。防災の備えと日々の水、両立できちゃいます✨
+
+ぜひチェックしてみてね。
+
+#防災グッズ #保存水 #備蓄水 #長期保存 #災害対策 #防災備蓄 #ギフト #プレゼント">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/bousaisos/10000010_1-1/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="keitai:10814351">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/keitai/cabinet/item/41_12/41-9800.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">iFace 公式 Reflection Magnetic iPhone18Pro ケース 18ProMax iPhone17 iPhone 17e 17Pro Air 17ProMax iPhone16 iPhone16e iPhone16Pro iPhone15 ケース iPhone14 iPhone13【 アイフェイス MagSafe対応 透明 クリア ケース 強化ガラス Neo MagSynq 】</p>
+        <p class="meta"><span class="price">4,620円</span> ・ ★4.37 (942件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ Hamee（ハミィ）</p>
+      </div>
+    </div>
+    <div class="pitch">透明ケースなのに、傷がつきにくいんですよ。✨
+
+強化ガラス素材だから、カバンの中での擦れや落下時の衝撃もしっかり守ってくれる 💪 透明だから推し活の推しカラーや、こだわりの壁紙も活かせるのに、耐久性も妥協しない。
+
+長く愛用できるケースを探してる人にぴったりです 🎯
+
+#iPhoneケース #MagSafe対応 #透明ケース #強化ガラス #耐衝撃 #iPhone18Pro #推し活 #ガジェット #iface公式 #ケース</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=keitai:10814351" target="_blank" rel="noopener" data-pitch="透明ケースなのに、傷がつきにくいんですよ。✨
+
+強化ガラス素材だから、カバンの中での擦れや落下時の衝撃もしっかり守ってくれる 💪 透明だから推し活の推しカラーや、こだわりの壁紙も活かせるのに、耐久性も妥協しない。
+
+長く愛用できるケースを探してる人にぴったりです 🎯
+
+#iPhoneケース #MagSafe対応 #透明ケース #強化ガラス #耐衝撃 #iPhone18Pro #推し活 #ガジェット #iface公式 #ケース">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="透明ケースなのに、傷がつきにくいんですよ。✨
+
+強化ガラス素材だから、カバンの中での擦れや落下時の衝撃もしっかり守ってくれる 💪 透明だから推し活の推しカラーや、こだわりの壁紙も活かせるのに、耐久性も妥協しない。
+
+長く愛用できるケースを探してる人にぴったりです 🎯
+
+#iPhoneケース #MagSafe対応 #透明ケース #強化ガラス #耐衝撃 #iPhone18Pro #推し活 #ガジェット #iface公式 #ケース">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/keitai/41-9800/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="irisplaza-r:10137581">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/irisplaza-r/cabinet/11073544/11939528/imgrc0108572419.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">非常食セット 5年保存 10食分 白米 アルファ米 ご飯 ごはん アルファ化米 白米 100【iris_dl05】</p>
+        <p class="meta"><span class="price">2,781円</span> ・ ★4.6 (50件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ アイリスオーヤマ公式 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">お湯を注ぐ。
+待つ。
+ふっくらご飯。💭
+
+真夜中の停電。
+朝の避難所。
+いつもと違う食卓。
+
+そんな時、ここにあるだけで心強い✨
+水があれば、温かいご飯が食べられる。
+5年もつから、置いておくだけで大丈夫。💪
+
+気になったらチェックしてみてね。
+
+#非常食 #防災グッズ #備蓄 #アルファ米 #保存食 #防災食 #災害対策 #もしもの時に</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=irisplaza-r:10137581" target="_blank" rel="noopener" data-pitch="お湯を注ぐ。
+待つ。
+ふっくらご飯。💭
+
+真夜中の停電。
+朝の避難所。
+いつもと違う食卓。
+
+そんな時、ここにあるだけで心強い✨
+水があれば、温かいご飯が食べられる。
+5年もつから、置いておくだけで大丈夫。💪
+
+気になったらチェックしてみてね。
+
+#非常食 #防災グッズ #備蓄 #アルファ米 #保存食 #防災食 #災害対策 #もしもの時に">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="お湯を注ぐ。
+待つ。
+ふっくらご飯。💭
+
+真夜中の停電。
+朝の避難所。
+いつもと違う食卓。
+
+そんな時、ここにあるだけで心強い✨
+水があれば、温かいご飯が食べられる。
+5年もつから、置いておくだけで大丈夫。💪
+
+気になったらチェックしてみてね。
+
+#非常食 #防災グッズ #備蓄 #アルファ米 #保存食 #防災食 #災害対策 #もしもの時に">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/irisplaza-r/1909549/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-04";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
