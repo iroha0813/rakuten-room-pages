@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-08</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-08 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="redbull-shop:10000001">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/redbull-shop/cabinet/item/energy-drink/thumb_250mlx24.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">＼26％OFFクーポン対象 11/11 1:59 まで／【公式】 レッドブル エナジードリンク 250ml×24本(24本×1ケース) 送料無料 Red Bull 翼をさずける カフェイン 箱 ギフト redbull 炭酸 炭酸飲料 缶 まとめ買い</p>
+        <p class="meta"><span class="price">5,521円</span> ・ ★4.72 (319件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ レッドブル 公式 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">仕事や勉強で集中力が続かないときの味方です⚡
+
+・カフェイン80mg配合で、シャキッと目が覚める
+・24本まとめ買いで、ストックもバッチリ
+・26%OFFクーポン対象で、お得に手に入る
+
+公式ショップからの販売で信頼できるのも、リピーターが多い理由なんだと思います💪
+
+#レッドブル #エナジードリンク #カフェイン #炭酸飲料 #仕事効率化 #まとめ買い #クーポン #ドリンク #栄養補給 #ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=redbull-shop:10000001" target="_blank" rel="noopener" data-pitch="仕事や勉強で集中力が続かないときの味方です⚡
+
+・カフェイン80mg配合で、シャキッと目が覚める
+・24本まとめ買いで、ストックもバッチリ
+・26%OFFクーポン対象で、お得に手に入る
+
+公式ショップからの販売で信頼できるのも、リピーターが多い理由なんだと思います💪
+
+#レッドブル #エナジードリンク #カフェイン #炭酸飲料 #仕事効率化 #まとめ買い #クーポン #ドリンク #栄養補給 #ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="仕事や勉強で集中力が続かないときの味方です⚡
+
+・カフェイン80mg配合で、シャキッと目が覚める
+・24本まとめ買いで、ストックもバッチリ
+・26%OFFクーポン対象で、お得に手に入る
+
+公式ショップからの販売で信頼できるのも、リピーターが多い理由なんだと思います💪
+
+#レッドブル #エナジードリンク #カフェイン #炭酸飲料 #仕事効率化 #まとめ買い #クーポン #ドリンク #栄養補給 #ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/redbull-shop/rb235052-24/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="towel-kenkyujyo:10000002">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/towel-kenkyujyo/cabinet/p10/003face10_p10.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【6%OFF 税込3,626円→3,409円 11/11 1:59まで】2点で3%OFF【タオル研究所】フェイスタオル #003 ボリュームリッチ 厚手 10枚セット 全9色 ホテルタオル ホテル仕様 ふかふか ボリューム 高速吸水 吸水タオル 耐久性 綿100% 約34×80cm 480GSM JapanTechnology</p>
+        <p class="meta"><span class="price">3,409円</span> ・ ★4.79 (214件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ タオル研究所</p>
+      </div>
+    </div>
+    <div class="pitch">タオル、高いし本当に持つのか迷う😅でも、毛羽落ちに強い日本の技術力だから長く使えるんですよ💪綿100%でふかふかなのに耐久性も優れてる✨
+
+214件のレビューが平均4.79点で支持されてるのも納得。ポイント10倍のエントリーキャンペーン中だから、気になったらチェックしてみてね。
+
+#フェイスタオル #ホテルタオル #厚手タオル #吸水タオル #日本製 #ふかふか #耐久性 #高級タオル</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=towel-kenkyujyo:10000002" target="_blank" rel="noopener" data-pitch="タオル、高いし本当に持つのか迷う😅でも、毛羽落ちに強い日本の技術力だから長く使えるんですよ💪綿100%でふかふかなのに耐久性も優れてる✨
+
+214件のレビューが平均4.79点で支持されてるのも納得。ポイント10倍のエントリーキャンペーン中だから、気になったらチェックしてみてね。
+
+#フェイスタオル #ホテルタオル #厚手タオル #吸水タオル #日本製 #ふかふか #耐久性 #高級タオル">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="タオル、高いし本当に持つのか迷う😅でも、毛羽落ちに強い日本の技術力だから長く使えるんですよ💪綿100%でふかふかなのに耐久性も優れてる✨
+
+214件のレビューが平均4.79点で支持されてるのも納得。ポイント10倍のエントリーキャンペーン中だから、気になったらチェックしてみてね。
+
+#フェイスタオル #ホテルタオル #厚手タオル #吸水タオル #日本製 #ふかふか #耐久性 #高級タオル">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/towel-kenkyujyo/003-face/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="bokunotamatebakoyafish:10003210">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/bokunotamatebakoyafish/cabinet/event/1104/sale-t0000910.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【クーポンで50%OFF】訳あり チョコレート 割れチョコ 「割れチョコMIXがリニューアル 感動の8種類 割れチョコミックス！選べるクベ之助とチュル太Go!Go!パック550g」 送料無料 [ チョコレート チョコ 訳あり カカオ 福袋 ] お買い物マラソン</p>
+        <p class="meta"><span class="price">4,800円</span> ・ ★4.37 (205件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 大浜スイーツアカデミー</p>
+      </div>
+    </div>
+    <div class="pitch">割れチョコだからこそ、味比べが楽しいんです✨
+
+8種類を少量ずつ食べられるから、飽きずに長く味わえる。コーヒーや紅茶のお供に、ひとくちのご褒美が続くんですよ。訳ありでお手頃だからこそ、普段は試さない味にも気軽にチャレンジできちゃいます💕
+
+気になったらチェックしてみてね。
+
+#割れチョコ #訳あり #チョコレート #ご褒美 #詰め合わせ #コーヒーに合う #おやつ #少量多種 #訳ありスイーツ #大浜スイーツアカデミー</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=bokunotamatebakoyafish:10003210" target="_blank" rel="noopener" data-pitch="割れチョコだからこそ、味比べが楽しいんです✨
+
+8種類を少量ずつ食べられるから、飽きずに長く味わえる。コーヒーや紅茶のお供に、ひとくちのご褒美が続くんですよ。訳ありでお手頃だからこそ、普段は試さない味にも気軽にチャレンジできちゃいます💕
+
+気になったらチェックしてみてね。
+
+#割れチョコ #訳あり #チョコレート #ご褒美 #詰め合わせ #コーヒーに合う #おやつ #少量多種 #訳ありスイーツ #大浜スイーツアカデミー">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="割れチョコだからこそ、味比べが楽しいんです✨
+
+8種類を少量ずつ食べられるから、飽きずに長く味わえる。コーヒーや紅茶のお供に、ひとくちのご褒美が続くんですよ。訳ありでお手頃だからこそ、普段は試さない味にも気軽にチャレンジできちゃいます💕
+
+気になったらチェックしてみてね。
+
+#割れチョコ #訳あり #チョコレート #ご褒美 #詰め合わせ #コーヒーに合う #おやつ #少量多種 #訳ありスイーツ #大浜スイーツアカデミー">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/bokunotamatebakoyafish/t0000910/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kanfudo:10000333">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kanfudo/cabinet/12702040/13087856/main_0001.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【楽天倉庫発送】正規品 ピエールダルジャン 300g 4種類から選べる フランス製 多目的クリーナー マルチクリーナー 固形洗剤 天然成分</p>
+        <p class="meta"><span class="price">3,200円</span> ・ ★4.12 (33件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ KANFUDO</p>
+      </div>
+    </div>
+    <div class="pitch">お手入れって、毎日のことだからこそ、いいものが欲しくありませんか？
+
+フランス生まれのこのクリーナーなら、キッチン・浴室・床と家中で使える万能さが魅力 ✨
+天然成分だから肌にも優しくて、贈り物にも喜ばれるんです。
+香りも選べる4種類から選べるから、相手の好みに合わせられる。ちょっと上質な日用品って、もらって嬉しいですよね 💕
+
+#ピエールダルジャン #多目的クリーナー #天然成分 #フランス製 #ギフト #プレゼント #キッチンクリーナー #お手入れ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kanfudo:10000333" target="_blank" rel="noopener" data-pitch="お手入れって、毎日のことだからこそ、いいものが欲しくありませんか？
+
+フランス生まれのこのクリーナーなら、キッチン・浴室・床と家中で使える万能さが魅力 ✨
+天然成分だから肌にも優しくて、贈り物にも喜ばれるんです。
+香りも選べる4種類から選べるから、相手の好みに合わせられる。ちょっと上質な日用品って、もらって嬉しいですよね 💕
+
+#ピエールダルジャン #多目的クリーナー #天然成分 #フランス製 #ギフト #プレゼント #キッチンクリーナー #お手入れ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="お手入れって、毎日のことだからこそ、いいものが欲しくありませんか？
+
+フランス生まれのこのクリーナーなら、キッチン・浴室・床と家中で使える万能さが魅力 ✨
+天然成分だから肌にも優しくて、贈り物にも喜ばれるんです。
+香りも選べる4種類から選べるから、相手の好みに合わせられる。ちょっと上質な日用品って、もらって嬉しいですよね 💕
+
+#ピエールダルジャン #多目的クリーナー #天然成分 #フランス製 #ギフト #プレゼント #キッチンクリーナー #お手入れ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kanfudo/kanfudo174-2/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="suzuyaebisudo:10000320">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/suzuyaebisudo/cabinet/product/item03/lindor26-assort_01v7.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">リンツ リンドール レビュー投稿で500円クーポン チョコレート アソート 24個 36個 48個 300g 450g 600g 24粒 36粒 48粒 LINDOR Lindt ボンボン チョコ ハロウィン お配り ばら撒き プチギフト Xmas クリスマス 大容量 プレゼント 贈り物</p>
+        <p class="meta"><span class="price">2,160円</span> ・ ★4.62 (2873件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ すずや恵比寿堂</p>
+      </div>
+    </div>
+    <div class="pitch">職場の机に置いて、同僚とつまむ ✨
+子どもの学校のお返しに、小分けで配る 💝
+退勤ラッシュの駅前で、さっと渡す。
+
+どの場面でも選ばれるのは、少しいい感じだけど負担にならないから。
+フォルムも味も、何度でも欲しくなる定番なんです 🍫
+
+#リンドール #チョコレート #プチギフト #ばらまき #贈り物 #職場 #お配り #クリスマス</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=suzuyaebisudo:10000320" target="_blank" rel="noopener" data-pitch="職場の机に置いて、同僚とつまむ ✨
+子どもの学校のお返しに、小分けで配る 💝
+退勤ラッシュの駅前で、さっと渡す。
+
+どの場面でも選ばれるのは、少しいい感じだけど負担にならないから。
+フォルムも味も、何度でも欲しくなる定番なんです 🍫
+
+#リンドール #チョコレート #プチギフト #ばらまき #贈り物 #職場 #お配り #クリスマス">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="職場の机に置いて、同僚とつまむ ✨
+子どもの学校のお返しに、小分けで配る 💝
+退勤ラッシュの駅前で、さっと渡す。
+
+どの場面でも選ばれるのは、少しいい感じだけど負担にならないから。
+フォルムも味も、何度でも欲しくなる定番なんです 🍫
+
+#リンドール #チョコレート #プチギフト #ばらまき #贈り物 #職場 #お配り #クリスマス">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/suzuyaebisudo/r-lindor-48/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="yoshinoya-shop:10000005">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yoshinoya-shop/cabinet/gyuudon/666507_2.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">吉野家 公式 【冷凍】大盛牛丼の具160g×20袋セット【送料込】 簡単 便利 夜食 おつまみ 昼ごはん ストック 冷凍食品 お弁当 おかず クール宅急便 取り寄せ グルメ 吉野家 牛丼</p>
+        <p class="meta"><span class="price">7,997円</span> ・ ★4.68 (319件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 吉野家公式ショップ楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">仕事から帰ってきて、ご飯支度が面倒な夜はこれ😋
+
+レンジで温めるだけで吉野家の牛丼が食べられちゃう✨20袋あるから、ストックしておくと本当に助かるんです💕
+
+#吉野家 #冷凍牛丼 #夜ご飯 #時短ごはん #ストック食品</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=yoshinoya-shop:10000005" target="_blank" rel="noopener" data-pitch="仕事から帰ってきて、ご飯支度が面倒な夜はこれ😋
+
+レンジで温めるだけで吉野家の牛丼が食べられちゃう✨20袋あるから、ストックしておくと本当に助かるんです💕
+
+#吉野家 #冷凍牛丼 #夜ご飯 #時短ごはん #ストック食品">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="仕事から帰ってきて、ご飯支度が面倒な夜はこれ😋
+
+レンジで温めるだけで吉野家の牛丼が食べられちゃう✨20袋あるから、ストックしておくと本当に助かるんです💕
+
+#吉野家 #冷凍牛丼 #夜ご飯 #時短ごはん #ストック食品">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/yoshinoya-shop/660220/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="anker:10000961">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/202611m1/a2663_sale.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【期間限定セール実施中 11/11まで】Anker Nano II 65W (PD 充電器 USB-C) 【独自技術Anker GaN II採用/PD対応/PSE技術基準適合/折りたたみ式プラグ】MacBook PD対応Windows PC iPad iPhone Galaxy Android</p>
+        <p class="meta"><span class="price">3,090円</span> ・ ★4.67 (1431件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ アンカー・ダイレクト楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">1つの充電器でスマホもノートPCも、これ1台で全部いけちゃう✨
+
+・スマホは通常の3倍速で充電
+・MacBook Proも2時間半で満充電
+・手のひらサイズだから持ち運び楽々
+
+1431件のレビューで支持されてる理由、納得です。今なら11/11までセール中だから気になったらチェックしてみて💡
+
+#充電器 #USB-C #PD充電 #急速充電 #MacBook #iPhone #Android #コンパクト #ガジェット好さんと繋がりたい #セール中</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=anker:10000961" target="_blank" rel="noopener" data-pitch="1つの充電器でスマホもノートPCも、これ1台で全部いけちゃう✨
+
+・スマホは通常の3倍速で充電
+・MacBook Proも2時間半で満充電
+・手のひらサイズだから持ち運び楽々
+
+1431件のレビューで支持されてる理由、納得です。今なら11/11までセール中だから気になったらチェックしてみて💡
+
+#充電器 #USB-C #PD充電 #急速充電 #MacBook #iPhone #Android #コンパクト #ガジェット好さんと繋がりたい #セール中">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="1つの充電器でスマホもノートPCも、これ1台で全部いけちゃう✨
+
+・スマホは通常の3倍速で充電
+・MacBook Proも2時間半で満充電
+・手のひらサイズだから持ち運び楽々
+
+1431件のレビューで支持されてる理由、納得です。今なら11/11までセール中だから気になったらチェックしてみて💡
+
+#充電器 #USB-C #PD充電 #急速充電 #MacBook #iPhone #Android #コンパクト #ガジェット好さんと繋がりたい #セール中">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/anker/a2663/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="nikkenkamisori:10000004">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/nikkenkamisori/cabinet/13834521/rk-top_psc_01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【メーカー公式】プレスンシール 専用カッター カッター プレスンシール専用刃 日本製 キッチン用品 料理 調理 簡単装着 クリップ 便利 ステンレス刃 安全 耐久性 切れやすい 切れ味 簡単 ラクラク NIKKEN 時短 便利グッズ 調理グッズ</p>
+        <p class="meta"><span class="price">1,980円</span> ・ ★4.95 (22件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ ニッケンかみそり公式ストア</p>
+      </div>
+    </div>
+    <div class="pitch">プレスンシール、いつも箱が潰れたり、うまく切れなかったりしませんか。
+
+この専用カッターなら、力加減やコツなしでスパッと切れるんです✂️ 老舗カミソリ屋が何度も試行錯誤した切れ味だから、誰が使っても同じように気持ちよく切れちゃいます。
+
+刃の両端は丸みがあるから安全だし、クリップで箱に取り付けるから刃を直接触らずに済む。細かい思いやりが詰まってるんですよね💕
+
+気軽に試せる価格だし、長く使える耐久性も◎
+
+#プレスンシール #キッチングッズ #時短調理 #便利グッズ #調理用品 #キッチン雑貨 #プレスンシール専用カッター #日本製</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=nikkenkamisori:10000004" target="_blank" rel="noopener" data-pitch="プレスンシール、いつも箱が潰れたり、うまく切れなかったりしませんか。
+
+この専用カッターなら、力加減やコツなしでスパッと切れるんです✂️ 老舗カミソリ屋が何度も試行錯誤した切れ味だから、誰が使っても同じように気持ちよく切れちゃいます。
+
+刃の両端は丸みがあるから安全だし、クリップで箱に取り付けるから刃を直接触らずに済む。細かい思いやりが詰まってるんですよね💕
+
+気軽に試せる価格だし、長く使える耐久性も◎
+
+#プレスンシール #キッチングッズ #時短調理 #便利グッズ #調理用品 #キッチン雑貨 #プレスンシール専用カッター #日本製">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="プレスンシール、いつも箱が潰れたり、うまく切れなかったりしませんか。
+
+この専用カッターなら、力加減やコツなしでスパッと切れるんです✂️ 老舗カミソリ屋が何度も試行錯誤した切れ味だから、誰が使っても同じように気持ちよく切れちゃいます。
+
+刃の両端は丸みがあるから安全だし、クリップで箱に取り付けるから刃を直接触らずに済む。細かい思いやりが詰まってるんですよね💕
+
+気軽に試せる価格だし、長く使える耐久性も◎
+
+#プレスンシール #キッチングッズ #時短調理 #便利グッズ #調理用品 #キッチン雑貨 #プレスンシール専用カッター #日本製">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/nikkenkamisori/pressn-seal-cutter/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kai:10005081">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kai/cabinet/bc/goods_2/000ap0308.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【マラソン限定：ポイント10倍＆クーポン】貝印 関孫六 ダイヤモンド セラミック シャープナー | 両刃 3種 包丁研ぎ 研ぎ器 包丁研ぎ器 包丁研ぎ機 砥石 ステンレス包丁 包丁 研ぎ とぎ 簡単 日本製一人暮らし 包丁研ぎ器 包丁シャープナー</p>
+        <p class="meta"><span class="price">2,420円</span> ・ ★4.75 (311件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 貝印公式オンラインストア</p>
+      </div>
+    </div>
+    <div class="pitch">ポイント還元でお得に買える、刃物メーカー貝印の包丁研ぎ器✨
+
+3種類の砥石で、どんな包丁にも対応。ダイヤモンド砥石とセラミック砥石の組み合わせで、切れ味をしっかり復活させられるんです。311件のレビューで平均4.75点の支持を集めてるのも納得です🔪
+
+気軽に試せる価格帯だから、初めての方にもぴったり。日本製の安心感もいいですよ。
+
+#包丁研ぎ器 #シャープナー #貝印 #関孫六 #切れ味 #キッチン雑貨 #日本製 #一人暮らし #新生活 #プレゼント</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kai:10005081" target="_blank" rel="noopener" data-pitch="ポイント還元でお得に買える、刃物メーカー貝印の包丁研ぎ器✨
+
+3種類の砥石で、どんな包丁にも対応。ダイヤモンド砥石とセラミック砥石の組み合わせで、切れ味をしっかり復活させられるんです。311件のレビューで平均4.75点の支持を集めてるのも納得です🔪
+
+気軽に試せる価格帯だから、初めての方にもぴったり。日本製の安心感もいいですよ。
+
+#包丁研ぎ器 #シャープナー #貝印 #関孫六 #切れ味 #キッチン雑貨 #日本製 #一人暮らし #新生活 #プレゼント">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ポイント還元でお得に買える、刃物メーカー貝印の包丁研ぎ器✨
+
+3種類の砥石で、どんな包丁にも対応。ダイヤモンド砥石とセラミック砥石の組み合わせで、切れ味をしっかり復活させられるんです。311件のレビューで平均4.75点の支持を集めてるのも納得です🔪
+
+気軽に試せる価格帯だから、初めての方にもぴったり。日本製の安心感もいいですよ。
+
+#包丁研ぎ器 #シャープナー #貝印 #関孫六 #切れ味 #キッチン雑貨 #日本製 #一人暮らし #新生活 #プレゼント">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kai/000ap0308/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="auc-kaei-trading:10000755">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-kaei-trading/cabinet/zk-snb02/sbox-3c.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">収納ボックス 収納ケース 折りたたみ 収納 ふた付き キャスター付き 5面開き 前開き 27L 40L 53L 82L 屋外 おしゃれ プラスチック 衣装ケース コンテナ ボックス 衣類 布団</p>
+        <p class="meta"><span class="price">1,320円</span> ・ ★4.51 (75件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ フリーライフ</p>
+      </div>
+    </div>
+    <div class="pitch">クローゼットの奥、眠ったままの荷物ありませんか？ ✨
+
+5面開きだから、引き出さなくても中身が見える。
+積み重ねても出し入れしやすいんです。
+キャスター付きで移動もラクだから、季節家電や布団の入れ替えもスムーズ💕
+折りたためばコンパクトになるので、使わない時期の保管も場所を取りません。
+
+サイズ展開が豊富だから、隙間ピッタリに納まります。
+
+#収納ボックス #衣装ケース #クローゼット収納 #季節家電 #布団収納 #おしゃれ収納 #リビング収納 #コンパクト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=auc-kaei-trading:10000755" target="_blank" rel="noopener" data-pitch="クローゼットの奥、眠ったままの荷物ありませんか？ ✨
+
+5面開きだから、引き出さなくても中身が見える。
+積み重ねても出し入れしやすいんです。
+キャスター付きで移動もラクだから、季節家電や布団の入れ替えもスムーズ💕
+折りたためばコンパクトになるので、使わない時期の保管も場所を取りません。
+
+サイズ展開が豊富だから、隙間ピッタリに納まります。
+
+#収納ボックス #衣装ケース #クローゼット収納 #季節家電 #布団収納 #おしゃれ収納 #リビング収納 #コンパクト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クローゼットの奥、眠ったままの荷物ありませんか？ ✨
+
+5面開きだから、引き出さなくても中身が見える。
+積み重ねても出し入れしやすいんです。
+キャスター付きで移動もラクだから、季節家電や布団の入れ替えもスムーズ💕
+折りたためばコンパクトになるので、使わない時期の保管も場所を取りません。
+
+サイズ展開が豊富だから、隙間ピッタリに納まります。
+
+#収納ボックス #衣装ケース #クローゼット収納 #季節家電 #布団収納 #おしゃれ収納 #リビング収納 #コンパクト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/auc-kaei-trading/zk-snb02-all-3c/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-08";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
