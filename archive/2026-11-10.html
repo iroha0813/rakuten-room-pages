@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-10</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-10 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="shopworld:10141609">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shopworld/cabinet/12445509/12445512/imgrc0192268767.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">全パーツ食洗機対応 象印 スープジャー ステンレス スープジャー 300ml 400ml 520ml 小さめ 大容量 食洗機対応 ランチ お弁当 持ち運び 保温 保冷 ランチジャー グレー グリーン ベージュ 軽量 コンパクト おしゃれ 300 400500 500ml以上食洗器母の日</p>
+        <p class="meta"><span class="price">3,479円</span> ・ ★4.72 (171件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ ショップワールド</p>
+      </div>
+    </div>
+    <div class="pitch">朝、スープをいれて 🍲
+お昼、ふたを開けて。
+湯気がふわり ☁️
+
+仕事帰りはバラバラにして、
+食洗機にポイ 🙌
+
+毎日つづく小さなラクが、
+スープジャーにはぎゅっと詰まってる ✨
+
+#スープジャー #お弁当 #ランチ #象印 #食洗機対応 #毎日使う #時短 #おしゃれ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=shopworld:10141609" target="_blank" rel="noopener" data-pitch="朝、スープをいれて 🍲
+お昼、ふたを開けて。
+湯気がふわり ☁️
+
+仕事帰りはバラバラにして、
+食洗機にポイ 🙌
+
+毎日つづく小さなラクが、
+スープジャーにはぎゅっと詰まってる ✨
+
+#スープジャー #お弁当 #ランチ #象印 #食洗機対応 #毎日使う #時短 #おしゃれ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="朝、スープをいれて 🍲
+お昼、ふたを開けて。
+湯気がふわり ☁️
+
+仕事帰りはバラバラにして、
+食洗機にポイ 🙌
+
+毎日つづく小さなラクが、
+スープジャーにはぎゅっと詰まってる ✨
+
+#スープジャー #お弁当 #ランチ #象印 #食洗機対応 #毎日使う #時短 #おしゃれ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/shopworld/141510-141517/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="cheesegarden:10000052">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/cheesegarden/cabinet/product/12993248/huku2027/01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">チーズガーデン福袋2027</p>
+        <p class="meta"><span class="price">3,980円</span> ・ ★4.35 (46件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ チーズガーデン</p>
+      </div>
+    </div>
+    <div class="pitch">チーズケーキから焼き菓子まで、推しが全部入ってる✨
+
+ひとつの箱でチーズガーデンの魅力が伝わるから、贈り物に選ぶと喜ばれる🧀💕
+
+#福袋 #チーズケーキ #焼き菓子 #年末年始 #贈り物</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=cheesegarden:10000052" target="_blank" rel="noopener" data-pitch="チーズケーキから焼き菓子まで、推しが全部入ってる✨
+
+ひとつの箱でチーズガーデンの魅力が伝わるから、贈り物に選ぶと喜ばれる🧀💕
+
+#福袋 #チーズケーキ #焼き菓子 #年末年始 #贈り物">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="チーズケーキから焼き菓子まで、推しが全部入ってる✨
+
+ひとつの箱でチーズガーデンの魅力が伝わるから、贈り物に選ぶと喜ばれる🧀💕
+
+#福袋 #チーズケーキ #焼き菓子 #年末年始 #贈り物">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/cheesegarden/50140/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="fudanzukainoomise:10017229">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/fudanzukainoomise/cabinet/xizhends_mover/fud0808019faykd/sy0808gj6km_01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【10%OFFクーポン】【日本倉庫発送】圧縮できる防臭ゴミ袋 圧縮袋 防災圧縮袋 汚物密封 40*60cm 50*70cm 防災用 ゴミ 圧縮 トイレ用凝固剤 簡易トイレ 便 汚物 生ゴミ ごみ 廃棄物 臭い漏れ 軽減 臭わない 防災 災害用 避難用 防臭 悪臭対策 非常用 避難グッズ 地震 高密閉</p>
+        <p class="meta"><span class="price">1,280円</span> ・ ★4.04 (23件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ Dulkiss</p>
+      </div>
+    </div>
+    <div class="pitch">災害時のゴミの臭いって、避難所で一番つらいことかもしれません 🚨
+
+チャック式で高密閉だから、生ゴミや汚物を入れてしっかり閉じれば、10日間ニオイを抑えられるんです ✨ 地震や台風で収集が止まった時、これ1枚あると避難生活がぐんと快適になります 💚
+
+もしもに備えて、防災バッグに忍ばせておくと安心ですよ。
+
+#防災用品 #防災グッズ #災害対策 #生ゴミ処理 #臭い対策 #避難用品 #非常用 #圧縮袋 #防臭 #備蓄</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=fudanzukainoomise:10017229" target="_blank" rel="noopener" data-pitch="災害時のゴミの臭いって、避難所で一番つらいことかもしれません 🚨
+
+チャック式で高密閉だから、生ゴミや汚物を入れてしっかり閉じれば、10日間ニオイを抑えられるんです ✨ 地震や台風で収集が止まった時、これ1枚あると避難生活がぐんと快適になります 💚
+
+もしもに備えて、防災バッグに忍ばせておくと安心ですよ。
+
+#防災用品 #防災グッズ #災害対策 #生ゴミ処理 #臭い対策 #避難用品 #非常用 #圧縮袋 #防臭 #備蓄">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="災害時のゴミの臭いって、避難所で一番つらいことかもしれません 🚨
+
+チャック式で高密閉だから、生ゴミや汚物を入れてしっかり閉じれば、10日間ニオイを抑えられるんです ✨ 地震や台風で収集が止まった時、これ1枚あると避難生活がぐんと快適になります 💚
+
+もしもに備えて、防災バッグに忍ばせておくと安心ですよ。
+
+#防災用品 #防災グッズ #災害対策 #生ゴミ処理 #臭い対策 #避難用品 #非常用 #圧縮袋 #防臭 #備蓄">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/fudanzukainoomise/sy0808gj6km/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="dripcoffee:10000184">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/dripcoffee/cabinet/it01/limited/rc_premium/0400003300020_ne55p.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【店内全品ポイント5倍中(要エントリー)】(12/01 09:59迄)コーヒー豆 コーヒー 豆 粉 2kg ゴールド ブレンド プレミアムシリーズ ( 500g × 4袋 ) 中深煎り コーヒー粉 珈琲 珈琲豆 送料無料 ドリップコーヒーファクトリー</p>
+        <p class="meta"><span class="price">4,950円</span> ・ ★4.69 (532件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ DRIP COFFEE FACTORY</p>
+      </div>
+    </div>
+    <div class="pitch">毎日飲むコーヒーだからこそ、ちょっと良いものが欲しい。でも何を選べば…と迷ってませんか？✨
+
+ポイント5倍で実質的なお得感もあり、送料無料だから試しやすいんです。
+しかも532件のレビュー、平均4.69点の実績が、その品質を物語ってますよ。
+
+昭和の喫茶店の味わい、ビターでとろりとした甘さ。珈琲好きから支持される理由はそこにあるんです。2kg届くから、毎朝の一杯がぐっと変わります🍵
+
+気になったらのぞいてみてね。
+
+#コーヒー豆 #自家焙煎 #コーヒー #プレミアム #送料無料 #毎日コーヒー #珈琲好きさんと繋がりたい #ポイント還元</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=dripcoffee:10000184" target="_blank" rel="noopener" data-pitch="毎日飲むコーヒーだからこそ、ちょっと良いものが欲しい。でも何を選べば…と迷ってませんか？✨
+
+ポイント5倍で実質的なお得感もあり、送料無料だから試しやすいんです。
+しかも532件のレビュー、平均4.69点の実績が、その品質を物語ってますよ。
+
+昭和の喫茶店の味わい、ビターでとろりとした甘さ。珈琲好きから支持される理由はそこにあるんです。2kg届くから、毎朝の一杯がぐっと変わります🍵
+
+気になったらのぞいてみてね。
+
+#コーヒー豆 #自家焙煎 #コーヒー #プレミアム #送料無料 #毎日コーヒー #珈琲好きさんと繋がりたい #ポイント還元">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日飲むコーヒーだからこそ、ちょっと良いものが欲しい。でも何を選べば…と迷ってませんか？✨
+
+ポイント5倍で実質的なお得感もあり、送料無料だから試しやすいんです。
+しかも532件のレビュー、平均4.69点の実績が、その品質を物語ってますよ。
+
+昭和の喫茶店の味わい、ビターでとろりとした甘さ。珈琲好きから支持される理由はそこにあるんです。2kg届くから、毎朝の一杯がぐっと変わります🍵
+
+気になったらのぞいてみてね。
+
+#コーヒー豆 #自家焙煎 #コーヒー #プレミアム #送料無料 #毎日コーヒー #珈琲好きさんと繋がりたい #ポイント還元">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/dripcoffee/gold-500-4/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kouragumi:10000855">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kouragumi/cabinet/10531638/imgrc0114997849.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">お試し送料無料2,999円！背ワタ無し♪希少な特大むきえび1kg（解凍後800g） お中元 ギフト プレゼント 【P】</p>
+        <p class="meta"><span class="price">2,999円</span> ・ ★4.69 (8162件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 越前かに職人甲羅組（DENSHOKU）</p>
+      </div>
+    </div>
+    <div class="pitch">えび料理を作るたびに、背ワタ取りと殻むきで時間とられませんか？
+
+このむきえびは背ワタまで取り除いてあるから、解凍してすぐ調理できちゃいます✨
+特大サイズを1尾ずつバラ凍結してるので、必要な分だけ使えて無駄もなし。
+エビマヨ、チリ、フライ…冷凍庫に常備しておくと、あと一品ほしいときに大活躍しますよ♡
+
+#むきえび #エビ料理 #下処理不要 #時短調理 #冷凍食品 #おうちご飯 #業務用 #お中元ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kouragumi:10000855" target="_blank" rel="noopener" data-pitch="えび料理を作るたびに、背ワタ取りと殻むきで時間とられませんか？
+
+このむきえびは背ワタまで取り除いてあるから、解凍してすぐ調理できちゃいます✨
+特大サイズを1尾ずつバラ凍結してるので、必要な分だけ使えて無駄もなし。
+エビマヨ、チリ、フライ…冷凍庫に常備しておくと、あと一品ほしいときに大活躍しますよ♡
+
+#むきえび #エビ料理 #下処理不要 #時短調理 #冷凍食品 #おうちご飯 #業務用 #お中元ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="えび料理を作るたびに、背ワタ取りと殻むきで時間とられませんか？
+
+このむきえびは背ワタまで取り除いてあるから、解凍してすぐ調理できちゃいます✨
+特大サイズを1尾ずつバラ凍結してるので、必要な分だけ使えて無駄もなし。
+エビマヨ、チリ、フライ…冷凍庫に常備しておくと、あと一品ほしいときに大活躍しますよ♡
+
+#むきえび #エビ料理 #下処理不要 #時短調理 #冷凍食品 #おうちご飯 #業務用 #お中元ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kouragumi/200109/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="vanilla:10003805">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/vanilla/cabinet/03608264/set/07827443/500-pt16_top.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【30%以上OFF】パリトロづくし福袋[11/30着迄] チョコレート 横浜 バニラビーンズ | 生チョコ プチケーキ チョコ 洋菓子 お菓子 高級 チョコレートギフト ギフト 個包装 詰め合わせ スイーツ プレゼント おしゃれ チョコレート 2026 16周年</p>
+        <p class="meta"><span class="price">4,980円</span> ・ ★4.59 (123件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 横浜チョコレートのバニラビーンズ</p>
+      </div>
+    </div>
+    <div class="pitch">横浜の名店が16年選ばれ続けるのは、やっぱり味なんだと思う✨
+
+・生チョコとショコラケーキの濃厚さがくせになる
+・個包装だから、ギフトにも自分へのご褒美にも使える
+・30%以上OFFだから、高級感を手頃に味わえる
+
+毎シーズン評判いいので、気になったらチェックしてみてね💕
+
+#横浜チョコレート #生チョコ #プチケーキ #ギフト #バニラビーンズ #チョコレートギフト #個包装 #詰め合わせ #お取り寄せ #スイーツギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=vanilla:10003805" target="_blank" rel="noopener" data-pitch="横浜の名店が16年選ばれ続けるのは、やっぱり味なんだと思う✨
+
+・生チョコとショコラケーキの濃厚さがくせになる
+・個包装だから、ギフトにも自分へのご褒美にも使える
+・30%以上OFFだから、高級感を手頃に味わえる
+
+毎シーズン評判いいので、気になったらチェックしてみてね💕
+
+#横浜チョコレート #生チョコ #プチケーキ #ギフト #バニラビーンズ #チョコレートギフト #個包装 #詰め合わせ #お取り寄せ #スイーツギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="横浜の名店が16年選ばれ続けるのは、やっぱり味なんだと思う✨
+
+・生チョコとショコラケーキの濃厚さがくせになる
+・個包装だから、ギフトにも自分へのご褒美にも使える
+・30%以上OFFだから、高級感を手頃に味わえる
+
+毎シーズン評判いいので、気になったらチェックしてみてね💕
+
+#横浜チョコレート #生チョコ #プチケーキ #ギフト #バニラビーンズ #チョコレートギフト #個包装 #詰め合わせ #お取り寄せ #スイーツギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/vanilla/ptc-birth-assort/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="dasimon:10000020">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/dasimon/cabinet/product/13699804/imgrc0123551576.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">＼楽天1位★88%OFF！クーポンで1,744円~／モバイルバッテリー 22000mAh 大容量 軽量 小型 ケーブル内蔵 防災ライト iPhone18 4台同時充電 急速充電 LED残量表示 スマホ充電器 iPhone/Android 全機種対応 Type-C PSE認証 旅行/出張 ケーブルの持ち運び不要 出張/停電/防災</p>
+        <p class="meta"><span class="price">2,180円</span> ・ ★4.64 (1505件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ ENNICE楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">ケーブルを忘れて、スマホの電池が切れる心配ともおさらば。
+
+出張先のホテルで、
+スマホとタブレットを同時充電 🔌
+
+空港のラウンジで、
+友達のiPhoneも繋いであげる 😊
+
+防災バッグに入れておいて、
+停電のときも灯りになる 💡
+
+4本のケーブルが内蔵されてるから、
+持ち歩くのはこれ1個でいい ✨
+
+#モバイルバッテリー #4台同時充電 #ケーブル内蔵 #出張グッズ #防災グッズ #旅行 #軽量 #小型</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=dasimon:10000020" target="_blank" rel="noopener" data-pitch="ケーブルを忘れて、スマホの電池が切れる心配ともおさらば。
+
+出張先のホテルで、
+スマホとタブレットを同時充電 🔌
+
+空港のラウンジで、
+友達のiPhoneも繋いであげる 😊
+
+防災バッグに入れておいて、
+停電のときも灯りになる 💡
+
+4本のケーブルが内蔵されてるから、
+持ち歩くのはこれ1個でいい ✨
+
+#モバイルバッテリー #4台同時充電 #ケーブル内蔵 #出張グッズ #防災グッズ #旅行 #軽量 #小型">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ケーブルを忘れて、スマホの電池が切れる心配ともおさらば。
+
+出張先のホテルで、
+スマホとタブレットを同時充電 🔌
+
+空港のラウンジで、
+友達のiPhoneも繋いであげる 😊
+
+防災バッグに入れておいて、
+停電のときも灯りになる 💡
+
+4本のケーブルが内蔵されてるから、
+持ち歩くのはこれ1個でいい ✨
+
+#モバイルバッテリー #4台同時充電 #ケーブル内蔵 #出張グッズ #防災グッズ #旅行 #軽量 #小型">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/dasimon/ennice-t3/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="scope:10108232">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/scope/cabinet/arabia2/ara79a11111_a_im01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【12月11日9:59まで期間限定価格！さらに20%オフクーポン対象】アラビア ルノ オーバルボウル 23cm フロストベリー ルノートおまけ付 [ Arabia Runo Frostberry ] クリスマスリースのような北欧食器 フルーツボウル サラダボウル</p>
+        <p class="meta"><span class="price">7,900円</span> ・ ★5.0 (27件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ scope version.R</p>
+      </div>
+    </div>
+    <div class="pitch">クリスマスディナーのテーブルに、これ一枚あるだけで北欧の魔法がかかる ✨
+
+深い楕円形だから、グラタンもラーメンも、みんなで取り分ける料理も。
+
+フロストベリーはスコープだけの復刻柄です 🍓
+
+#北欧食器 #アラビア #クリスマスディナー #テーブルコーディネート #おしゃれな食器</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=scope:10108232" target="_blank" rel="noopener" data-pitch="クリスマスディナーのテーブルに、これ一枚あるだけで北欧の魔法がかかる ✨
+
+深い楕円形だから、グラタンもラーメンも、みんなで取り分ける料理も。
+
+フロストベリーはスコープだけの復刻柄です 🍓
+
+#北欧食器 #アラビア #クリスマスディナー #テーブルコーディネート #おしゃれな食器">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クリスマスディナーのテーブルに、これ一枚あるだけで北欧の魔法がかかる ✨
+
+深い楕円形だから、グラタンもラーメンも、みんなで取り分ける料理も。
+
+フロストベリーはスコープだけの復刻柄です 🍓
+
+#北欧食器 #アラビア #クリスマスディナー #テーブルコーディネート #おしゃれな食器">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/scope/ara79a11111/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="t-interior:10000211">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/t-interior/cabinet/item/usual/jst0031.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">NERUS 毛布 [正規品] とにかく暖かい毛布 軽量 蓄熱 吸湿発熱 エアロゲル 毛布 厚手 宇宙服素材 毛布 シングル セミダブル ダブル 極暖 暖かい ふわとろ毛布 ふわとろ ブランケット エアロゲル毛布 掛け布団 Branchpoint【実用新案登録済】</p>
+        <p class="meta"><span class="price">5,980円</span> ・ ★4.77 (713件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ Branchpoint ブランチポイント</p>
+      </div>
+    </div>
+    <div class="pitch">冬ギフトで失敗しないなら、これ一択です✨
+
+宇宙服の素材を使ってるから、掛けた瞬間にじわっと暖かさが広がるんですよ。なのに軽いから、重い毛布が苦手な人にも喜ばれるんです💕
+
+713件のレビューで評価4.77だからハズレがない。実用新案登録済みの独自素材だから、ほかでは買えない特別感もあります。
+
+気になったらチェックしてみてね🏠
+
+#毛布 #冬ギフト #贈り物 #暖かい毛布 #冷え性 #蓄熱毛布 #ブランケット #寝具 #プレゼント #冬支度</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=t-interior:10000211" target="_blank" rel="noopener" data-pitch="冬ギフトで失敗しないなら、これ一択です✨
+
+宇宙服の素材を使ってるから、掛けた瞬間にじわっと暖かさが広がるんですよ。なのに軽いから、重い毛布が苦手な人にも喜ばれるんです💕
+
+713件のレビューで評価4.77だからハズレがない。実用新案登録済みの独自素材だから、ほかでは買えない特別感もあります。
+
+気になったらチェックしてみてね🏠
+
+#毛布 #冬ギフト #贈り物 #暖かい毛布 #冷え性 #蓄熱毛布 #ブランケット #寝具 #プレゼント #冬支度">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="冬ギフトで失敗しないなら、これ一択です✨
+
+宇宙服の素材を使ってるから、掛けた瞬間にじわっと暖かさが広がるんですよ。なのに軽いから、重い毛布が苦手な人にも喜ばれるんです💕
+
+713件のレビューで評価4.77だからハズレがない。実用新案登録済みの独自素材だから、ほかでは買えない特別感もあります。
+
+気になったらチェックしてみてね🏠
+
+#毛布 #冬ギフト #贈り物 #暖かい毛布 #冷え性 #蓄熱毛布 #ブランケット #寝具 #プレゼント #冬支度">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/t-interior/jst0031/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rakuten24:11301010">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/723/405723.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">象印 ステンレススープジャー シームレスせん SW-LA(1個)【象印マホービン（ZOJIRUSHI）】</p>
+        <p class="meta"><span class="price">3,569円</span> ・ ★4.66 (180件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 楽天24</p>
+      </div>
+    </div>
+    <div class="pitch">スープジャーって本当に温かさ続くのかな、って疑問ありませんか💭
+
+象印のこのモデルは「サーモリング構造」で飲み口からの放熱を抑えるから、95度の熱湯が6時間後も62度以上をキープ✨ あったかスープもひんやりメニューも、食べごろの温度で食べられるんです。
+
+ステンレス真空2重だからこその保温力。真摯な作りだからこそ、180件のレビューで4.66の高評価なんだと思います。
+
+詳しくチェックしてみてね。
+
+#スープジャー #お弁当グッズ #象印 #保温 #保冷 #あったかい #ステンレス #弁当箱</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rakuten24:11301010" target="_blank" rel="noopener" data-pitch="スープジャーって本当に温かさ続くのかな、って疑問ありませんか💭
+
+象印のこのモデルは「サーモリング構造」で飲み口からの放熱を抑えるから、95度の熱湯が6時間後も62度以上をキープ✨ あったかスープもひんやりメニューも、食べごろの温度で食べられるんです。
+
+ステンレス真空2重だからこその保温力。真摯な作りだからこそ、180件のレビューで4.66の高評価なんだと思います。
+
+詳しくチェックしてみてね。
+
+#スープジャー #お弁当グッズ #象印 #保温 #保冷 #あったかい #ステンレス #弁当箱">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="スープジャーって本当に温かさ続くのかな、って疑問ありませんか💭
+
+象印のこのモデルは「サーモリング構造」で飲み口からの放熱を抑えるから、95度の熱湯が6時間後も62度以上をキープ✨ あったかスープもひんやりメニューも、食べごろの温度で食べられるんです。
+
+ステンレス真空2重だからこその保温力。真摯な作りだからこそ、180件のレビューで4.66の高評価なんだと思います。
+
+詳しくチェックしてみてね。
+
+#スープジャー #お弁当グッズ #象印 #保温 #保冷 #あったかい #ステンレス #弁当箱">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rakuten24/405723/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-10";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
