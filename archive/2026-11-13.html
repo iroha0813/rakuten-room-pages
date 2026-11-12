@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-13</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-13 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="bmaxshop:10000003">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/bmaxshop/cabinet/12549238/12549244/imgrc0129338781.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【レビューでケース特典】タブレット 10インチ Wi-Fiモデル Android16 128GB 新品 android タブレット 本体 10.1インチ アンドロイド タブレット 子供用 キッズタブレット 学習用 動画視聴 電子書籍 タブレット端末 タブレットPC BMAX I9Plus I10Plus</p>
+        <p class="meta"><span class="price">12,900円</span> ・ ★4.5 (2444件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ BMAX本店</p>
+      </div>
+    </div>
+    <div class="pitch">タブレットって、買ったらすぐ飽きちゃいませんか？
+
+実はこのタブレット、1年間の保証がついてるから長く安心して使えるんです💡子どもの学習用から動画視聴、電子書籍まで、家族みんなで活躍する場面がいっぱい😊10.1インチの大画面だからどの年代でも目が疲れにくいのも意外と便利ですよ📱
+
+気になったらチェック✨
+
+#タブレット #Android16 #キッズタブレット #学習用 #10インチ #子ども用 #家族用 #動画視聴</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=bmaxshop:10000003" target="_blank" rel="noopener" data-pitch="タブレットって、買ったらすぐ飽きちゃいませんか？
+
+実はこのタブレット、1年間の保証がついてるから長く安心して使えるんです💡子どもの学習用から動画視聴、電子書籍まで、家族みんなで活躍する場面がいっぱい😊10.1インチの大画面だからどの年代でも目が疲れにくいのも意外と便利ですよ📱
+
+気になったらチェック✨
+
+#タブレット #Android16 #キッズタブレット #学習用 #10インチ #子ども用 #家族用 #動画視聴">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="タブレットって、買ったらすぐ飽きちゃいませんか？
+
+実はこのタブレット、1年間の保証がついてるから長く安心して使えるんです💡子どもの学習用から動画視聴、電子書籍まで、家族みんなで活躍する場面がいっぱい😊10.1インチの大画面だからどの年代でも目が疲れにくいのも意外と便利ですよ📱
+
+気になったらチェック✨
+
+#タブレット #Android16 #キッズタブレット #学習用 #10インチ #子ども用 #家族用 #動画視聴">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/bmaxshop/xxtb01/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="biople:10005422">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/biople/cabinet/10406205/4986919990051.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【エスオーシー】温泉水99 500mL＜箱24入＞ | ミネラルウォーター 温泉水 24本 水 超軟水 九州 鹿児島 水 天然水 アルカリイオン水 飲む温泉水 飲料水 水 軟水 シリカ 炭酸イオン 美容 健康 送料無料</p>
+        <p class="meta"><span class="price">4,536円</span> ・ ★4.82 (449件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ Biople</p>
+      </div>
+    </div>
+    <div class="pitch">毎日飲み続けたくなる、定番の温泉水です✨
+
+鹿児島の垂水温泉から湧き出す天然アルカリ水で、硬度1.7という桁違いの軟水。水粒子が細かいからまろやかで飲みやすく、常温でもおいしいんです。
+
+シリカや炭酸イオンなどの温泉成分も含まれていて、美容と健康を気遣う方に選ばれ続けているのも納得。コーヒーや紅茶を淹れるときも、旨味がぐっと引き出されます☕
+
+まとめ買いなら、このボックスがおすすめですよ。
+
+#温泉水 #ミネラルウォーター #アルカリイオン水 #天然水 #美容 #健康 #軟水 #飲料水 #日用品 #鹿児島</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=biople:10005422" target="_blank" rel="noopener" data-pitch="毎日飲み続けたくなる、定番の温泉水です✨
+
+鹿児島の垂水温泉から湧き出す天然アルカリ水で、硬度1.7という桁違いの軟水。水粒子が細かいからまろやかで飲みやすく、常温でもおいしいんです。
+
+シリカや炭酸イオンなどの温泉成分も含まれていて、美容と健康を気遣う方に選ばれ続けているのも納得。コーヒーや紅茶を淹れるときも、旨味がぐっと引き出されます☕
+
+まとめ買いなら、このボックスがおすすめですよ。
+
+#温泉水 #ミネラルウォーター #アルカリイオン水 #天然水 #美容 #健康 #軟水 #飲料水 #日用品 #鹿児島">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日飲み続けたくなる、定番の温泉水です✨
+
+鹿児島の垂水温泉から湧き出す天然アルカリ水で、硬度1.7という桁違いの軟水。水粒子が細かいからまろやかで飲みやすく、常温でもおいしいんです。
+
+シリカや炭酸イオンなどの温泉成分も含まれていて、美容と健康を気遣う方に選ばれ続けているのも納得。コーヒーや紅茶を淹れるときも、旨味がぐっと引き出されます☕
+
+まとめ買いなら、このボックスがおすすめですよ。
+
+#温泉水 #ミネラルウォーター #アルカリイオン水 #天然水 #美容 #健康 #軟水 #飲料水 #日用品 #鹿児島">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/biople/4986919990051/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="with-kagoshima:10000015">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/with-kagoshima/cabinet/sumi/sheet_5m/tkss_img_nodoor.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">国産 除湿シート 消臭シート 竹炭シート 30cm幅 【2m・3m・5m】 靴箱消臭 靴箱シート 除湿 調湿 炭インテリア 炭シート タンスシート 脱臭剤 炭消臭 さつま竹源作 ペット 匂い消し 夏の靴箱・ゴミ箱のニオイに 匂い対策</p>
+        <p class="meta"><span class="price">1,650円</span> ・ ★4.6 (747件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 竹の力　楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">靴箱のニオイが気になる季節こそ、竹炭シートの出番ですよ。
+
+・鹿児島産の孟宗竹100％で、自然の力だけで消臭
+・湿気も吸収するから、梅雨時のカビ対策にも◎
+・30cm幅でカットして、どこにでも敷けます
+
+4.6★の高評価で、多くの人に愛用されている理由が分かります。気になったらチェックしてみてね✨
+
+#消臭シート #竹炭 #靴箱消臭 #除湿シート #調湿 #梅雨対策 #カビ防止 #脱臭 #におい対策 #収納グッズ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=with-kagoshima:10000015" target="_blank" rel="noopener" data-pitch="靴箱のニオイが気になる季節こそ、竹炭シートの出番ですよ。
+
+・鹿児島産の孟宗竹100％で、自然の力だけで消臭
+・湿気も吸収するから、梅雨時のカビ対策にも◎
+・30cm幅でカットして、どこにでも敷けます
+
+4.6★の高評価で、多くの人に愛用されている理由が分かります。気になったらチェックしてみてね✨
+
+#消臭シート #竹炭 #靴箱消臭 #除湿シート #調湿 #梅雨対策 #カビ防止 #脱臭 #におい対策 #収納グッズ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="靴箱のニオイが気になる季節こそ、竹炭シートの出番ですよ。
+
+・鹿児島産の孟宗竹100％で、自然の力だけで消臭
+・湿気も吸収するから、梅雨時のカビ対策にも◎
+・30cm幅でカットして、どこにでも敷けます
+
+4.6★の高評価で、多くの人に愛用されている理由が分かります。気になったらチェックしてみてね✨
+
+#消臭シート #竹炭 #靴箱消臭 #除湿シート #調湿 #梅雨対策 #カビ防止 #脱臭 #におい対策 #収納グッズ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/with-kagoshima/10000018/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="telaffy:10010773">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/telaffy/cabinet/2024/11/dmp-bd90s-k.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">ブルーレイディスク/DVDプレーヤー(再生専用) ブラック Panasonic パナソニック DMP-BD90S-K</p>
+        <p class="meta"><span class="price">16,900円</span> ・ ★4.65 (100件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ あっと！テラフィ 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">ブルーレイプレーヤーが欲しいけど、テレビ周りが狭くて置き場所に困ってる、って人いませんか。
+
+このパナソニックのプレーヤーはコンパクト設計だから、薄型ラックやテレビボードの隅にもすっきり置けるんです 📀
+
+DVDもフルHD画質にアップコンバートして映してくれるし、高速起動で見たい時にすぐ再生できる。狭い空間を活かしたい人には、正解の1台だと思いますよ ✨
+
+#ブルーレイプレーヤー #DVDプレーヤー #パナソニック #コンパクト設計 #小型家電 #テレビ周辺機器 #省スペース #新生活</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=telaffy:10010773" target="_blank" rel="noopener" data-pitch="ブルーレイプレーヤーが欲しいけど、テレビ周りが狭くて置き場所に困ってる、って人いませんか。
+
+このパナソニックのプレーヤーはコンパクト設計だから、薄型ラックやテレビボードの隅にもすっきり置けるんです 📀
+
+DVDもフルHD画質にアップコンバートして映してくれるし、高速起動で見たい時にすぐ再生できる。狭い空間を活かしたい人には、正解の1台だと思いますよ ✨
+
+#ブルーレイプレーヤー #DVDプレーヤー #パナソニック #コンパクト設計 #小型家電 #テレビ周辺機器 #省スペース #新生活">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ブルーレイプレーヤーが欲しいけど、テレビ周りが狭くて置き場所に困ってる、って人いませんか。
+
+このパナソニックのプレーヤーはコンパクト設計だから、薄型ラックやテレビボードの隅にもすっきり置けるんです 📀
+
+DVDもフルHD画質にアップコンバートして映してくれるし、高速起動で見たい時にすぐ再生できる。狭い空間を活かしたい人には、正解の1台だと思いますよ ✨
+
+#ブルーレイプレーヤー #DVDプレーヤー #パナソニック #コンパクト設計 #小型家電 #テレビ周辺機器 #省スペース #新生活">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/telaffy/dmp-bd90s-k/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="cubic-square:10000022">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/cubic-square/cabinet/mem_item/asrk/20000004line.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">撥水スプレー プラルタ【11月26日発送開始！ 送料無料】 PLARTA 200ml 撥水コーティング コーティング剤 シンク 超撥水 弾き ステンレスクリーナー コーティング 水回り キッチン 人工大理石 洗面所 洗面台 便器 トイレ 鏡 窓 スプレー</p>
+        <p class="meta"><span class="price">2,980円</span> ・ ★4.4 (133件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ シー・エス</p>
+      </div>
+    </div>
+    <div class="pitch">送料無料で試せる、シンクや鏡の水はじきがすごい✨
+
+プロが磨いたようなつるっと感が、スプレーしてふくだけで叶うんですよ💕 133件のレビューで評価も高いから、気になったらチェックしてみて🎯
+
+#撥水スプレー #キッチン掃除 #水回り #コーティング剤 #洗面台</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=cubic-square:10000022" target="_blank" rel="noopener" data-pitch="送料無料で試せる、シンクや鏡の水はじきがすごい✨
+
+プロが磨いたようなつるっと感が、スプレーしてふくだけで叶うんですよ💕 133件のレビューで評価も高いから、気になったらチェックしてみて🎯
+
+#撥水スプレー #キッチン掃除 #水回り #コーティング剤 #洗面台">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="送料無料で試せる、シンクや鏡の水はじきがすごい✨
+
+プロが磨いたようなつるっと感が、スプレーしてふくだけで叶うんですよ💕 133件のレビューで評価も高いから、気になったらチェックしてみて🎯
+
+#撥水スプレー #キッチン掃除 #水回り #コーティング剤 #洗面台">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/cubic-square/20000004/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="gallershop:10000144">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/gallershop/cabinet/items/galler/advent/adv_ca2026_thmb.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">ベルギー王室御用達 ガレー クリスマス アドベントカレンダー チョコレート 24個入 詰め合わせ 2026 クリスマス プレゼント お菓子 スイーツ 高級 チョコ カウントダウン 日めくり 飾り オーナメント 個包装 人気 有名 かわいい 大人 子供 誕生日 お歳暮 冬 ギフト 予約</p>
+        <p class="meta"><span class="price">3,580円</span> ・ ★4.6 (90件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ ベルギーチョコレート　ガレー</p>
+      </div>
+    </div>
+    <div class="pitch">クリスマスまで毎日、開く楽しみ✨
+
+箱を手にした瞬間、目が輝く。
+
+深いネイビーに映えるツリーとオーナメント🎄
+
+毎日ひとつ、ベルギーの上質なチョコが出てくる。
+
+王室御用達の高級感と、日めくりの遊び心💝
+
+8種類のフレーバーで、クリスマスまでのカウントダウンが特別になる。
+
+飾るだけでもお部屋がクリスマス気分に包まれる。
+
+気になったらチェックしてみてね🎁
+
+#アドベントカレンダー #クリスマスプレゼント #高級チョコレート #ベルギーチョコ #ギフト #クリスマスギフト #スイーツギフト #贈り物</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=gallershop:10000144" target="_blank" rel="noopener" data-pitch="クリスマスまで毎日、開く楽しみ✨
+
+箱を手にした瞬間、目が輝く。
+
+深いネイビーに映えるツリーとオーナメント🎄
+
+毎日ひとつ、ベルギーの上質なチョコが出てくる。
+
+王室御用達の高級感と、日めくりの遊び心💝
+
+8種類のフレーバーで、クリスマスまでのカウントダウンが特別になる。
+
+飾るだけでもお部屋がクリスマス気分に包まれる。
+
+気になったらチェックしてみてね🎁
+
+#アドベントカレンダー #クリスマスプレゼント #高級チョコレート #ベルギーチョコ #ギフト #クリスマスギフト #スイーツギフト #贈り物">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クリスマスまで毎日、開く楽しみ✨
+
+箱を手にした瞬間、目が輝く。
+
+深いネイビーに映えるツリーとオーナメント🎄
+
+毎日ひとつ、ベルギーの上質なチョコが出てくる。
+
+王室御用達の高級感と、日めくりの遊び心💝
+
+8種類のフレーバーで、クリスマスまでのカウントダウンが特別になる。
+
+飾るだけでもお部屋がクリスマス気分に包まれる。
+
+気になったらチェックしてみてね🎁
+
+#アドベントカレンダー #クリスマスプレゼント #高級チョコレート #ベルギーチョコ #ギフト #クリスマスギフト #スイーツギフト #贈り物">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/gallershop/gaga0025cd/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="coyoli:10000347">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/coyoli/cabinet/26aw13543/26aw_13543_r.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【10%OFFクーポン！17日まで】【一部予約商品】 ボックスシーツ 冬用 シングル セミダブル ダブル クイーン ワイドキング 冬 暖かい あったか boxシーツ マイクロファイバー フランネル 抗菌 ベージュ グリーン ホワイト グレー ネイビー 13543 ボックスシーツならCOYOLI</p>
+        <p class="meta"><span class="price">2,690円</span> ・ ★4.53 (1651件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ インテリアショップ コヨリ</p>
+      </div>
+    </div>
+    <div class="pitch">毎晩、冷たいシーツにがっかりしていませんか？
+
+それなら、フランネル素材のこのボックスシーツがぴったり✨中綿がたっぷり入ってるから、ふわふわあったかい。敷きパッドとシーツが一体型だから、着脱も洗濯も楽ちんです💕
+
+1651件のレビューで選ばれ続けてる理由、チェックしてみてね。
+
+#ボックスシーツ #冬用寝具 #あったか寝具 #フランネル #マイクロファイバー #ベッドカバー #あったかい #寒さ対策</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=coyoli:10000347" target="_blank" rel="noopener" data-pitch="毎晩、冷たいシーツにがっかりしていませんか？
+
+それなら、フランネル素材のこのボックスシーツがぴったり✨中綿がたっぷり入ってるから、ふわふわあったかい。敷きパッドとシーツが一体型だから、着脱も洗濯も楽ちんです💕
+
+1651件のレビューで選ばれ続けてる理由、チェックしてみてね。
+
+#ボックスシーツ #冬用寝具 #あったか寝具 #フランネル #マイクロファイバー #ベッドカバー #あったかい #寒さ対策">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎晩、冷たいシーツにがっかりしていませんか？
+
+それなら、フランネル素材のこのボックスシーツがぴったり✨中綿がたっぷり入ってるから、ふわふわあったかい。敷きパッドとシーツが一体型だから、着脱も洗濯も楽ちんです💕
+
+1651件のレビューで選ばれ続けてる理由、チェックしてみてね。
+
+#ボックスシーツ #冬用寝具 #あったか寝具 #フランネル #マイクロファイバー #ベッドカバー #あったかい #寒さ対策">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/coyoli/13543/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="stylife:15740238">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/stylife/cabinet/item/477/se9477-03_1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">sanrio house ハローキティ シルエットラメタンブラー サンリオ ハウス 食器・調理器具・キッチン用品 グラス・マグカップ・タンブラー【送料無料】</p>
+        <p class="meta"><span class="price">4,290円</span> ・ ★4.96 (24件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ Rakuten Fashion</p>
+      </div>
+    </div>
+    <div class="pitch">キティのシルエットが浮かぶシリコン蓋が、思ってた以上に便利なんです。✨
+
+蓋があるから飲みかけのドリンクもほこりが入らず、オフィスでも安心して置いておけます。大容量なのにラメでキラキラだから、デスクに置いてるだけで気分上がる😊
+
+ギフトにも選ばれ続けてるのも納得。ちょっと奮発したいときにぴったりです💕
+
+#ハローキティ #タンブラー #マグカップ #シルエット #ラメ #キッチン雑貨 #推し活 #ギフト #サンリオ好きさんと繋がりたい</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=stylife:15740238" target="_blank" rel="noopener" data-pitch="キティのシルエットが浮かぶシリコン蓋が、思ってた以上に便利なんです。✨
+
+蓋があるから飲みかけのドリンクもほこりが入らず、オフィスでも安心して置いておけます。大容量なのにラメでキラキラだから、デスクに置いてるだけで気分上がる😊
+
+ギフトにも選ばれ続けてるのも納得。ちょっと奮発したいときにぴったりです💕
+
+#ハローキティ #タンブラー #マグカップ #シルエット #ラメ #キッチン雑貨 #推し活 #ギフト #サンリオ好きさんと繋がりたい">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="キティのシルエットが浮かぶシリコン蓋が、思ってた以上に便利なんです。✨
+
+蓋があるから飲みかけのドリンクもほこりが入らず、オフィスでも安心して置いておけます。大容量なのにラメでキラキラだから、デスクに置いてるだけで気分上がる😊
+
+ギフトにも選ばれ続けてるのも納得。ちょっと奮発したいときにぴったりです💕
+
+#ハローキティ #タンブラー #マグカップ #シルエット #ラメ #キッチン雑貨 #推し活 #ギフト #サンリオ好きさんと繋がりたい">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/stylife/se9477/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="bos-shop:10000070">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/bos-shop/cabinet/saigai/hijyou-common2/imgrc0090513235.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【うんちが臭わないトイレ】 BOS非常用臭わないトイレセット(4点セット・100回分) 災害/携帯/簡易トイレ/防災グッズ/15年保存 ◆防臭 防菌◆ 臭わない袋BOS付き 【排泄臭の根本解決はBOSだけ】</p>
+        <p class="meta"><span class="price">9,770円</span> ・ ★4.72 (233件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ BOS-SHOP</p>
+      </div>
+    </div>
+    <div class="pitch">災害時のトイレの不安、これ1つで解決しちゃいます💡
+
+・防臭袋BOSが排泄臭を根本解決 ✨
+・凝固剤で液体も処理できて衛生的
+・4人で約5日分、長期保存もOK 🏠
+
+230件以上のレビューで選ばれ続けてるのも納得。いざという時の家庭備蓄に、あると本当に安心ですよ。
+
+#防災グッズ #トイレ #災害対策 #非常用 #簡易トイレ #防臭 #家庭備蓄 #防災用品 #緊急時 #携帯トイレ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=bos-shop:10000070" target="_blank" rel="noopener" data-pitch="災害時のトイレの不安、これ1つで解決しちゃいます💡
+
+・防臭袋BOSが排泄臭を根本解決 ✨
+・凝固剤で液体も処理できて衛生的
+・4人で約5日分、長期保存もOK 🏠
+
+230件以上のレビューで選ばれ続けてるのも納得。いざという時の家庭備蓄に、あると本当に安心ですよ。
+
+#防災グッズ #トイレ #災害対策 #非常用 #簡易トイレ #防臭 #家庭備蓄 #防災用品 #緊急時 #携帯トイレ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="災害時のトイレの不安、これ1つで解決しちゃいます💡
+
+・防臭袋BOSが排泄臭を根本解決 ✨
+・凝固剤で液体も処理できて衛生的
+・4人で約5日分、長期保存もOK 🏠
+
+230件以上のレビューで選ばれ続けてるのも納得。いざという時の家庭備蓄に、あると本当に安心ですよ。
+
+#防災グッズ #トイレ #災害対策 #非常用 #簡易トイレ #防臭 #家庭備蓄 #防災用品 #緊急時 #携帯トイレ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/bos-shop/bos-0653/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kainomahou:10000125">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kainomahou/cabinet/m-1000/downquilt90sdf-sl-1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【3点目41%OFFクーポン】 ＼4万枚突破／ 羽毛布団のように 暖かい シングル ダブル セミダブル 冬 羽毛掛け布団より あったか シングル 羽布団 掛け布団 羽毛 冬 ふとん 羽毛 より あったか 羽毛布団より あったか 冬 布団 羽根布団 洗える 掛ふとん 冬布団</p>
+        <p class="meta"><span class="price">6,580円</span> ・ ★4.44 (782件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ 魔法のいやしストア</p>
+      </div>
+    </div>
+    <div class="pitch">羽毛布団は高いし、本当に暖かいのか不安ですよね。😊
+
+でもこの布団、ダウン10%入りで1.8kg増量だから、羽毛布団並みの暖かさなのに手頃な価格なんです。
+
+782件のレビューで平均4.44点という支持の厚さも、その実力の証。洗えるのも地味に嬉しい。✨
+
+気になったらチェックしてみてください。
+
+#掛け布団 #冬布団 #羽毛布団 #あったか寝具 #冬寝具 #新生活 #一人暮らし #寝具選び</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kainomahou:10000125" target="_blank" rel="noopener" data-pitch="羽毛布団は高いし、本当に暖かいのか不安ですよね。😊
+
+でもこの布団、ダウン10%入りで1.8kg増量だから、羽毛布団並みの暖かさなのに手頃な価格なんです。
+
+782件のレビューで平均4.44点という支持の厚さも、その実力の証。洗えるのも地味に嬉しい。✨
+
+気になったらチェックしてみてください。
+
+#掛け布団 #冬布団 #羽毛布団 #あったか寝具 #冬寝具 #新生活 #一人暮らし #寝具選び">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="羽毛布団は高いし、本当に暖かいのか不安ですよね。😊
+
+でもこの布団、ダウン10%入りで1.8kg増量だから、羽毛布団並みの暖かさなのに手頃な価格なんです。
+
+782件のレビューで平均4.44点という支持の厚さも、その実力の証。洗えるのも地味に嬉しい。✨
+
+気になったらチェックしてみてください。
+
+#掛け布団 #冬布団 #羽毛布団 #あったか寝具 #冬寝具 #新生活 #一人暮らし #寝具選び">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kainomahou/downquilt90sdf-sl/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-13";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
