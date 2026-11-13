@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-14</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-14 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="fuji-store-mie:10000538">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/fuji-store-mie/cabinet/13181710/compass1784194526.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">★2026年最新型番★ 火災報知器 パナソニック 電池 けむり当番 SHK484551 SHK48455K後継品 熱 煙 煙式 火災警報器 リチウム電池 大音量 煙感知器 住宅用 panasonic ねつ当番 けむり ねつ 当番薄型 2種 電池式 単独型 薄型 小型 高機能 警報音</p>
+        <p class="meta"><span class="price">2,640円</span> ・ ★4.76 (3302件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ くらしの園ショップ</p>
+      </div>
+    </div>
+    <div class="pitch">薄くて天井に目立たないのに、約90dBの大音量で火災を逃さない✨
+
+・インテリアに溶け込む薄型デザイン
+・リチウム電池で10年間使える
+・交換時期を自動でお知らせ
+
+3,302件のレビューで高評価されている理由がわかります。防災は後付けじゃなく、毎日の暮らしに馴染む選択を🏠
+
+#火災警報器 #火災報知器 #パナソニック #けむり当番 #防災グッズ #一人暮らし #新生活 #引っ越し準備 #住宅 #寝室</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=fuji-store-mie:10000538" target="_blank" rel="noopener" data-pitch="薄くて天井に目立たないのに、約90dBの大音量で火災を逃さない✨
+
+・インテリアに溶け込む薄型デザイン
+・リチウム電池で10年間使える
+・交換時期を自動でお知らせ
+
+3,302件のレビューで高評価されている理由がわかります。防災は後付けじゃなく、毎日の暮らしに馴染む選択を🏠
+
+#火災警報器 #火災報知器 #パナソニック #けむり当番 #防災グッズ #一人暮らし #新生活 #引っ越し準備 #住宅 #寝室">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="薄くて天井に目立たないのに、約90dBの大音量で火災を逃さない✨
+
+・インテリアに溶け込む薄型デザイン
+・リチウム電池で10年間使える
+・交換時期を自動でお知らせ
+
+3,302件のレビューで高評価されている理由がわかります。防災は後付けじゃなく、毎日の暮らしに馴染む選択を🏠
+
+#火災警報器 #火災報知器 #パナソニック #けむり当番 #防災グッズ #一人暮らし #新生活 #引っ越し準備 #住宅 #寝室">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/fuji-store-mie/compass1707101421/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="shiseido-parlour:10000382">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shiseido-parlour/cabinet/gift/05658582/75551_2609_thum.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">お歳暮 スイーツ お菓子 【公式】東京 銀座 資生堂パーラー 資生堂パーラー 冬の菓子詰め合わせ DJ30 数量 限定 チョコ ラングドシャ クッキー サブレ 5種30個 個包装 詰め合わせ お菓子 ギフト お歳暮2026 クリスマス お年賀 寒中見舞い 内祝い 帰省 手土産 東京土産</p>
+        <p class="meta"><span class="price">3,240円</span> ・ ★4.78 (254件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 資生堂パーラー</p>
+      </div>
+    </div>
+    <div class="pitch">銀座の看板スイーツ、毎年選ばれ続けているのには理由があるんです。✨
+
+北海道産小麦粉のラングドシャ、アーモンドプードルのビスキュイ、チョコレート菓子まで、5種30個それぞれが素材にこだわって焼き上げられてる。個包装だから配りやすいし、味わいのバラエティーで誰もが好きな一枚に出会える。254件のレビューで平均4.78点なのも、信頼の証だと思う。💕
+
+手土産にもギフトにも、ぜひチェックしてみてね。
+
+#銀座 #資生堂パーラー #お歳暮 #スイーツギフト #個包装 #ラングドシャ #チョコレート菓子 #クリスマス #内祝い #手土産</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=shiseido-parlour:10000382" target="_blank" rel="noopener" data-pitch="銀座の看板スイーツ、毎年選ばれ続けているのには理由があるんです。✨
+
+北海道産小麦粉のラングドシャ、アーモンドプードルのビスキュイ、チョコレート菓子まで、5種30個それぞれが素材にこだわって焼き上げられてる。個包装だから配りやすいし、味わいのバラエティーで誰もが好きな一枚に出会える。254件のレビューで平均4.78点なのも、信頼の証だと思う。💕
+
+手土産にもギフトにも、ぜひチェックしてみてね。
+
+#銀座 #資生堂パーラー #お歳暮 #スイーツギフト #個包装 #ラングドシャ #チョコレート菓子 #クリスマス #内祝い #手土産">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="銀座の看板スイーツ、毎年選ばれ続けているのには理由があるんです。✨
+
+北海道産小麦粉のラングドシャ、アーモンドプードルのビスキュイ、チョコレート菓子まで、5種30個それぞれが素材にこだわって焼き上げられてる。個包装だから配りやすいし、味わいのバラエティーで誰もが好きな一枚に出会える。254件のレビューで平均4.78点なのも、信頼の証だと思う。💕
+
+手土産にもギフトにも、ぜひチェックしてみてね。
+
+#銀座 #資生堂パーラー #お歳暮 #スイーツギフト #個包装 #ラングドシャ #チョコレート菓子 #クリスマス #内祝い #手土産">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/shiseido-parlour/75551_2018/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kagustyle:10044504">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kagustyle/cabinet/main-img/021/main-xaedt_k01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">コロ脚 中が透けない 壁付き チェスト スリム/ワイド 幅34/54 奥行41.5/41.7 高さ66.1/86.1/106.1cm 衣装ケース 収納ケース プラスチック 引き出し 洗面所 収納 子供部屋 クローゼット 隠す収納 ランドリーチェスト 壁付きチェスト 日本製 【送料無料】</p>
+        <p class="meta"><span class="price">4,999円</span> ・ ★4.49 (150件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ e家具スタイル</p>
+      </div>
+    </div>
+    <div class="pitch">壁にぴったりつけても、コロ付きだから掃除のときはスルスル動く。✨
+
+シンプルなのに、こういう工夫が嬉しいんですよね💕 隠す収納なのに機能的、それっていい。🙌
+
+#壁付けチェスト #収納 #洗面所 #掃除しやすい #日本製</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kagustyle:10044504" target="_blank" rel="noopener" data-pitch="壁にぴったりつけても、コロ付きだから掃除のときはスルスル動く。✨
+
+シンプルなのに、こういう工夫が嬉しいんですよね💕 隠す収納なのに機能的、それっていい。🙌
+
+#壁付けチェスト #収納 #洗面所 #掃除しやすい #日本製">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="壁にぴったりつけても、コロ付きだから掃除のときはスルスル動く。✨
+
+シンプルなのに、こういう工夫が嬉しいんですよね💕 隠す収納なのに機能的、それっていい。🙌
+
+#壁付けチェスト #収納 #洗面所 #掃除しやすい #日本製">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kagustyle/s1u57/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="dearcologne:10001209">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/dearcologne/cabinet/dk3/dk093aa.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">かぶるだけ！キッズ はっ水 エプロン 3点セット 薄手 100-140cm対応 男の子 女の子 子供 撥水 調節 幼児 子供用 100 110 120 130 140 幼稚園 保育園 かわいい プレイウェア 三角巾 ポケットセット 簡単 こども 入園入学 ギフト dk093</p>
+        <p class="meta"><span class="price">1,980円</span> ・ ★4.69 (129件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ ディアコロン</p>
+      </div>
+    </div>
+    <div class="pitch">入園入学のギフト、何を選んだらいいか迷いますよね。でもこれなら大丈夫🎁
+
+エプロン・三角巾・巾着の3点がそろってるから、届いたらすぐに使ってもらえるんです。撥水加工で汚れにくく、薄手だからお手入れも簡単。スナップで100～140cmまでサイズ調整できるので、成長に合わせて長く使えるのも嬉しい💕
+
+ネームタグ付きだから、保育園や幼稚園でもすぐ活躍します。実際に129件のレビューで4.69評価だから、贈ってハズレなし✨
+
+気になったらチェックしてみてね。
+
+#キッズエプロン #入園入学 #出産祝い #ギフト #保育園 #幼稚園 #プレゼント #撥水エプロン</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=dearcologne:10001209" target="_blank" rel="noopener" data-pitch="入園入学のギフト、何を選んだらいいか迷いますよね。でもこれなら大丈夫🎁
+
+エプロン・三角巾・巾着の3点がそろってるから、届いたらすぐに使ってもらえるんです。撥水加工で汚れにくく、薄手だからお手入れも簡単。スナップで100～140cmまでサイズ調整できるので、成長に合わせて長く使えるのも嬉しい💕
+
+ネームタグ付きだから、保育園や幼稚園でもすぐ活躍します。実際に129件のレビューで4.69評価だから、贈ってハズレなし✨
+
+気になったらチェックしてみてね。
+
+#キッズエプロン #入園入学 #出産祝い #ギフト #保育園 #幼稚園 #プレゼント #撥水エプロン">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="入園入学のギフト、何を選んだらいいか迷いますよね。でもこれなら大丈夫🎁
+
+エプロン・三角巾・巾着の3点がそろってるから、届いたらすぐに使ってもらえるんです。撥水加工で汚れにくく、薄手だからお手入れも簡単。スナップで100～140cmまでサイズ調整できるので、成長に合わせて長く使えるのも嬉しい💕
+
+ネームタグ付きだから、保育園や幼稚園でもすぐ活躍します。実際に129件のレビューで4.69評価だから、贈ってハズレなし✨
+
+気になったらチェックしてみてね。
+
+#キッズエプロン #入園入学 #出産祝い #ギフト #保育園 #幼稚園 #プレゼント #撥水エプロン">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/dearcologne/dk093/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="yokumoku:10000486">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/seasonal/10475741/holiday26_30_b.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【公式】ヨックモック ホリデー シーズン アソート 5種30個入 お歳暮 クリスマス ホリデー 冬ギフト 御歳暮 2026 詰め合わせ プレゼント スイーツ ギフト プチギフト クッキー 退職 洋菓子 お菓子 焼き菓子 手土産 個包装 お取り寄せ お礼 お祝い</p>
+        <p class="meta"><span class="price">3,240円</span> ・ ★4.74 (626件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ ヨックモック　楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">冬のギフト選び、毎回同じものになっていませんか？
+
+ヨックモックなら5種類のクッキーが30個詰まってて、誰にでも喜ばれる🎁
+
+個包装だから配りやすくて、贈る側も貰う側もあたたかな気持ちになれるんです✨💕
+
+お歳暮から手土産まで、いろんなシーンで活躍しますよ。
+
+気になったらチェックしてみてね。
+
+#ギフト #冬ギフト #お歳暮 #クリスマスギフト #クッキー #個包装 #手土産 #詰め合わせ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=yokumoku:10000486" target="_blank" rel="noopener" data-pitch="冬のギフト選び、毎回同じものになっていませんか？
+
+ヨックモックなら5種類のクッキーが30個詰まってて、誰にでも喜ばれる🎁
+
+個包装だから配りやすくて、贈る側も貰う側もあたたかな気持ちになれるんです✨💕
+
+お歳暮から手土産まで、いろんなシーンで活躍しますよ。
+
+気になったらチェックしてみてね。
+
+#ギフト #冬ギフト #お歳暮 #クリスマスギフト #クッキー #個包装 #手土産 #詰め合わせ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="冬のギフト選び、毎回同じものになっていませんか？
+
+ヨックモックなら5種類のクッキーが30個詰まってて、誰にでも喜ばれる🎁
+
+個包装だから配りやすくて、贈る側も貰う側もあたたかな気持ちになれるんです✨💕
+
+お歳暮から手土産まで、いろんなシーンで活躍しますよ。
+
+気になったらチェックしてみてね。
+
+#ギフト #冬ギフト #お歳暮 #クリスマスギフト #クッキー #個包装 #手土産 #詰め合わせ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/yokumoku/1010011310010/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="fastonline:10001176">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/fastonline/cabinet/12545679/imgrc0139254991.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【国内5年保証】Nintendo Switch2 対応 microSD Express カード 1TB 512GB microSDXC Express カード 最大容量 マイクロSD Express カード スイッチ2 SD エクスプレス カード 高速 Switch2 SDカード Switch2 メモリ SUNEAST メーカー保証付</p>
+        <p class="meta"><span class="price">16,980円</span> ・ ★4.58 (24件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ ファストオンライン</p>
+      </div>
+    </div>
+    <div class="pitch">Switch2のゲームをどんどんダウンロード。
+
+容量が足りない…と焦る前に、
+このカードを挿すだけ 🎮
+
+読込速度が速いから、
+ロード時間もストレスなし ⚡
+
+耐衝撃・耐水だから、
+カバンの中でも安心 💪
+
+最大1TB対応で、
+好きなゲームを思う存分入れられるんです ✨
+
+#Switch2
+#SDカード
+#マイクロSDカード
+#ゲーム
+#ゲーム好きさんと繋がりたい
+#ゲーム環境
+#Switch2対応
+#メモリーカード</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=fastonline:10001176" target="_blank" rel="noopener" data-pitch="Switch2のゲームをどんどんダウンロード。
+
+容量が足りない…と焦る前に、
+このカードを挿すだけ 🎮
+
+読込速度が速いから、
+ロード時間もストレスなし ⚡
+
+耐衝撃・耐水だから、
+カバンの中でも安心 💪
+
+最大1TB対応で、
+好きなゲームを思う存分入れられるんです ✨
+
+#Switch2
+#SDカード
+#マイクロSDカード
+#ゲーム
+#ゲーム好きさんと繋がりたい
+#ゲーム環境
+#Switch2対応
+#メモリーカード">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="Switch2のゲームをどんどんダウンロード。
+
+容量が足りない…と焦る前に、
+このカードを挿すだけ 🎮
+
+読込速度が速いから、
+ロード時間もストレスなし ⚡
+
+耐衝撃・耐水だから、
+カバンの中でも安心 💪
+
+最大1TB対応で、
+好きなゲームを思う存分入れられるんです ✨
+
+#Switch2
+#SDカード
+#マイクロSDカード
+#ゲーム
+#ゲーム好きさんと繋がりたい
+#ゲーム環境
+#Switch2対応
+#メモリーカード">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/fastonline/se-mse/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="shaddy:10373811">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shaddy/cabinet/26xmas/261128524-1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【エントリーでP10倍】クリスマス 2026 モロゾフ ホリデースイートカレンダー アドベントカレンダー チョコレート50個入り 数字窓付き 毎日1つずつ開ける窓 洋菓子 メーカー品番 MO-3977 お菓子 チョコ おやつ 洋菓子 カウントダウン かわいい ギフト プレゼント 贈り物</p>
+        <p class="meta"><span class="price">2,160円</span> ・ ★4.3 (61件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ ギフトのお店 シャディ 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">毎日の楽しみが24日間も続くって、こんなに幸せなことあるんですか😊
+
+・朝起きたら窓をひとつ開ける儀式
+・チョコの種類がいろいろで飽きない
+・家族で一緒にカウントダウンできる
+
+モロゾフだから味も間違いなしですよ✨子どもだけじゃなく、大人もワクワクしちゃう。
+
+#アドベントカレンダー #クリスマスカウントダウン #クリスマスプレゼント #モロゾフ #チョコレート #クリスマスギフト #家族時間 #冬のお楽しみ #毎日のお菓子 #ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=shaddy:10373811" target="_blank" rel="noopener" data-pitch="毎日の楽しみが24日間も続くって、こんなに幸せなことあるんですか😊
+
+・朝起きたら窓をひとつ開ける儀式
+・チョコの種類がいろいろで飽きない
+・家族で一緒にカウントダウンできる
+
+モロゾフだから味も間違いなしですよ✨子どもだけじゃなく、大人もワクワクしちゃう。
+
+#アドベントカレンダー #クリスマスカウントダウン #クリスマスプレゼント #モロゾフ #チョコレート #クリスマスギフト #家族時間 #冬のお楽しみ #毎日のお菓子 #ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日の楽しみが24日間も続くって、こんなに幸せなことあるんですか😊
+
+・朝起きたら窓をひとつ開ける儀式
+・チョコの種類がいろいろで飽きない
+・家族で一緒にカウントダウンできる
+
+モロゾフだから味も間違いなしですよ✨子どもだけじゃなく、大人もワクワクしちゃう。
+
+#アドベントカレンダー #クリスマスカウントダウン #クリスマスプレゼント #モロゾフ #チョコレート #クリスマスギフト #家族時間 #冬のお楽しみ #毎日のお菓子 #ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/shaddy/1492236xmas/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="shopworld:10142307">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shopworld/cabinet/12440368/12440370/imgrc0182340167.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">タイガー 保温ポット 卓上ポット 魔法瓶 ステンレスポット 保冷 保温 保冷ポット 真空断熱 ハンディーポット ポット ピッチャー ハンディポット テーブルポット 洗いやすい 卓上 1リットル おしゃれ 二重構造 ステンレス おしゃれ 丸洗い 2L</p>
+        <p class="meta"><span class="price">5,279円</span> ・ ★4.5 (78件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ ショップワールド</p>
+      </div>
+    </div>
+    <div class="pitch">朝入れたコーヒーが夜も温かいままなんて、感動します☕✨
+
+真空断熱の二重構造だから、保温力がほんとうに優秀なんです。朝の準備時に注いだドリンクが、何時間経っても温度をキープ。デスクワークや勉強中も、いつでも温かいまま飲める便利さがたまりません。
+
+シンプルなステンレス製だからお手入れも簡単だし、ギフトにも喜ばれてるみたい💕
+
+気になったらチェックしてみてね。
+
+#保温ポット #魔法瓶 #ステンレスポット #真空断熱 #卓上ポット #おしゃれ #保温 #時短 #新生活 #プレゼント</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=shopworld:10142307" target="_blank" rel="noopener" data-pitch="朝入れたコーヒーが夜も温かいままなんて、感動します☕✨
+
+真空断熱の二重構造だから、保温力がほんとうに優秀なんです。朝の準備時に注いだドリンクが、何時間経っても温度をキープ。デスクワークや勉強中も、いつでも温かいまま飲める便利さがたまりません。
+
+シンプルなステンレス製だからお手入れも簡単だし、ギフトにも喜ばれてるみたい💕
+
+気になったらチェックしてみてね。
+
+#保温ポット #魔法瓶 #ステンレスポット #真空断熱 #卓上ポット #おしゃれ #保温 #時短 #新生活 #プレゼント">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="朝入れたコーヒーが夜も温かいままなんて、感動します☕✨
+
+真空断熱の二重構造だから、保温力がほんとうに優秀なんです。朝の準備時に注いだドリンクが、何時間経っても温度をキープ。デスクワークや勉強中も、いつでも温かいまま飲める便利さがたまりません。
+
+シンプルなステンレス製だからお手入れも簡単だし、ギフトにも喜ばれてるみたい💕
+
+気になったらチェックしてみてね。
+
+#保温ポット #魔法瓶 #ステンレスポット #真空断熱 #卓上ポット #おしゃれ #保温 #時短 #新生活 #プレゼント">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/shopworld/t-pot/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="iwaki-uni:10002654">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/iwaki-uni/cabinet/inshoku_2/esuca804_1.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【送料無料】コックシューズ 厨房靴 滑りにくい 軽い レディース メンズ おしゃれ シューズ 黒 白 ブラック ホワイト 軽量 立ち仕事 疲れない スニーカー 疲れにくい 厨房 靴</p>
+        <p class="meta"><span class="price">2,990円</span> ・ ★4.41 (627件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ エスカユニフォーム</p>
+      </div>
+    </div>
+    <div class="pitch">厨房での立ち仕事、足の疲れと滑りやすさが悩みですよね 😅
+
+624件のレビューが支持する理由は、水・油に強い靴底と軽さの両立 ✨ 長時間立っていても疲れにくいクッション性で、黒・白から選べます 💪
+
+#コックシューズ #厨房靴 #立ち仕事 #疲れない靴 #軽い靴</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=iwaki-uni:10002654" target="_blank" rel="noopener" data-pitch="厨房での立ち仕事、足の疲れと滑りやすさが悩みですよね 😅
+
+624件のレビューが支持する理由は、水・油に強い靴底と軽さの両立 ✨ 長時間立っていても疲れにくいクッション性で、黒・白から選べます 💪
+
+#コックシューズ #厨房靴 #立ち仕事 #疲れない靴 #軽い靴">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="厨房での立ち仕事、足の疲れと滑りやすさが悩みですよね 😅
+
+624件のレビューが支持する理由は、水・油に強い靴底と軽さの両立 ✨ 長時間立っていても疲れにくいクッション性で、黒・白から選べます 💪
+
+#コックシューズ #厨房靴 #立ち仕事 #疲れない靴 #軽い靴">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/iwaki-uni/esuca804/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="yoshinoya-shop:10000779">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yoshinoya-shop/cabinet/12631574/imgrc0123832240.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">吉野家 公式【冷凍】 2027福箱【梅】セット (牛丼の具(120g)・甘口豚丼の具(120g)・親子丼の具(120g)・牛鉄板焼肉(105g)×各2袋、紅生姜 ×1袋) 冷凍食品 お歳暮 福袋 ギフト【送料込み】</p>
+        <p class="meta"><span class="price">4,320円</span> ・ ★4.23 (22件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 吉野家公式ショップ楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">福箱って本当に得なのか、ちょっと疑わしいと思ってませんか。
+
+この梅セットなら納得できます🍱
+
+牛丼・親子丼・豚丼の具と鉄板焼肉が各2袋ずつ、全8袋。バラエティ豊かだから飽きず、ご飯が進む組み合わせなんですよ。
+
+年末年始で忙しいときや、朝ごはんにも。冷凍だから好きなタイミングで食べられるのが地味に便利✨
+
+#吉野家 #福箱 #年末年始 #ギフト #冷凍食品 #時短ご飯 #お歳暮 #丼もの</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=yoshinoya-shop:10000779" target="_blank" rel="noopener" data-pitch="福箱って本当に得なのか、ちょっと疑わしいと思ってませんか。
+
+この梅セットなら納得できます🍱
+
+牛丼・親子丼・豚丼の具と鉄板焼肉が各2袋ずつ、全8袋。バラエティ豊かだから飽きず、ご飯が進む組み合わせなんですよ。
+
+年末年始で忙しいときや、朝ごはんにも。冷凍だから好きなタイミングで食べられるのが地味に便利✨
+
+#吉野家 #福箱 #年末年始 #ギフト #冷凍食品 #時短ご飯 #お歳暮 #丼もの">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="福箱って本当に得なのか、ちょっと疑わしいと思ってませんか。
+
+この梅セットなら納得できます🍱
+
+牛丼・親子丼・豚丼の具と鉄板焼肉が各2袋ずつ、全8袋。バラエティ豊かだから飽きず、ご飯が進む組み合わせなんですよ。
+
+年末年始で忙しいときや、朝ごはんにも。冷凍だから好きなタイミングで食べられるのが地味に便利✨
+
+#吉野家 #福箱 #年末年始 #ギフト #冷凍食品 #時短ご飯 #お歳暮 #丼もの">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/yoshinoya-shop/666631/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-14";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
