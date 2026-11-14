@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-15</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-15 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="henri-charpentier:10001039">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/specialfeature/gines/hfm-50_i_261029.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">お歳暮 クリスマス スイーツ お菓子 洋菓子 焼き菓子 ギフト 個包装 詰め合わせ 手土産 お祝い お返し 内祝い 退職 高級 おしゃれ 贈り物 プレゼント 手土産送料無料 HFM-50N2 フィナンシェ・マドレーヌ詰合せ 2種33個入</p>
+        <p class="meta"><span class="price">5,400円</span> ・ ★4.79 (891件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ アンリ・シャルパンティエ</p>
+      </div>
+    </div>
+    <div class="pitch">会社の休憩室で、みんなが手に取る。
+その手が止まる。
+フィナンシェのバターの香り、マドレーヌのしっとり感 ✨
+33個入りだから、配るのにちょうどいい。
+
+50年以上、選ばれ続けているのは、本気で作られているから 💕
+
+#焼き菓子 #ギフト #お歳暮 #クリスマス #手土産 #詰め合わせ #贈り物 #おしゃれ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=henri-charpentier:10001039" target="_blank" rel="noopener" data-pitch="会社の休憩室で、みんなが手に取る。
+その手が止まる。
+フィナンシェのバターの香り、マドレーヌのしっとり感 ✨
+33個入りだから、配るのにちょうどいい。
+
+50年以上、選ばれ続けているのは、本気で作られているから 💕
+
+#焼き菓子 #ギフト #お歳暮 #クリスマス #手土産 #詰め合わせ #贈り物 #おしゃれ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="会社の休憩室で、みんなが手に取る。
+その手が止まる。
+フィナンシェのバターの香り、マドレーヌのしっとり感 ✨
+33個入りだから、配るのにちょうどいい。
+
+50年以上、選ばれ続けているのは、本気で作られているから 💕
+
+#焼き菓子 #ギフト #お歳暮 #クリスマス #手土産 #詰め合わせ #贈り物 #おしゃれ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/henri-charpentier/771332/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="fujiya-family-town:10000015">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/fujiya-family-town/cabinet/christmas2022/imgrc0107218745.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">不二家 公式 送料無料 6種のスイーツコレクション 6種 5号 14.5cm 誕生日 お祝い 記念日 冷凍 ケーキ 誕生日ケーキ バースデーケーキ フルーツケーキ ショートケーキ ケーキセット アソート 6カット 食べ比べ 詰め合わせ インスタ映え</p>
+        <p class="meta"><span class="price">3,500円</span> ・ ★4.59 (166件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 不二家ファミリータウン</p>
+      </div>
+    </div>
+    <div class="pitch">6種類も入ってるから、渡した人が何を食べるか迷っちゃう楽しみがある😋
+
+・一度に食べ比べできるから、家族みんなで盛り上がる
+・糖質オフもあるから、気遣い上手な選択肢になる
+・見た目も豪華で、開けたときのときめきが違う✨
+
+165件のレビューでも高評価だから、贈り物に選んでまず失敗しません。気になったらのぞいてみてね。
+
+#ケーキセット #アソート #食べ比べ #誕生日ケーキ #贈り物 #お祝い #不二家 #スイーツギフト #冷凍ケーキ #詰め合わせ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=fujiya-family-town:10000015" target="_blank" rel="noopener" data-pitch="6種類も入ってるから、渡した人が何を食べるか迷っちゃう楽しみがある😋
+
+・一度に食べ比べできるから、家族みんなで盛り上がる
+・糖質オフもあるから、気遣い上手な選択肢になる
+・見た目も豪華で、開けたときのときめきが違う✨
+
+165件のレビューでも高評価だから、贈り物に選んでまず失敗しません。気になったらのぞいてみてね。
+
+#ケーキセット #アソート #食べ比べ #誕生日ケーキ #贈り物 #お祝い #不二家 #スイーツギフト #冷凍ケーキ #詰め合わせ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="6種類も入ってるから、渡した人が何を食べるか迷っちゃう楽しみがある😋
+
+・一度に食べ比べできるから、家族みんなで盛り上がる
+・糖質オフもあるから、気遣い上手な選択肢になる
+・見た目も豪華で、開けたときのときめきが違う✨
+
+165件のレビューでも高評価だから、贈り物に選んでまず失敗しません。気になったらのぞいてみてね。
+
+#ケーキセット #アソート #食べ比べ #誕生日ケーキ #贈り物 #お祝い #不二家 #スイーツギフト #冷凍ケーキ #詰め合わせ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/fujiya-family-town/80052/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="aozorahonpo:10000074">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/aozorahonpo/cabinet/10111371/mitarasi200.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">あおぞら本舗 みたらしだんご120本入り</p>
+        <p class="meta"><span class="price">4,320円</span> ・ ★4.73 (94件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ あおぞら本舗</p>
+      </div>
+    </div>
+    <div class="pitch">みたらし団子って、焼き立てだけが美味しいと思っていませんか？
+
+実は冷凍だからこそ便利なんです。120本入りは大量買いだから、祭りやキャンプ、運動会などイベントに大活躍✨ 解凍して焼くだけで屋台の味が再現できちゃう。
+
+家族で食べるのはもちろん、来客時のおもてなしにも重宝します。タレも絡みやすくて、見た目も美味しい🍡
+
+#みたらし団子 #冷凍食品 #業務用 #イベント #屋台グルメ #おもてなし #ふるさと納税 #大量買い</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=aozorahonpo:10000074" target="_blank" rel="noopener" data-pitch="みたらし団子って、焼き立てだけが美味しいと思っていませんか？
+
+実は冷凍だからこそ便利なんです。120本入りは大量買いだから、祭りやキャンプ、運動会などイベントに大活躍✨ 解凍して焼くだけで屋台の味が再現できちゃう。
+
+家族で食べるのはもちろん、来客時のおもてなしにも重宝します。タレも絡みやすくて、見た目も美味しい🍡
+
+#みたらし団子 #冷凍食品 #業務用 #イベント #屋台グルメ #おもてなし #ふるさと納税 #大量買い">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="みたらし団子って、焼き立てだけが美味しいと思っていませんか？
+
+実は冷凍だからこそ便利なんです。120本入りは大量買いだから、祭りやキャンプ、運動会などイベントに大活躍✨ 解凍して焼くだけで屋台の味が再現できちゃう。
+
+家族で食べるのはもちろん、来客時のおもてなしにも重宝します。タレも絡みやすくて、見た目も美味しい🍡
+
+#みたらし団子 #冷凍食品 #業務用 #イベント #屋台グルメ #おもてなし #ふるさと納税 #大量買い">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/aozorahonpo/10000074/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="hotch-potch:10015578">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/hotch-potch/cabinet/kago800_img1/00010353.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【公認店】スタンレー マグ STANLEY カフェトゥーゴー トラベルマグ 真空マグ 0.23L 0.35L 0.47L The Cafe To Go Travel Mug 8oz 12oz 16oz 保冷 保温 真空断熱マグ フタ 蓋 水筒 ステンレス 完全密閉 軽量 タンブラー マグボトル おしゃれ 正規品 ギフト 12079 12080 12081</p>
+        <p class="meta"><span class="price">3,300円</span> ・ ★4.6 (137件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ ホッチポッチ自由が丘 WEB shop</p>
+      </div>
+    </div>
+    <div class="pitch">完全密閉だからバッグに入れて安心💡
+
+STANLEYの真空マグは、保温・保冷力の高さと使い勝手の良さで137件のレビューを集めています。コンパクト〜たっぷりサイズまで、毎日のシーン🎯に合わせて選べるのも推しポイント✨
+
+#STANLEYマグ #保温保冷 #トラベルマグ #ギフト #コンパクト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=hotch-potch:10015578" target="_blank" rel="noopener" data-pitch="完全密閉だからバッグに入れて安心💡
+
+STANLEYの真空マグは、保温・保冷力の高さと使い勝手の良さで137件のレビューを集めています。コンパクト〜たっぷりサイズまで、毎日のシーン🎯に合わせて選べるのも推しポイント✨
+
+#STANLEYマグ #保温保冷 #トラベルマグ #ギフト #コンパクト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="完全密閉だからバッグに入れて安心💡
+
+STANLEYの真空マグは、保温・保冷力の高さと使い勝手の良さで137件のレビューを集めています。コンパクト〜たっぷりサイズまで、毎日のシーン🎯に合わせて選べるのも推しポイント✨
+
+#STANLEYマグ #保温保冷 #トラベルマグ #ギフト #コンパクト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/hotch-potch/00010353_ms_mug023l/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="nestle:10003556">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/nestle/cabinet/thum/normal/kksantappbmset_tmb.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">キットカット ホリデイサンタ ラッピング袋セット【ネスレ公式通販】【KITKAT チョコレート】【クリスマス ギフト】│ 個包装 大容量 ボックス メッセージ チョコレート菓子 お菓子 職場 受験 応援 異動 お礼 プチギフト 可愛い 差し入れ サンタ チョコ プレゼント</p>
+        <p class="meta"><span class="price">3,348円</span> ・ ★4.85 (20件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ ネスレ通販online shop 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">クリスマスのプチギフトって、結局どれでもいいんじゃ？と思ってない？💭
+
+このサンタ型のキットカットなら、受け取った瞬間に笑顔になる可愛さがあります。公式店限定だからこその特別感✨
+
+個包装だから職場でも配りやすく、大容量なのに質感がある。サクサクウエハースとチョコのバランスも◎
+
+気になったらチェックしてみてね。
+
+#クリスマスギフト #プチギフト #キットカット #差し入れ #チョコレート #個包装 #クリスマス #ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=nestle:10003556" target="_blank" rel="noopener" data-pitch="クリスマスのプチギフトって、結局どれでもいいんじゃ？と思ってない？💭
+
+このサンタ型のキットカットなら、受け取った瞬間に笑顔になる可愛さがあります。公式店限定だからこその特別感✨
+
+個包装だから職場でも配りやすく、大容量なのに質感がある。サクサクウエハースとチョコのバランスも◎
+
+気になったらチェックしてみてね。
+
+#クリスマスギフト #プチギフト #キットカット #差し入れ #チョコレート #個包装 #クリスマス #ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クリスマスのプチギフトって、結局どれでもいいんじゃ？と思ってない？💭
+
+このサンタ型のキットカットなら、受け取った瞬間に笑顔になる可愛さがあります。公式店限定だからこその特別感✨
+
+個包装だから職場でも配りやすく、大容量なのに質感がある。サクサクウエハースとチョコのバランスも◎
+
+気になったらチェックしてみてね。
+
+#クリスマスギフト #プチギフト #キットカット #差し入れ #チョコレート #個包装 #クリスマス #ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/nestle/0009418385/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="wapal:10001374">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/wapal/cabinet/washo3/washo-2027s.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">「砥部焼 2027年 干支 子未 和将窯」 羊 ひつじ 置物 かわいい おしゃれ 縁起物 干支飾り 正月飾り 迎春飾り 玄関 インテリア 手作り 未年 干支置物 コンパクト ミニ 卓上 リビング 和風 窯元 愛媛 伝統工芸 washo-eto-s</p>
+        <p class="meta"><span class="price">2,970円</span> ・ ★4.4 (20件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ 砥部焼と愛媛の雑貨のお店ワパル</p>
+      </div>
+    </div>
+    <div class="pitch">毎年売り切れちゃう砥部焼の干支置物、今年は羊ですよ🐑
+
+正月飾りとして玄関に飾ると、優しい表情の子ひつじがお出迎えしてくれます。唐草模様で丁寧に絵付けされた陶器は、古い町家にも新しい家にも似合う和の雰囲気。親羊と揃えると、さらに可愛らしくなるんですって✨
+
+手作りだからひとつひとつ表情が違う、そこが良きなんですよね。
+
+#砥部焼 #干支置物 #羊 #正月飾り #2027年 #玄関飾り #迎春飾り #陶器 #インテリア #愛媛</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=wapal:10001374" target="_blank" rel="noopener" data-pitch="毎年売り切れちゃう砥部焼の干支置物、今年は羊ですよ🐑
+
+正月飾りとして玄関に飾ると、優しい表情の子ひつじがお出迎えしてくれます。唐草模様で丁寧に絵付けされた陶器は、古い町家にも新しい家にも似合う和の雰囲気。親羊と揃えると、さらに可愛らしくなるんですって✨
+
+手作りだからひとつひとつ表情が違う、そこが良きなんですよね。
+
+#砥部焼 #干支置物 #羊 #正月飾り #2027年 #玄関飾り #迎春飾り #陶器 #インテリア #愛媛">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎年売り切れちゃう砥部焼の干支置物、今年は羊ですよ🐑
+
+正月飾りとして玄関に飾ると、優しい表情の子ひつじがお出迎えしてくれます。唐草模様で丁寧に絵付けされた陶器は、古い町家にも新しい家にも似合う和の雰囲気。親羊と揃えると、さらに可愛らしくなるんですって✨
+
+手作りだからひとつひとつ表情が違う、そこが良きなんですよね。
+
+#砥部焼 #干支置物 #羊 #正月飾り #2027年 #玄関飾り #迎春飾り #陶器 #インテリア #愛媛">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/wapal/washo-eto-s/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="sawaicoffee-tea:10004962">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sawaicoffee-tea/cabinet/thum/sale/261113/osechi-500set.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">澤井珈琲｜鮮度抜群 ドリップコーヒー 280杯 珈琲 ドリップパック 送料無料 コーヒー 福袋 ドリップバッグ 10種280杯分おせち福袋 大容量 個包装 飲み比べ セット 人気 ブラジル グアテマラ 中煎り～深煎り エチオピア グルメ大賞受賞 コーヒー専門店 【RD】【TS】</p>
+        <p class="meta"><span class="price">10,000円</span> ・ ★4.84 (255件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 澤井珈琲Beans＆Leaf</p>
+      </div>
+    </div>
+    <div class="pitch">毎日のコーヒー選びで迷わなくなる。
+
+朝の準備に、
+さっとドリップ。☕
+
+午後の一息に、
+違う味を選ぶ。
+
+来客が来たら、
+10種から選んでもらう。✨
+
+オフィスの休憩室に、
+常備しておく。
+
+280杯分あるから、
+毎日違う一杯を楽しめる。💕
+
+#ドリップコーヒー #コーヒー好きさんと繋がりたい #職場 #来客用 #おもてなし #コーヒータイム #福袋 #大容量</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sawaicoffee-tea:10004962" target="_blank" rel="noopener" data-pitch="毎日のコーヒー選びで迷わなくなる。
+
+朝の準備に、
+さっとドリップ。☕
+
+午後の一息に、
+違う味を選ぶ。
+
+来客が来たら、
+10種から選んでもらう。✨
+
+オフィスの休憩室に、
+常備しておく。
+
+280杯分あるから、
+毎日違う一杯を楽しめる。💕
+
+#ドリップコーヒー #コーヒー好きさんと繋がりたい #職場 #来客用 #おもてなし #コーヒータイム #福袋 #大容量">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日のコーヒー選びで迷わなくなる。
+
+朝の準備に、
+さっとドリップ。☕
+
+午後の一息に、
+違う味を選ぶ。
+
+来客が来たら、
+10種から選んでもらう。✨
+
+オフィスの休憩室に、
+常備しておく。
+
+280杯分あるから、
+毎日違う一杯を楽しめる。💕
+
+#ドリップコーヒー #コーヒー好きさんと繋がりたい #職場 #来客用 #おもてなし #コーヒータイム #福袋 #大容量">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sawaicoffee-tea/osechi-500set/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rorrystore:10000210">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rorrystore/cabinet/09412976/09461393/12513987/imgrc0097314493.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">★最大2000円OFF【楽天1位連続受賞 SNS話題】RORRY モバイルバッテリー 10000mAh iPhone 大容量 携帯充電器 軽量 小型 タイプcケーブル内蔵 急速 30W アイフォン ライトニング対応 3台同時 スマホ 持ち運び PSE カラビナ CharmGo</p>
+        <p class="meta"><span class="price">2,990円</span> ・ ★4.57 (509件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ RorryStore</p>
+      </div>
+    </div>
+    <div class="pitch">外出先でスマホの電池がなくなるの、困りますよね😭
+
+・軽くてコンパクト、毎日持ち運べる
+・ケーブル内蔵でポーチいらず
+・3台同時充電できる大容量
+
+509件のレビューで選ばれ続けてるのは、この使いやすさがあるから✨ 1年保証もついてるから、長く安心して使えるんです💚
+
+気になったらチェックしてみてね。
+
+#モバイルバッテリー #iPhone #スマホ充電器 #軽量 #小型 #携帯充電器 #大容量 #急速充電 #持ち運び #ガジェット</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rorrystore:10000210" target="_blank" rel="noopener" data-pitch="外出先でスマホの電池がなくなるの、困りますよね😭
+
+・軽くてコンパクト、毎日持ち運べる
+・ケーブル内蔵でポーチいらず
+・3台同時充電できる大容量
+
+509件のレビューで選ばれ続けてるのは、この使いやすさがあるから✨ 1年保証もついてるから、長く安心して使えるんです💚
+
+気になったらチェックしてみてね。
+
+#モバイルバッテリー #iPhone #スマホ充電器 #軽量 #小型 #携帯充電器 #大容量 #急速充電 #持ち運び #ガジェット">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="外出先でスマホの電池がなくなるの、困りますよね😭
+
+・軽くてコンパクト、毎日持ち運べる
+・ケーブル内蔵でポーチいらず
+・3台同時充電できる大容量
+
+509件のレビューで選ばれ続けてるのは、この使いやすさがあるから✨ 1年保証もついてるから、長く安心して使えるんです💚
+
+気になったらチェックしてみてね。
+
+#モバイルバッテリー #iPhone #スマホ充電器 #軽量 #小型 #携帯充電器 #大容量 #急速充電 #持ち運び #ガジェット">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rorrystore/phce-t1-10000/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="auc-risecreation:10005456">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/auc-risecreation/cabinet/product/top-2/r0876_01h_em.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【20％OFFクーポン 11/18 23:59迄】 ＼再入荷／ エアフライヤー レシピ 付き コンパクト 耐熱ガラス ガラス ノン ノンオイルフライヤー ノンフライヤー 食洗機 対応 調理 フライ 家電 省 スペース 節約 軽量 小型 キッチン 簡単 ガラス製 ノンフライヤー器 大容量</p>
+        <p class="meta"><span class="price">14,800円</span> ・ ★4.38 (74件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ atRise（アットライズ）</p>
+      </div>
+    </div>
+    <div class="pitch">油なしで揚げたてのおいしさを食べたい、でも健康も譲りたくない……そんなわがままありませんか？
+
+このノンフライヤーなら、両方いけちゃうんです🌟
+360°の熱風で油なしでもカラッとジューシー。余分な脂は下に落ちるからヘルシーに仕上がる。
+
+42レシピ付きだから、プレゼントされた人もすぐに活躍させられる。シンプルな設計で使い方も簡単。もらって困らない家電です✨
+
+#ノンフライヤー #エアフライヤー #キッチン家電 #プレゼント #贈り物 #ヘルシー料理 #時短調理 #新生活</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=auc-risecreation:10005456" target="_blank" rel="noopener" data-pitch="油なしで揚げたてのおいしさを食べたい、でも健康も譲りたくない……そんなわがままありませんか？
+
+このノンフライヤーなら、両方いけちゃうんです🌟
+360°の熱風で油なしでもカラッとジューシー。余分な脂は下に落ちるからヘルシーに仕上がる。
+
+42レシピ付きだから、プレゼントされた人もすぐに活躍させられる。シンプルな設計で使い方も簡単。もらって困らない家電です✨
+
+#ノンフライヤー #エアフライヤー #キッチン家電 #プレゼント #贈り物 #ヘルシー料理 #時短調理 #新生活">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="油なしで揚げたてのおいしさを食べたい、でも健康も譲りたくない……そんなわがままありませんか？
+
+このノンフライヤーなら、両方いけちゃうんです🌟
+360°の熱風で油なしでもカラッとジューシー。余分な脂は下に落ちるからヘルシーに仕上がる。
+
+42レシピ付きだから、プレゼントされた人もすぐに活躍させられる。シンプルな設計で使い方も簡単。もらって困らない家電です✨
+
+#ノンフライヤー #エアフライヤー #キッチン家電 #プレゼント #贈り物 #ヘルシー料理 #時短調理 #新生活">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/auc-risecreation/r0876/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="scope:10032441">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/scope/cabinet/iittala2/iia14a11_a_im05.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">イッタラ ティーマ プレート12cm [ Iittala Teema ]</p>
+        <p class="meta"><span class="price">2,750円</span> ・ ★4.85 (875件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ scope version.R</p>
+      </div>
+    </div>
+    <div class="pitch">取り皿だと思ってたら、コーヒーカップのソーサーにもなるんです✨
+
+何枚も揃えるとテーブルコーディネートも自由自在だし、北欧の定番だからこその色選びで個性が出る💙
+
+気になったらチェックしてみてね。
+
+#イッタラティーマ #北欧食器 #小皿 #テーブルウェア #食卓</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=scope:10032441" target="_blank" rel="noopener" data-pitch="取り皿だと思ってたら、コーヒーカップのソーサーにもなるんです✨
+
+何枚も揃えるとテーブルコーディネートも自由自在だし、北欧の定番だからこその色選びで個性が出る💙
+
+気になったらチェックしてみてね。
+
+#イッタラティーマ #北欧食器 #小皿 #テーブルウェア #食卓">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="取り皿だと思ってたら、コーヒーカップのソーサーにもなるんです✨
+
+何枚も揃えるとテーブルコーディネートも自由自在だし、北欧の定番だからこその色選びで個性が出る💙
+
+気になったらチェックしてみてね。
+
+#イッタラティーマ #北欧食器 #小皿 #テーブルウェア #食卓">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/scope/iitteep12/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-15";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
