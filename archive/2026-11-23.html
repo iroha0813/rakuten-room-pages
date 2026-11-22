@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-23</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-23 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="arahata:10000075">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/arahata/cabinet/product/11991580/puerh-thumb-5x30-c.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">革命のプーアール茶 5g×30包 30日分 1リットル煮出し用 ダイエット 機能性表示食品 国産 プーアル茶 プアール茶 ダイエット茶 ダイエットティー 健康茶 お茶 ティーパック ティーバッグ 荒畑園 SARYU-SOSO メール便配送 送料無料</p>
+        <p class="meta"><span class="price">3,888円</span> ・ ★4.53 (816件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 【 お茶の荒畑園 楽天市場店 】</p>
+      </div>
+    </div>
+    <div class="pitch">油っこい食事のあと、スッキリしたいと思いませんか？
+
+このプーアール茶なら、1日1リットル飲むだけで大丈夫💚
+静岡産の茶葉を独自製法で発酵させた、くせのない飲みやすい味です。
+緑茶より豊富な没食子酸がスルスル流してくれるから、毎日ゴクゴク続けられちゃいます✨
+
+816件のレビューで選ばれ続けてる理由、ぜひ試してみてね。
+
+#プーアール茶 #ダイエット茶 #健康茶 #スッキリ #毎日飲むお茶 #国産茶 #ティーバッグ #ダイエット</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=arahata:10000075" target="_blank" rel="noopener" data-pitch="油っこい食事のあと、スッキリしたいと思いませんか？
+
+このプーアール茶なら、1日1リットル飲むだけで大丈夫💚
+静岡産の茶葉を独自製法で発酵させた、くせのない飲みやすい味です。
+緑茶より豊富な没食子酸がスルスル流してくれるから、毎日ゴクゴク続けられちゃいます✨
+
+816件のレビューで選ばれ続けてる理由、ぜひ試してみてね。
+
+#プーアール茶 #ダイエット茶 #健康茶 #スッキリ #毎日飲むお茶 #国産茶 #ティーバッグ #ダイエット">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="油っこい食事のあと、スッキリしたいと思いませんか？
+
+このプーアール茶なら、1日1リットル飲むだけで大丈夫💚
+静岡産の茶葉を独自製法で発酵させた、くせのない飲みやすい味です。
+緑茶より豊富な没食子酸がスルスル流してくれるから、毎日ゴクゴク続けられちゃいます✨
+
+816件のレビューで選ばれ続けてる理由、ぜひ試してみてね。
+
+#プーアール茶 #ダイエット茶 #健康茶 #スッキリ #毎日飲むお茶 #国産茶 #ティーバッグ #ダイエット">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/arahata/6069/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="letao:10001854">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/letao/cabinet/item/point/r971_bf2026_p10.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【ポイント10倍】 クリスマス ギフト 2026 ケーキ ルタオ LeTAO ドゥーブルフロマージュ チーズケーキ チョコ ギフト 4号 ( 2名用 ～ 4名用 ) 誕生日ケーキ スイーツ 洋菓子 お取り寄せ 北海道 内祝い お返し 詰め合わせ 冷凍ケーキ チーズケーキ 食べ比べセット 送料込み</p>
+        <p class="meta"><span class="price">4,580円</span> ・ ★4.86 (388件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ LeTAO（小樽洋菓子舗ルタオ）</p>
+      </div>
+    </div>
+    <div class="pitch">累計2,700万個突破のチーズケーキ、知ってますか？
+
+ルタオのドゥーブルフロマージュは圧倒的な支持を得ている看板商品。濃厚で上質な味わいが、特別感のある贈り物として選ばれ続けています。
+
+4号サイズなら2〜4名でシェアできて、クリスマスや冬のギフトにぴったり。大切な人への贈り物だからこそ、ルタオのこだわりの美味しさが喜ばれるんです💕
+
+#チーズケーキ #北海道スイーツ #クリスマスギフト #贈り物 #お取り寄せ #冬ギフト #ルタオ #内祝い #誕生日ケーキ #チーズケーキ好きさんと繋がりたい</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=letao:10001854" target="_blank" rel="noopener" data-pitch="累計2,700万個突破のチーズケーキ、知ってますか？
+
+ルタオのドゥーブルフロマージュは圧倒的な支持を得ている看板商品。濃厚で上質な味わいが、特別感のある贈り物として選ばれ続けています。
+
+4号サイズなら2〜4名でシェアできて、クリスマスや冬のギフトにぴったり。大切な人への贈り物だからこそ、ルタオのこだわりの美味しさが喜ばれるんです💕
+
+#チーズケーキ #北海道スイーツ #クリスマスギフト #贈り物 #お取り寄せ #冬ギフト #ルタオ #内祝い #誕生日ケーキ #チーズケーキ好きさんと繋がりたい">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="累計2,700万個突破のチーズケーキ、知ってますか？
+
+ルタオのドゥーブルフロマージュは圧倒的な支持を得ている看板商品。濃厚で上質な味わいが、特別感のある贈り物として選ばれ続けています。
+
+4号サイズなら2〜4名でシェアできて、クリスマスや冬のギフトにぴったり。大切な人への贈り物だからこそ、ルタオのこだわりの美味しさが喜ばれるんです💕
+
+#チーズケーキ #北海道スイーツ #クリスマスギフト #贈り物 #お取り寄せ #冬ギフト #ルタオ #内祝い #誕生日ケーキ #チーズケーキ好きさんと繋がりたい">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/letao/r971/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="e-up-eishin:10000112">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/e-up-eishin/cabinet/singu/12779751/ep_st_black_45.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">【最大45%OFFクーポン限定50枚24日10時まで】枕 横向き 首が痛くならない 首こり 肩こり ストレートネック 枕 カバー 付 TPE枕 まくら 寝返り 首 サポート 仰向け いびき 予防 防止 快眠 寝具 横寝 通気性 うつぶせ寝 シルク 枕 カバー ナイトキャップ 洗える 枕難民</p>
+        <p class="meta"><span class="price">3,480円</span> ・ ★4.59 (244件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ E-UP楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">夜中に何度も目が覚める。
+寝返りを打つたびに首が痛い。
+朝起きたら肩がバキバキ。
+
+そんな人こそ試してほしい、このTPE枕✨
+
+横向き・仰向け・うつぶせと、どの寝姿勢でも首と肩をしっかり支えてくれるから、寝返りが多い人も快眠できるんです。
+
+最大45%OFFクーポンあるから、気になったらチェック👍
+
+#枕 #寝具 #首こり #肩こり #ストレートネック #快眠 #横寝 #寝返り</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=e-up-eishin:10000112" target="_blank" rel="noopener" data-pitch="夜中に何度も目が覚める。
+寝返りを打つたびに首が痛い。
+朝起きたら肩がバキバキ。
+
+そんな人こそ試してほしい、このTPE枕✨
+
+横向き・仰向け・うつぶせと、どの寝姿勢でも首と肩をしっかり支えてくれるから、寝返りが多い人も快眠できるんです。
+
+最大45%OFFクーポンあるから、気になったらチェック👍
+
+#枕 #寝具 #首こり #肩こり #ストレートネック #快眠 #横寝 #寝返り">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="夜中に何度も目が覚める。
+寝返りを打つたびに首が痛い。
+朝起きたら肩がバキバキ。
+
+そんな人こそ試してほしい、このTPE枕✨
+
+横向き・仰向け・うつぶせと、どの寝姿勢でも首と肩をしっかり支えてくれるから、寝返りが多い人も快眠できるんです。
+
+最大45%OFFクーポンあるから、気になったらチェック👍
+
+#枕 #寝具 #首こり #肩こり #ストレートネック #快眠 #横寝 #寝返り">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/e-up-eishin/hacci-sd01/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="omuraisu-n:10000004">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/omuraisu-n/cabinet/event/2611bf/2611bf_ads_thum.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【半額★5,998円⇒2,999円】11/21限定！絶品オムそば210g×8袋 2セット購入で2個おまけ 焼きそば 仕送り 冷凍 冷凍食品 惣菜 夏休み 子供 電子レンジ 時短 レンチン ランチ 洋食 おかず ストック 仕送り 買い置き 置きオム オムレツ 簡単 便利 夕食 昼食</p>
+        <p class="meta"><span class="price">2,999円</span> ・ ★4.41 (71件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ オムライスの西川</p>
+      </div>
+    </div>
+    <div class="pitch">オムライス専門店が作ってるから、玉子の食感が違うんですよ✨
+
+・レンジで温めるだけ、調理時間はほぼなし
+・お店の屋台感がそのまま味わえる
+・ストックしてる人が多い定番になってる
+
+71件のレビューで平均4.41点。選ばれ続けてる理由はシンプルな美味しさなんだと思います。気になったらチェックしてみてね💕
+
+#オムライス #冷凍食品 #時短ごはん #お弁当 #仕送り #レンチン #簡単おかず #洋食 #ストック #夜ご飯</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=omuraisu-n:10000004" target="_blank" rel="noopener" data-pitch="オムライス専門店が作ってるから、玉子の食感が違うんですよ✨
+
+・レンジで温めるだけ、調理時間はほぼなし
+・お店の屋台感がそのまま味わえる
+・ストックしてる人が多い定番になってる
+
+71件のレビューで平均4.41点。選ばれ続けてる理由はシンプルな美味しさなんだと思います。気になったらチェックしてみてね💕
+
+#オムライス #冷凍食品 #時短ごはん #お弁当 #仕送り #レンチン #簡単おかず #洋食 #ストック #夜ご飯">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="オムライス専門店が作ってるから、玉子の食感が違うんですよ✨
+
+・レンジで温めるだけ、調理時間はほぼなし
+・お店の屋台感がそのまま味わえる
+・ストックしてる人が多い定番になってる
+
+71件のレビューで平均4.41点。選ばれ続けてる理由はシンプルな美味しさなんだと思います。気になったらチェックしてみてね💕
+
+#オムライス #冷凍食品 #時短ごはん #お弁当 #仕送り #レンチン #簡単おかず #洋食 #ストック #夜ご飯">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/omuraisu-n/omusoba8-co/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="has:10000485">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/has/cabinet/kn/tmn/b_6.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【メール便送料無料】粉なっとう[あらびき] 84g 小さじ1杯に納豆10パック分の納豆菌が生きているサプリメント/納豆キナーゼ/ポリアミン/食物繊維#四国阿波はすや</p>
+        <p class="meta"><span class="price">2,700円</span> ・ ★4.59 (1428件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 粉なっとう・粉末納豆の「はすや」</p>
+      </div>
+    </div>
+    <div class="pitch">納豆は好きだけど、毎日10パック食べるのは無理…😅
+
+そんなときこの粉なっとうなら、小さじ1杯で10パック分の納豆菌が生きたまま摂取できちゃうんです。食物繊維はレタスの19倍だから、腸活にもぴったり✨
+
+粉だからヨーグルトやスープにさっと混ぜるだけで良くて、納豆のニオイも気にならない。1428件のレビューで支持され続けてるのも納得ですよ。
+
+気になったら覗いてみて。
+
+#納豆菌 #粉末納豆 #腸活 #食物繊維 #サプリメント #健康食品 #メール便送料無料 #納豆キナーゼ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=has:10000485" target="_blank" rel="noopener" data-pitch="納豆は好きだけど、毎日10パック食べるのは無理…😅
+
+そんなときこの粉なっとうなら、小さじ1杯で10パック分の納豆菌が生きたまま摂取できちゃうんです。食物繊維はレタスの19倍だから、腸活にもぴったり✨
+
+粉だからヨーグルトやスープにさっと混ぜるだけで良くて、納豆のニオイも気にならない。1428件のレビューで支持され続けてるのも納得ですよ。
+
+気になったら覗いてみて。
+
+#納豆菌 #粉末納豆 #腸活 #食物繊維 #サプリメント #健康食品 #メール便送料無料 #納豆キナーゼ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="納豆は好きだけど、毎日10パック食べるのは無理…😅
+
+そんなときこの粉なっとうなら、小さじ1杯で10パック分の納豆菌が生きたまま摂取できちゃうんです。食物繊維はレタスの19倍だから、腸活にもぴったり✨
+
+粉だからヨーグルトやスープにさっと混ぜるだけで良くて、納豆のニオイも気にならない。1428件のレビューで支持され続けてるのも納得ですよ。
+
+気になったら覗いてみて。
+
+#納豆菌 #粉末納豆 #腸活 #食物繊維 #サプリメント #健康食品 #メール便送料無料 #納豆キナーゼ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/has/504823/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kai:10008595">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kai/cabinet/bc/goods_2/thumb/000dw5630_r.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【19日20時〜25日限定：ポイント10倍＆クーポン】フライパン 貝印 軽いフライパン 20cm 26cm 28cm 30cm 32cm IH ガス 対応 | 軽量フライパン 軽量 IH対応 ガス火 ガスコンロ 20 26 28 30 32 PFOAフリー PFOSフリー PFOA PFOS フリー FREE PFOA不使用 PFOS不使用</p>
+        <p class="meta"><span class="price">1,755円</span> ・ ★4.57 (1853件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 貝印公式オンラインストア</p>
+      </div>
+    </div>
+    <div class="pitch">ポイント10倍＆クーポンだから、今が買い時！✨
+
+毎日使うフライパンだからこそ、軽さと焦げにくさにこだわったやつ。💕
+1853件のレビューで支持されてる理由、使ってみるとわかるよ。🍳
+
+#フライパン #軽量フライパン #IH対応 #キッチン用品 #貝印</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kai:10008595" target="_blank" rel="noopener" data-pitch="ポイント10倍＆クーポンだから、今が買い時！✨
+
+毎日使うフライパンだからこそ、軽さと焦げにくさにこだわったやつ。💕
+1853件のレビューで支持されてる理由、使ってみるとわかるよ。🍳
+
+#フライパン #軽量フライパン #IH対応 #キッチン用品 #貝印">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ポイント10倍＆クーポンだから、今が買い時！✨
+
+毎日使うフライパンだからこそ、軽さと焦げにくさにこだわったやつ。💕
+1853件のレビューで支持されてる理由、使ってみるとわかるよ。🍳
+
+#フライパン #軽量フライパン #IH対応 #キッチン用品 #貝印">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kai/000dw5629/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="toucher-home:10002832">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/toucher-home/cabinet/image04/szbs102x_01.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【半額3168円→1580円】 今治製 【訳あり】 フェイスタオル 4枚セット 残糸 ボーダー 楽天1位 / 日本製 今治 タオル 吸水 速乾 ギフト セット まとめ買い ad lt</p>
+        <p class="meta"><span class="price">1,580円</span> ・ ★4.44 (236件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ タオル直販店 ヒオリエ／日織恵</p>
+      </div>
+    </div>
+    <div class="pitch">朝、顔を洗うたびにボロボロになるタオルにうんざりしていませんか？
+
+今治製だから吸水性と速乾性が段違い ✨ 綿100%でふわふわなのに、訳ありだから気軽に試せる価格なんです。4枚セットで家族みんなで使えるし、新生活の準備にもぴったり 💕
+
+ボーダー柄もおしゃれですよ。
+
+#今治タオル #フェイスタオル #日本製 #訳あり #新生活 #ギフト #タオル #まとめ買い</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=toucher-home:10002832" target="_blank" rel="noopener" data-pitch="朝、顔を洗うたびにボロボロになるタオルにうんざりしていませんか？
+
+今治製だから吸水性と速乾性が段違い ✨ 綿100%でふわふわなのに、訳ありだから気軽に試せる価格なんです。4枚セットで家族みんなで使えるし、新生活の準備にもぴったり 💕
+
+ボーダー柄もおしゃれですよ。
+
+#今治タオル #フェイスタオル #日本製 #訳あり #新生活 #ギフト #タオル #まとめ買い">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="朝、顔を洗うたびにボロボロになるタオルにうんざりしていませんか？
+
+今治製だから吸水性と速乾性が段違い ✨ 綿100%でふわふわなのに、訳ありだから気軽に試せる価格なんです。4枚セットで家族みんなで使えるし、新生活の準備にもぴったり 💕
+
+ボーダー柄もおしゃれですよ。
+
+#今治タオル #フェイスタオル #日本製 #訳あり #新生活 #ギフト #タオル #まとめ買い">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/toucher-home/szbs103x/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="angelingg:10001000">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/angelingg/cabinet/ag-r-00150/ag-r-00150.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【最大40%オフクーポン★ブラックフライデー】折りたたみ マグネット 保存容器 シリコン ボックス トレイ 鍋敷き 耐熱 油はじく 簡単洗浄 コンパクト 収納 フラット 組立簡単 小物入れ まな板 ペット皿 ピクニック キッチン 軽量 お手入れ簡単 楽天ROOM掲載歓迎</p>
+        <p class="meta"><span class="price">1,980円</span> ・ ★4.59 (29件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ Angeling（エンジェリング）</p>
+      </div>
+    </div>
+    <div class="pitch">保存容器のかさばりがなくなる✨
+
+マグネットでペタッと貼り付けて、使う時だけサッと広げられるから、冷蔵庫周りがスッキリ💕フラットに戻してコンパクト収納できるのが最高です。食品用シリコンだから角まで簡単に洗えるのも嬉しい🧹
+
+キッチンの小さなモヤモヤが一気に解決する一枚。気になったらチェックしてみてね！
+
+#折りたたみボックス #シリコン容器 #キッチン収納 #冷蔵庫 #マグネット #鍋敷き #トレイ #省スペース #便利グッズ #時短家事</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=angelingg:10001000" target="_blank" rel="noopener" data-pitch="保存容器のかさばりがなくなる✨
+
+マグネットでペタッと貼り付けて、使う時だけサッと広げられるから、冷蔵庫周りがスッキリ💕フラットに戻してコンパクト収納できるのが最高です。食品用シリコンだから角まで簡単に洗えるのも嬉しい🧹
+
+キッチンの小さなモヤモヤが一気に解決する一枚。気になったらチェックしてみてね！
+
+#折りたたみボックス #シリコン容器 #キッチン収納 #冷蔵庫 #マグネット #鍋敷き #トレイ #省スペース #便利グッズ #時短家事">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="保存容器のかさばりがなくなる✨
+
+マグネットでペタッと貼り付けて、使う時だけサッと広げられるから、冷蔵庫周りがスッキリ💕フラットに戻してコンパクト収納できるのが最高です。食品用シリコンだから角まで簡単に洗えるのも嬉しい🧹
+
+キッチンの小さなモヤモヤが一気に解決する一枚。気になったらチェックしてみてね！
+
+#折りたたみボックス #シリコン容器 #キッチン収納 #冷蔵庫 #マグネット #鍋敷き #トレイ #省スペース #便利グッズ #時短家事">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/angelingg/ag-r-00150/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="audio-technica:10000191">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/audio-technica/cabinet/event_thum/imgrc0146443944.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【50%OFFクーポン 11/25 1:59まで】オーディオテクニカ ATH-SQ1TW2 ワイヤレスイヤホン Bluetooth マルチポイント ワイヤレス充電 ながら聞き ハンズフリー通話 片耳通話可能 小型 低遅延 ギフト ラッピング プレゼント</p>
+        <p class="meta"><span class="price">10,780円</span> ・ ★4.14 (131件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ オーディオテクニカ公式楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">50%OFFクーポン付きで贈れば、喜ばれ度が違う✨
+
+片耳でながら聞きしてる人。
+
+通話が入って、イヤホン一つで応答する人。
+
+充電ケースにそっと戻す人。
+
+小さくて上品だから、
+誰もが毎日使いたくなるんです💕
+
+気になったらチェックしてみてね。
+
+#ワイヤレスイヤホン #プレゼント #ギフト #Bluetoothイヤホン #小型 #ながら聞き #贈り物 #マルチポイント</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=audio-technica:10000191" target="_blank" rel="noopener" data-pitch="50%OFFクーポン付きで贈れば、喜ばれ度が違う✨
+
+片耳でながら聞きしてる人。
+
+通話が入って、イヤホン一つで応答する人。
+
+充電ケースにそっと戻す人。
+
+小さくて上品だから、
+誰もが毎日使いたくなるんです💕
+
+気になったらチェックしてみてね。
+
+#ワイヤレスイヤホン #プレゼント #ギフト #Bluetoothイヤホン #小型 #ながら聞き #贈り物 #マルチポイント">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="50%OFFクーポン付きで贈れば、喜ばれ度が違う✨
+
+片耳でながら聞きしてる人。
+
+通話が入って、イヤホン一つで応答する人。
+
+充電ケースにそっと戻す人。
+
+小さくて上品だから、
+誰もが毎日使いたくなるんです💕
+
+気になったらチェックしてみてね。
+
+#ワイヤレスイヤホン #プレゼント #ギフト #Bluetoothイヤホン #小型 #ながら聞き #贈り物 #マルチポイント">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/audio-technica/130308930/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="irisplaza-r:10108692">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/irisplaza-r/cabinet/10172579/12541977/imgrc0115940798.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">[200円OFFクーポン/超トク]＼2枚目60%OFFクーポン★~25日9:59迄／【公式】掛け布団 シングル セミダブル ダブル 洗える 冬 シンサレート暖かい 洗濯 丸洗い 軽量 冬用 掛布団 冬掛け布団 プレミアムシンサレート 毛布 掛け毛布 リバーシブル</p>
+        <p class="meta"><span class="price">4,280円</span> ・ ★4.36 (403件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ アイリスオーヤマ公式 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">ふわふわなのに軽くて、実は防災グッズとしても活躍するんです✨
+
+・丸洗いできるから、花粉の季節も安心🌸
+・リバーシブルで使い分けられて、掛け毛布いらず
+・避難時の防寒対策にもなる万能さ🛡️
+
+冬はもちろん、シーズン関係なく頼れる一枚。今なら2枚目が60%OFFだから、寝室用と来客用で揃えるのもいいですよ💕
+
+#掛け布団 #シングル #セミダブル #ダブル #洗える布団 #冬用寝具 #シンサレート #防寒対策 #軽量布団 #寝具</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=irisplaza-r:10108692" target="_blank" rel="noopener" data-pitch="ふわふわなのに軽くて、実は防災グッズとしても活躍するんです✨
+
+・丸洗いできるから、花粉の季節も安心🌸
+・リバーシブルで使い分けられて、掛け毛布いらず
+・避難時の防寒対策にもなる万能さ🛡️
+
+冬はもちろん、シーズン関係なく頼れる一枚。今なら2枚目が60%OFFだから、寝室用と来客用で揃えるのもいいですよ💕
+
+#掛け布団 #シングル #セミダブル #ダブル #洗える布団 #冬用寝具 #シンサレート #防寒対策 #軽量布団 #寝具">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ふわふわなのに軽くて、実は防災グッズとしても活躍するんです✨
+
+・丸洗いできるから、花粉の季節も安心🌸
+・リバーシブルで使い分けられて、掛け毛布いらず
+・避難時の防寒対策にもなる万能さ🛡️
+
+冬はもちろん、シーズン関係なく頼れる一枚。今なら2枚目が60%OFFだから、寝室用と来客用で揃えるのもいいですよ💕
+
+#掛け布団 #シングル #セミダブル #ダブル #洗える布団 #冬用寝具 #シンサレート #防寒対策 #軽量布団 #寝具">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/irisplaza-r/7149341/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-23";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
