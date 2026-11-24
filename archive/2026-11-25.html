@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-25</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-25 ・ 7件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="jblstore:10000180">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/jblstore/cabinet/07940778/go-4/th_go4_rank.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">★BLACK FRIDAY先着CP＆エントリー10倍★＼楽天1位／【公式】 JBL Bluetoothスピーカー GO 4 | ジェービーエル 防水 スピーカー Bluetooth 5.3 ブルートゥース ポータブルスピーカー ワイヤレス 屋外 アウトドア ビーチ 防塵 高音質 軽量 小型 お風呂 車内 最大7時間再生</p>
+        <p class="meta"><span class="price">4,730円</span> ・ ★4.8 (312件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ JBL・AKG公式ストア</p>
+      </div>
+    </div>
+    <div class="pitch">JBL GO 4は、シンプルなのに何年も選ばれ続けるスピーカーなんです。✨
+
+・小さくて軽いから、どこへでも持ち運べる
+・防水防塵で、お風呂もビーチも気にせず使える
+・7時間再生で、外出中も電池切れの心配なし
+
+312件のレビューで4.8点という信頼の厚さが、定番になった理由。シンプルだからこそ、ずっと活躍するスピーカーですよ💙
+
+#Bluetoothスピーカー #ポータブルスピーカー #防水スピーカー #アウトドア #キャンプ #ビーチ #高音質 #軽量 #コンパクト #ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=jblstore:10000180" target="_blank" rel="noopener" data-pitch="JBL GO 4は、シンプルなのに何年も選ばれ続けるスピーカーなんです。✨
+
+・小さくて軽いから、どこへでも持ち運べる
+・防水防塵で、お風呂もビーチも気にせず使える
+・7時間再生で、外出中も電池切れの心配なし
+
+312件のレビューで4.8点という信頼の厚さが、定番になった理由。シンプルだからこそ、ずっと活躍するスピーカーですよ💙
+
+#Bluetoothスピーカー #ポータブルスピーカー #防水スピーカー #アウトドア #キャンプ #ビーチ #高音質 #軽量 #コンパクト #ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="JBL GO 4は、シンプルなのに何年も選ばれ続けるスピーカーなんです。✨
+
+・小さくて軽いから、どこへでも持ち運べる
+・防水防塵で、お風呂もビーチも気にせず使える
+・7時間再生で、外出中も電池切れの心配なし
+
+312件のレビューで4.8点という信頼の厚さが、定番になった理由。シンプルだからこそ、ずっと活躍するスピーカーですよ💙
+
+#Bluetoothスピーカー #ポータブルスピーカー #防水スピーカー #アウトドア #キャンプ #ビーチ #高音質 #軽量 #コンパクト #ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/jblstore/go-4/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="machinoomise:10000805">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/machinoomise/cabinet/thumb/imgrc0110528247.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【20％OFF 11/19 20:00-11/25 01:59】CIO モバイルバッテリー 半固体電池 半固体系 燃えにくい 小型 薄型 軽量 大容量 10000mAh 35W Type-C タイプC 3ポート パススルー iPhone 17 Pixel10 Galaxy S26 iPad MacBook Windows ノートPC SMARTCOBY Pro SLIM SS</p>
+        <p class="meta"><span class="price">4,980円</span> ・ ★4.67 (90件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ CIO 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">飛行機の手荷物で持ち込める、パワフルなモバイルバッテリー✈️
+
+半固体電池だから燃えにくくて安心。薄型・軽量なのにノートパソコンにも使える35W出力 ✨💪
+
+毎日のお供にぴったりです。
+
+#モバイルバッテリー #ノートパソコン #飛行機 #モバイルバッテリー大容量 #iPhone充電</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=machinoomise:10000805" target="_blank" rel="noopener" data-pitch="飛行機の手荷物で持ち込める、パワフルなモバイルバッテリー✈️
+
+半固体電池だから燃えにくくて安心。薄型・軽量なのにノートパソコンにも使える35W出力 ✨💪
+
+毎日のお供にぴったりです。
+
+#モバイルバッテリー #ノートパソコン #飛行機 #モバイルバッテリー大容量 #iPhone充電">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="飛行機の手荷物で持ち込める、パワフルなモバイルバッテリー✈️
+
+半固体電池だから燃えにくくて安心。薄型・軽量なのにノートパソコンにも使える35W出力 ✨💪
+
+毎日のお供にぴったりです。
+
+#モバイルバッテリー #ノートパソコン #飛行機 #モバイルバッテリー大容量 #iPhone充電">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/machinoomise/cio-mb35w2c1a-ssa10k-s/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="lindt-chocolate:10002129">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/lindt-chocolate/cabinet/9701730_2611_2r.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">≪クーポンご利用で50％OFF≫リンツ クリアランスバッグ 250gx2セット</p>
+        <p class="meta"><span class="price">7,200円</span> ・ ★4.57 (181件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ リンツ チョコレート 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">クーポンで50％OFFだから、高級感あるのに気軽に贈れる ✨
+
+箱を開けると、
+色とりどりのチョコが 🎁
+
+リンドールの定番に、
+ジャンドゥーヤの上品さ。
+
+知ってる人も、
+初めての人も喜ぶ 💕
+
+みんなが好きな詰め合わせだからこそ、
+贈り物に選ばれ続けてるんだ。
+
+#リンツ #チョコレート #お菓子 #ギフト #クーポン #50%OFF #高級チョコ #もらって嬉しい</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=lindt-chocolate:10002129" target="_blank" rel="noopener" data-pitch="クーポンで50％OFFだから、高級感あるのに気軽に贈れる ✨
+
+箱を開けると、
+色とりどりのチョコが 🎁
+
+リンドールの定番に、
+ジャンドゥーヤの上品さ。
+
+知ってる人も、
+初めての人も喜ぶ 💕
+
+みんなが好きな詰め合わせだからこそ、
+贈り物に選ばれ続けてるんだ。
+
+#リンツ #チョコレート #お菓子 #ギフト #クーポン #50%OFF #高級チョコ #もらって嬉しい">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クーポンで50％OFFだから、高級感あるのに気軽に贈れる ✨
+
+箱を開けると、
+色とりどりのチョコが 🎁
+
+リンドールの定番に、
+ジャンドゥーヤの上品さ。
+
+知ってる人も、
+初めての人も喜ぶ 💕
+
+みんなが好きな詰め合わせだからこそ、
+贈り物に選ばれ続けてるんだ。
+
+#リンツ #チョコレート #お菓子 #ギフト #クーポン #50%OFF #高級チョコ #もらって嬉しい">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/lindt-chocolate/clearance_set/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="henri-charpentier:10001037">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/campaign2026/p-thumbnail-26/hfm30_p19.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【エントリーでP19倍】お歳暮 クリスマス スイーツ お菓子 洋菓子 焼き菓子 ギフト 個包装 詰め合わせ 手土産 お祝い お返し 内祝い 退職 高級 おしゃれ 贈り物 プレゼント 手土産送料無料 HFM-30N2 フィナンシェ・マドレーヌ詰合せ 2種19個入</p>
+        <p class="meta"><span class="price">3,240円</span> ・ ★4.74 (3286件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ アンリ・シャルパンティエ</p>
+      </div>
+    </div>
+    <div class="pitch">ギネス世界記録9回目認定の焼き菓子💕
+
+アンリ・シャルパンティエのフィナンシェとマドレーヌ詰合せです。3,000件以上のレビューで4.74の高評価！フィナンシェの香ばしさとマドレーヌのしっとり感、2つの味わいが楽しめるから、どなたへのギフトにも喜ばれているんですよ。
+
+個包装で19個入りだから、配りやすいのも嬉しい✨
+
+#ギフト #焼き菓子 #お歳暮 #クリスマス #手土産 #詰め合わせ #プレゼント #高級お菓子 #おしゃれ #内祝い</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=henri-charpentier:10001037" target="_blank" rel="noopener" data-pitch="ギネス世界記録9回目認定の焼き菓子💕
+
+アンリ・シャルパンティエのフィナンシェとマドレーヌ詰合せです。3,000件以上のレビューで4.74の高評価！フィナンシェの香ばしさとマドレーヌのしっとり感、2つの味わいが楽しめるから、どなたへのギフトにも喜ばれているんですよ。
+
+個包装で19個入りだから、配りやすいのも嬉しい✨
+
+#ギフト #焼き菓子 #お歳暮 #クリスマス #手土産 #詰め合わせ #プレゼント #高級お菓子 #おしゃれ #内祝い">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ギネス世界記録9回目認定の焼き菓子💕
+
+アンリ・シャルパンティエのフィナンシェとマドレーヌ詰合せです。3,000件以上のレビューで4.74の高評価！フィナンシェの香ばしさとマドレーヌのしっとり感、2つの味わいが楽しめるから、どなたへのギフトにも喜ばれているんですよ。
+
+個包装で19個入りだから、配りやすいのも嬉しい✨
+
+#ギフト #焼き菓子 #お歳暮 #クリスマス #手土産 #詰め合わせ #プレゼント #高級お菓子 #おしゃれ #内祝い">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/henri-charpentier/771330/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="angelingg:10001044">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/angelingg/cabinet/ag-r-00190/ag-r-00190.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【最大40%オフクーポン★ブラックフライデー】キッチンたわし ステンレスたわし ステンレスブラシ キッチンブラシ ワイヤーブラシ チェーンたわし チェーンメール スクラバー 鍋 フライパン 焦げ落とし こびりつき 汚れ落とし 油汚れ 鍋底 水筒 タンブラー ボトル</p>
+        <p class="meta"><span class="price">1,780円</span> ・ ★4.52 (108件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ Angeling（エンジェリング）</p>
+      </div>
+    </div>
+    <div class="pitch">水筒の底の汚れ、スポンジでは取れないままになっていませんか？
+
+このチェーンたわしなら、ボトルの中に入れて振るだけ。手が届かない底の汚れもスッキリ落とせちゃうんです✨
+
+鍋やフライパンの焦げ付きはもちろん、折り曲げたり丸めたり形を自由に変えられるから、洗いたい場所に合わせて使える。最大40%オフクーポンでお試しやすい価格ですよ💕
+
+気になったらチェック👇
+
+#水筒洗い #キッチン掃除 #焦げ落とし #油汚れ #ステンレスたわし #時短家事 #キッチングッズ #コンパクト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=angelingg:10001044" target="_blank" rel="noopener" data-pitch="水筒の底の汚れ、スポンジでは取れないままになっていませんか？
+
+このチェーンたわしなら、ボトルの中に入れて振るだけ。手が届かない底の汚れもスッキリ落とせちゃうんです✨
+
+鍋やフライパンの焦げ付きはもちろん、折り曲げたり丸めたり形を自由に変えられるから、洗いたい場所に合わせて使える。最大40%オフクーポンでお試しやすい価格ですよ💕
+
+気になったらチェック👇
+
+#水筒洗い #キッチン掃除 #焦げ落とし #油汚れ #ステンレスたわし #時短家事 #キッチングッズ #コンパクト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="水筒の底の汚れ、スポンジでは取れないままになっていませんか？
+
+このチェーンたわしなら、ボトルの中に入れて振るだけ。手が届かない底の汚れもスッキリ落とせちゃうんです✨
+
+鍋やフライパンの焦げ付きはもちろん、折り曲げたり丸めたり形を自由に変えられるから、洗いたい場所に合わせて使える。最大40%オフクーポンでお試しやすい価格ですよ💕
+
+気になったらチェック👇
+
+#水筒洗い #キッチン掃除 #焦げ落とし #油汚れ #ステンレスたわし #時短家事 #キッチングッズ #コンパクト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/angelingg/ag-r-00190/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="xiaomiofficial:10000551">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/xiaomiofficial/cabinet/13819195/13829477/imgrc0113153617.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">Redmi Buds 8 liteイヤホン 最大36時間再生 Bluetooth 5.4 カスタムEQモード 最大42dBのアクティブノイズキャンセリング マイク 長いバッテリー持続時間 防滴防塵性能 コスパ Bluetooth ワイアレス ノイキャン ドライバー</p>
+        <p class="meta"><span class="price">3,680円</span> ・ ★4.26 (244件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ Xiaomi公式　楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">ワイヤレスイヤホンって、どれを選んでも高くて、しかも性能も似てる気がしませんか。
+
+でも、36時間再生・ノイキャン・防滴防塵がこの価格帯で揃ってるのはなかなか💫軽くて小型だから、仕事もリモート会議も通勤も全部これ1つでいけるんです。
+
+244件のレビューで4.26点の支持も、シンプルにコスパが勝ってるから。まずは試してみる価値ありですよ✨
+
+#Redmi Buds 8 lite #ワイヤレスイヤホン #ノイズキャンセリング #長時間再生 #通勤 #テレワーク #Xiaomi #イヤホン</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=xiaomiofficial:10000551" target="_blank" rel="noopener" data-pitch="ワイヤレスイヤホンって、どれを選んでも高くて、しかも性能も似てる気がしませんか。
+
+でも、36時間再生・ノイキャン・防滴防塵がこの価格帯で揃ってるのはなかなか💫軽くて小型だから、仕事もリモート会議も通勤も全部これ1つでいけるんです。
+
+244件のレビューで4.26点の支持も、シンプルにコスパが勝ってるから。まずは試してみる価値ありですよ✨
+
+#Redmi Buds 8 lite #ワイヤレスイヤホン #ノイズキャンセリング #長時間再生 #通勤 #テレワーク #Xiaomi #イヤホン">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ワイヤレスイヤホンって、どれを選んでも高くて、しかも性能も似てる気がしませんか。
+
+でも、36時間再生・ノイキャン・防滴防塵がこの価格帯で揃ってるのはなかなか💫軽くて小型だから、仕事もリモート会議も通勤も全部これ1つでいけるんです。
+
+244件のレビューで4.26点の支持も、シンプルにコスパが勝ってるから。まずは試してみる価値ありですよ✨
+
+#Redmi Buds 8 lite #ワイヤレスイヤホン #ノイズキャンセリング #長時間再生 #通勤 #テレワーク #Xiaomi #イヤホン">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/xiaomiofficial/m71620/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="rakuten24:11304301">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/152/4582699252152.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">ハロー ソフトパックティシュ(150組×16個)【ハロー】</p>
+        <p class="meta"><span class="price">1,280円</span> ・ ★4.72 (771件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ 楽天24</p>
+      </div>
+    </div>
+    <div class="pitch">毎日使うティシュだから、まとめ買いで賢く節約しちゃおう💡
+
+・パルプ100％だからふんわりソフト
+・環境配慮の認証紙で安心
+・16個入りで家計も心配なし
+
+771件のレビューで高評価を集めてるのも納得です。ストック切らしたくない必需品だからこそ、気軽に試せる価格で常備できるのが嬉しい。気になったらチェック✨
+
+#ティッシュペーパー #まとめ買い #日用品 #トイレットペーパー #ペーパー類 #生活用品 #家計管理 #楽天24 #コスパ良い #環境配慮</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=rakuten24:11304301" target="_blank" rel="noopener" data-pitch="毎日使うティシュだから、まとめ買いで賢く節約しちゃおう💡
+
+・パルプ100％だからふんわりソフト
+・環境配慮の認証紙で安心
+・16個入りで家計も心配なし
+
+771件のレビューで高評価を集めてるのも納得です。ストック切らしたくない必需品だからこそ、気軽に試せる価格で常備できるのが嬉しい。気になったらチェック✨
+
+#ティッシュペーパー #まとめ買い #日用品 #トイレットペーパー #ペーパー類 #生活用品 #家計管理 #楽天24 #コスパ良い #環境配慮">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日使うティシュだから、まとめ買いで賢く節約しちゃおう💡
+
+・パルプ100％だからふんわりソフト
+・環境配慮の認証紙で安心
+・16個入りで家計も心配なし
+
+771件のレビューで高評価を集めてるのも納得です。ストック切らしたくない必需品だからこそ、気軽に試せる価格で常備できるのが嬉しい。気になったらチェック✨
+
+#ティッシュペーパー #まとめ買い #日用品 #トイレットペーパー #ペーパー類 #生活用品 #家計管理 #楽天24 #コスパ良い #環境配慮">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/rakuten24/4582699252152/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-25";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
