@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ROOM投稿候補 2026-11-26</title>
+<style>
+  :root {
+    --bg: #f6f6f4;
+    --surface: #ffffff;
+    --border: #e2e1dc;
+    --text: #22211e;
+    --muted: #6b6862;
+    --accent: #bf0000;
+    --accent-text: #ffffff;
+    --ok: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171614;
+      --surface: #211f1c;
+      --border: #35322d;
+      --text: #ece9e3;
+      --muted: #a09b92;
+      --accent: #ff5a5a;
+      --accent-text: #171614;
+      --ok: #6fcf97;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171614;
+    --surface: #211f1c;
+    --border: #35322d;
+    --text: #ece9e3;
+    --muted: #a09b92;
+    --accent: #ff5a5a;
+    --accent-text: #171614;
+    --ok: #6fcf97;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+      "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  header { padding: 28px 0 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 4px; letter-spacing: .01em; }
+  .sub { color: var(--muted); font-size: .85rem; margin: 0; }
+  .progress { color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .card.done { opacity: .5; }
+  .head { display: flex; gap: 12px; align-items: flex-start; }
+  .thumb {
+    width: 84px; height: 84px; flex: 0 0 84px;
+    object-fit: contain; background: #fff; border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .name { font-size: .95rem; font-weight: 600; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: .8rem; margin: 0; }
+  .price { color: var(--accent); font-weight: 700; }
+  .mark {
+    display: inline-block; margin: 0 0 4px;
+    font-size: .75rem; font-weight: 700; line-height: 1;
+    padding: 5px 9px; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent);
+  }
+  .pitch {
+    white-space: pre-wrap;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 14px 0 12px;
+    font-size: .92rem;
+  }
+  .pitch.missing { color: var(--muted); font-style: italic; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  button, .btn {
+    font: inherit; font-size: .88rem; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    display: inline-block;
+  }
+  .primary {
+    background: var(--accent); color: var(--accent-text); border-color: transparent;
+    flex: 1 1 100%; text-align: center; font-weight: 600;
+  }
+  .copied { background: var(--ok); color: var(--accent-text); border-color: transparent; }
+  .done-row { margin-top: 12px; font-size: .85rem; color: var(--muted); }
+  .done-row label { cursor: pointer; user-select: none; }
+  footer { color: var(--muted); font-size: .8rem; padding-top: 12px; }
+  footer a { color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>今日の楽天ROOM投稿候補</h1>
+    <p class="sub">2026-11-26 ・ 10件</p>
+    <p class="progress" id="progress"></p>
+  </header>
+  <article class="card" data-key="nouyu:10000006">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/nouyu/cabinet/test/13083945/imgrc0134434077.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【秋田県クーポン利用可】【1000円割引クーポン対象】パックごはん180g×40食 秋田米100％のごはん オール秋田県産米使用 パックライス パックご飯 送料無料※沖縄・離島別途</p>
+        <p class="meta"><span class="price">4,450円</span> ・ ★4.63 (96件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ こまちのふるさと</p>
+      </div>
+    </div>
+    <div class="pitch">毎日のご飯、ストックしておくと本当に助かる。🍚
+
+秋田産100%のパックライス、レンジで2分でごはんができちゃうから、疲れた日の味方になってくれます✨
+
+クーポン対象で送料無料だから、まとめ買いするなら今がいいタイミング。
+
+#パックライス #秋田米 #時短ご飯 #備蓄 #在宅勤務</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=nouyu:10000006" target="_blank" rel="noopener" data-pitch="毎日のご飯、ストックしておくと本当に助かる。🍚
+
+秋田産100%のパックライス、レンジで2分でごはんができちゃうから、疲れた日の味方になってくれます✨
+
+クーポン対象で送料無料だから、まとめ買いするなら今がいいタイミング。
+
+#パックライス #秋田米 #時短ご飯 #備蓄 #在宅勤務">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日のご飯、ストックしておくと本当に助かる。🍚
+
+秋田産100%のパックライス、レンジで2分でごはんができちゃうから、疲れた日の味方になってくれます✨
+
+クーポン対象で送料無料だから、まとめ買いするなら今がいいタイミング。
+
+#パックライス #秋田米 #時短ご飯 #備蓄 #在宅勤務">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/nouyu/komachinofurusato5/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="suisosum-shop:10000062">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/suisosum-shop/cabinet/h_/pc_01/750g25g/hakuforset_sa_38.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">【ラスト5時間限定】＼50%OFFクーポン有★11月24日21:00-11月25日01:59／ 入浴剤 水素入浴剤 H＆ アッシュアンド 750g 1個 25g 3個 塩素除去 保湿 無香料 ナノバブル 国産 女性 プレゼント プチギフト ギフト 半身浴 温活 美肌 睡眠 炭酸 炭酸入浴剤 重炭酸 計量スプーン付</p>
+        <p class="meta"><span class="price">4,700円</span> ・ ★4.72 (540件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ SUISOSUM公式 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">入浴剤って、本当に効果あるの？って思いませんか。
+
+でも540件のレビューで★4.72を獲得してるこちらは、大学・研究機関の研究データをもとに開発された水素入浴料なんです。入浴後5〜10分で水素が全身に巡り、さら湯では得られないしっとり感を実感する人が多数。
+
+さらに今なら50%OFFクーポン有りで、試しやすい価格に💫
+
+大容量750gと携帯用25gのセットだから、自分用にもギフトにも◎
+
+#入浴剤 #水素入浴剤 #美肌 #温活 #保湿 #ギフト #プチギフト #女性へのプレゼント</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=suisosum-shop:10000062" target="_blank" rel="noopener" data-pitch="入浴剤って、本当に効果あるの？って思いませんか。
+
+でも540件のレビューで★4.72を獲得してるこちらは、大学・研究機関の研究データをもとに開発された水素入浴料なんです。入浴後5〜10分で水素が全身に巡り、さら湯では得られないしっとり感を実感する人が多数。
+
+さらに今なら50%OFFクーポン有りで、試しやすい価格に💫
+
+大容量750gと携帯用25gのセットだから、自分用にもギフトにも◎
+
+#入浴剤 #水素入浴剤 #美肌 #温活 #保湿 #ギフト #プチギフト #女性へのプレゼント">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="入浴剤って、本当に効果あるの？って思いませんか。
+
+でも540件のレビューで★4.72を獲得してるこちらは、大学・研究機関の研究データをもとに開発された水素入浴料なんです。入浴後5〜10分で水素が全身に巡り、さら湯では得られないしっとり感を実感する人が多数。
+
+さらに今なら50%OFFクーポン有りで、試しやすい価格に💫
+
+大容量750gと携帯用25gのセットだから、自分用にもギフトにも◎
+
+#入浴剤 #水素入浴剤 #美肌 #温活 #保湿 #ギフト #プチギフト #女性へのプレゼント">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/suisosum-shop/hakusui-forset/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kaihyaku:10006648">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kaihyaku/cabinet/azumagic/imgrc0194261082.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">アズマ公式 アズマジック カビ取り剤 400ml ジェル状 ジェルスプレー カビ取りスプレー 風呂掃除 カビ取り洗剤 プロ用 業務用 ゴムパッキン タイル 浴室 お風呂 掃除 風呂 除菌 カビ取りジェル 梅雨 日本製 CH880【マンスリーSALE】</p>
+        <p class="meta"><span class="price">1,440円</span> ・ ★4.57 (253件)</p>
+        <p class="meta">日用品・キッチン雑貨 ・ アズマ公式 楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">浴室のしつこいカビ、落ちずに困ってませんか？
+
+プロ用だから効き目が違うんです💪ジェル状だから狙った場所にしっかり密着して、頑固な黒カビもすっきり✨日本製で気軽に試せる価格帯だから、お風呂掃除が好きな人への贈り物にぴったり🎁
+
+#カビ取り #浴室掃除 #風呂掃除 #プロ用 #カビ対策 #黒カビ #お風呂 #贈り物</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kaihyaku:10006648" target="_blank" rel="noopener" data-pitch="浴室のしつこいカビ、落ちずに困ってませんか？
+
+プロ用だから効き目が違うんです💪ジェル状だから狙った場所にしっかり密着して、頑固な黒カビもすっきり✨日本製で気軽に試せる価格帯だから、お風呂掃除が好きな人への贈り物にぴったり🎁
+
+#カビ取り #浴室掃除 #風呂掃除 #プロ用 #カビ対策 #黒カビ #お風呂 #贈り物">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="浴室のしつこいカビ、落ちずに困ってませんか？
+
+プロ用だから効き目が違うんです💪ジェル状だから狙った場所にしっかり密着して、頑固な黒カビもすっきり✨日本製で気軽に試せる価格帯だから、お風呂掃除が好きな人への贈り物にぴったり🎁
+
+#カビ取り #浴室掃除 #風呂掃除 #プロ用 #カビ対策 #黒カビ #お風呂 #贈り物">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kaihyaku/651374/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="shoppingrhsecond:10000813">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/shoppingrhsecond/cabinet/13766765/qwz00111.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <span class="mark">要確認</span>
+        <p class="name">「期間限定！クーポンで1点最安2,912円」枕 まくら 快眠枕 ストレートネック 頸椎サポート 首こり 肩こり 人間工学 横向き寝 仰向け寝 寝返りしやすい いびき対策 睡眠改善 肩楽寝 首が痛くならない 体圧分散 へたりにくい 安眠枕 抗菌防臭 丸洗いOK</p>
+        <p class="meta"><span class="price">7,280円</span> ・ ★4.27 (67件)</p>
+        <p class="meta">インテリア・寝具・収納 ・ ショッピングRHセカンド</p>
+      </div>
+    </div>
+    <div class="pitch">朝目覚めたときに首が痛くない。😌
+
+夜中に寝返りを打つ。
+横向きになっても頭がしっかり支えられる。
+朝まで、その姿勢が続く。✨
+
+仰向けに戻す。
+真ん中の凹みが首にぴったり。
+肩まで包み込む形だから、どんな寝方でも体がラクなんです。💕
+
+何度も同じ悩みに戻らない。
+丸洗いできるから、いつも清潔。
+
+#快眠枕 #ストレートネック #首こり対策 #肩こり #いびき対策 #寝返りしやすい #枕 #睡眠改善</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=shoppingrhsecond:10000813" target="_blank" rel="noopener" data-pitch="朝目覚めたときに首が痛くない。😌
+
+夜中に寝返りを打つ。
+横向きになっても頭がしっかり支えられる。
+朝まで、その姿勢が続く。✨
+
+仰向けに戻す。
+真ん中の凹みが首にぴったり。
+肩まで包み込む形だから、どんな寝方でも体がラクなんです。💕
+
+何度も同じ悩みに戻らない。
+丸洗いできるから、いつも清潔。
+
+#快眠枕 #ストレートネック #首こり対策 #肩こり #いびき対策 #寝返りしやすい #枕 #睡眠改善">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="朝目覚めたときに首が痛くない。😌
+
+夜中に寝返りを打つ。
+横向きになっても頭がしっかり支えられる。
+朝まで、その姿勢が続く。✨
+
+仰向けに戻す。
+真ん中の凹みが首にぴったり。
+肩まで包み込む形だから、どんな寝方でも体がラクなんです。💕
+
+何度も同じ悩みに戻らない。
+丸洗いできるから、いつも清潔。
+
+#快眠枕 #ストレートネック #首こり対策 #肩こり #いびき対策 #寝返りしやすい #枕 #睡眠改善">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/shoppingrhsecond/qwz001/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="sonoshokuan:10000285">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sonoshokuan/cabinet/item/11188147/imgrc0088195467.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【早割500円OFF！11/30まで】9,980円⇒9,480円！甲羅組おせち「角鹿」6.5寸×3段 3〜4人前 盛り付け済み 冷凍 主原料に中国産不使用 おせちは年末送料加算対象外 冷凍食品</p>
+        <p class="meta"><span class="price">9,480円</span> ・ ★4.53 (92件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 祖の食庵</p>
+      </div>
+    </div>
+    <div class="pitch">お正月の準備に手がかかる、そんなときに頼りになるおせちです。🎍
+
+盛り付け済みだからすぐ食卓に出せて、カニやブラックタイガーなど北陸厳選の豪華食材がギッシリ詰まってます。32品目で家族みんなが満足できる内容なんですよ。
+
+92件の高評価で当店人気ナンバーワン、昨年8,500セット完売したのも納得です。✨
+
+気になったらチェックしてみてね。
+
+#おせち #2027年 #3人前 #和洋風 #お正月 #家族 #冷凍食品 #北陸 #お祝い #新年</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sonoshokuan:10000285" target="_blank" rel="noopener" data-pitch="お正月の準備に手がかかる、そんなときに頼りになるおせちです。🎍
+
+盛り付け済みだからすぐ食卓に出せて、カニやブラックタイガーなど北陸厳選の豪華食材がギッシリ詰まってます。32品目で家族みんなが満足できる内容なんですよ。
+
+92件の高評価で当店人気ナンバーワン、昨年8,500セット完売したのも納得です。✨
+
+気になったらチェックしてみてね。
+
+#おせち #2027年 #3人前 #和洋風 #お正月 #家族 #冷凍食品 #北陸 #お祝い #新年">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="お正月の準備に手がかかる、そんなときに頼りになるおせちです。🎍
+
+盛り付け済みだからすぐ食卓に出せて、カニやブラックタイガーなど北陸厳選の豪華食材がギッシリ詰まってます。32品目で家族みんなが満足できる内容なんですよ。
+
+92件の高評価で当店人気ナンバーワン、昨年8,500セット完売したのも納得です。✨
+
+気になったらチェックしてみてね。
+
+#おせち #2027年 #3人前 #和洋風 #お正月 #家族 #冷凍食品 #北陸 #お祝い #新年">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sonoshokuan/500007/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="sennheiser-hearing:10000113">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/sennheiser-hearing/cabinet/mtw3black/s.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【納期約1週間　期間限定価格 11/25 1:59まで】公式ストア限定 バッテリー強化モデル ゼンハイザー公式 Sennheiser ワイヤレスイヤホン MOMENTUM True Wireless 3 MTW3 V2 イヤフォン ノイキャン Bluetooth 5.2+Class1 Qi充電 IPX4 防滴</p>
+        <p class="meta"><span class="price">12,800円</span> ・ ★4.72 (154件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ ゼンハイザーヒアリング楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">通勤電車で音楽に浸る時間が、こんなに変わるんだ💫
+
+・低域が心地よく、ボーカルがクリアに聴こえる音質
+・ノイズキャンセリングで周りの音がシャットアウト
+・Qi充電で手軽に、バッテリーもしっかり持つ
+
+プロの手による音作りだからこそ、毎日の移動時間が特別になりますよ✨
+
+気になったらチェックしてみてね。
+
+#ワイヤレスイヤホン #ノイズキャンセリング #高音質 #通勤時間 #Bluetooth #Sennheiser #MOMENTUM #プレゼント #デイリーユース #ガジェット好きさんと繋がりたい</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=sennheiser-hearing:10000113" target="_blank" rel="noopener" data-pitch="通勤電車で音楽に浸る時間が、こんなに変わるんだ💫
+
+・低域が心地よく、ボーカルがクリアに聴こえる音質
+・ノイズキャンセリングで周りの音がシャットアウト
+・Qi充電で手軽に、バッテリーもしっかり持つ
+
+プロの手による音作りだからこそ、毎日の移動時間が特別になりますよ✨
+
+気になったらチェックしてみてね。
+
+#ワイヤレスイヤホン #ノイズキャンセリング #高音質 #通勤時間 #Bluetooth #Sennheiser #MOMENTUM #プレゼント #デイリーユース #ガジェット好きさんと繋がりたい">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="通勤電車で音楽に浸る時間が、こんなに変わるんだ💫
+
+・低域が心地よく、ボーカルがクリアに聴こえる音質
+・ノイズキャンセリングで周りの音がシャットアウト
+・Qi充電で手軽に、バッテリーもしっかり持つ
+
+プロの手による音作りだからこそ、毎日の移動時間が特別になりますよ✨
+
+気になったらチェックしてみてね。
+
+#ワイヤレスイヤホン #ノイズキャンセリング #高音質 #通勤時間 #Bluetooth #Sennheiser #MOMENTUM #プレゼント #デイリーユース #ガジェット好きさんと繋がりたい">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/sennheiser-hearing/mtw3-v2/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="yokumoku:10000799">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/yokumoku/cabinet/yokumoku_thumbnail/seasonal/11133674/noel44_26a.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【送料無料】【公式】ヨックモック カドー ドゥ ノエル 3種44個入 お歳暮 クリスマス ホリデー 冬ギフト 御歳暮 2026 詰め合わせ プレゼント スイーツ ギフト プチギフト クッキー 退職 洋菓子 お菓子 焼き菓子 手土産 個包装 お取り寄せ お礼 お祝い</p>
+        <p class="meta"><span class="price">4,212円</span> ・ ★4.8 (362件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ ヨックモック　楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">44個入りだから、バラまきギフトに最高🎄✨
+
+退職者さんへのお礼とか、職場配りとか。
+個包装だし日持ちするし、喜ばれる品だから重宝しますよ💕
+
+#ヨックモック #クリスマスギフト #バラまきギフト #職場配り #冬ギフト</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=yokumoku:10000799" target="_blank" rel="noopener" data-pitch="44個入りだから、バラまきギフトに最高🎄✨
+
+退職者さんへのお礼とか、職場配りとか。
+個包装だし日持ちするし、喜ばれる品だから重宝しますよ💕
+
+#ヨックモック #クリスマスギフト #バラまきギフト #職場配り #冬ギフト">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="44個入りだから、バラまきギフトに最高🎄✨
+
+退職者さんへのお礼とか、職場配りとか。
+個包装だし日持ちするし、喜ばれる品だから重宝しますよ💕
+
+#ヨックモック #クリスマスギフト #バラまきギフト #職場配り #冬ギフト">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/yokumoku/1010011315020/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="henri-charpentier:10001741">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/henri-charpentier/cabinet/2026/campaign2026/p-thumbnail-26/hym-30n3_p19.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">お歳暮 クリスマス スイーツ お菓子 洋菓子 焼き菓子 ギフト 個包装 詰め合わせ 手土産 お祝い お返し 内祝い 退職 高級【季節限定】HYM-30N3 モンブラン・スペシャリテ・アソート　S 〈お届けは12/31まで〉</p>
+        <p class="meta"><span class="price">3,240円</span> ・ ★4.72 (1124件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ アンリ・シャルパンティエ</p>
+      </div>
+    </div>
+    <div class="pitch">クリスマスプレゼントの焼き菓子は、どれも同じに見えちゃいませんか？
+
+そう感じてる人こそ、このアソートの出番ですよ。栗の季節限定「焼き栗モンブラン」をメインに、ロングセラーのフィナンシェやマドレーヌなど5種類を贅沢に詰め合わせ。バラエティ豊かだから、もらった人も楽しめます✨1000件超のレビューで愛され続けてるのも納得。
+
+#ギフト #クリスマスプレゼント #焼き菓子 #手土産 #モンブラン #詰め合わせ #お祝い #内祝い</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=henri-charpentier:10001741" target="_blank" rel="noopener" data-pitch="クリスマスプレゼントの焼き菓子は、どれも同じに見えちゃいませんか？
+
+そう感じてる人こそ、このアソートの出番ですよ。栗の季節限定「焼き栗モンブラン」をメインに、ロングセラーのフィナンシェやマドレーヌなど5種類を贅沢に詰め合わせ。バラエティ豊かだから、もらった人も楽しめます✨1000件超のレビューで愛され続けてるのも納得。
+
+#ギフト #クリスマスプレゼント #焼き菓子 #手土産 #モンブラン #詰め合わせ #お祝い #内祝い">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="クリスマスプレゼントの焼き菓子は、どれも同じに見えちゃいませんか？
+
+そう感じてる人こそ、このアソートの出番ですよ。栗の季節限定「焼き栗モンブラン」をメインに、ロングセラーのフィナンシェやマドレーヌなど5種類を贅沢に詰め合わせ。バラエティ豊かだから、もらった人も楽しめます✨1000件超のレビューで愛され続けてるのも納得。
+
+#ギフト #クリスマスプレゼント #焼き菓子 #手土産 #モンブラン #詰め合わせ #お祝い #内祝い">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/henri-charpentier/772465/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="kurashikenkou:10247452">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/kurashikenkou/cabinet/11663202/13368735/imgrc0110767513.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">≪24本が66%OFF！≫ コーヒー 500ml ペットボトル 24本 48本 FRUITY AROMA COFFEE ブラック 無糖 フルーティーな香り 飲みやすい アイリスオーヤマ アイリスフーズ *</p>
+        <p class="meta"><span class="price">5,960円</span> ・ ★4.68 (31件)</p>
+        <p class="meta">食品・飲料・ふるさと納税 ・ 暮らし健康ネット館</p>
+      </div>
+    </div>
+    <div class="pitch">毎日のコーヒータイムを、もっと気軽に楽しみたくありませんか？✨
+
+24本が66%OFFなので、買い置きするなら今がチャンス。フルーティーな香りが心地よく、無糖なのに飲みやすいブラックコーヒーなんです。
+
+仕事の合間のリフレッシュから、ゆったりした朝時間まで。毎日飲むものだからこそ、お手頃に続けられるのって大事ですよね💕
+
+気になったらチェックしてみてね。
+
+#コーヒー #ペットボトル #無糖 #アイリスオーヤマ #買い置き #仕事 #勉強 #リフレッシュ</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=kurashikenkou:10247452" target="_blank" rel="noopener" data-pitch="毎日のコーヒータイムを、もっと気軽に楽しみたくありませんか？✨
+
+24本が66%OFFなので、買い置きするなら今がチャンス。フルーティーな香りが心地よく、無糖なのに飲みやすいブラックコーヒーなんです。
+
+仕事の合間のリフレッシュから、ゆったりした朝時間まで。毎日飲むものだからこそ、お手頃に続けられるのって大事ですよね💕
+
+気になったらチェックしてみてね。
+
+#コーヒー #ペットボトル #無糖 #アイリスオーヤマ #買い置き #仕事 #勉強 #リフレッシュ">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="毎日のコーヒータイムを、もっと気軽に楽しみたくありませんか？✨
+
+24本が66%OFFなので、買い置きするなら今がチャンス。フルーティーな香りが心地よく、無糖なのに飲みやすいブラックコーヒーなんです。
+
+仕事の合間のリフレッシュから、ゆったりした朝時間まで。毎日飲むものだからこそ、お手頃に続けられるのって大事ですよね💕
+
+気になったらチェックしてみてね。
+
+#コーヒー #ペットボトル #無糖 #アイリスオーヤマ #買い置き #仕事 #勉強 #リフレッシュ">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/kurashikenkou/114869/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <article class="card" data-key="anker:10001561">
+    <div class="head">
+      <img class="thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/deal/2611m2/a1645_11m2.jpg?_ex=128x128" alt="" loading="lazy">
+      <div>
+        <p class="name">【期間限定セール実施中 11/25まで】Anker Nano Power Bank (12W, Built-In Lightning Connector ) / Anker Nano Power Bank (22.5W, Built-In USB-C Connector) (モバイルバッテリー 5000mAh 小型)【MFi認証済/端子一体型】iPhone 17/16/15/14</p>
+        <p class="meta"><span class="price">2,790円</span> ・ ★4.45 (4161件)</p>
+        <p class="meta">ガジェット・PC周辺 ・ アンカー・ダイレクト楽天市場店</p>
+      </div>
+    </div>
+    <div class="pitch">ケーブル忘れて、あ、と思う瞬間。
+
+プレゼントで受け取ったこれをサッと取り出す。
+
+iPhoneにクッと差し込んで、ポケットに戻す。
+
+もう何も持たなくていい ✨
+
+ケーブルも、充電器も、いらない。
+
+小さくてシンプルだからこそ、
+
+4000件超のレビューで支持されてる理由が分かる 🎁
+
+#モバイルバッテリー #iPhone充電 #ギフト #コンパクト #便利グッズ #プレゼント #ケーブルレス #ガジェット</div>
+    <div class="actions">
+      <a class="btn primary post" href="https://room.rakuten.co.jp/mix?itemcode=anker:10001561" target="_blank" rel="noopener" data-pitch="ケーブル忘れて、あ、と思う瞬間。
+
+プレゼントで受け取ったこれをサッと取り出す。
+
+iPhoneにクッと差し込んで、ポケットに戻す。
+
+もう何も持たなくていい ✨
+
+ケーブルも、充電器も、いらない。
+
+小さくてシンプルだからこそ、
+
+4000件超のレビューで支持されてる理由が分かる 🎁
+
+#モバイルバッテリー #iPhone充電 #ギフト #コンパクト #便利グッズ #プレゼント #ケーブルレス #ガジェット">文章をコピーしてROOMで開く</a>
+      <button class="copy" data-pitch="ケーブル忘れて、あ、と思う瞬間。
+
+プレゼントで受け取ったこれをサッと取り出す。
+
+iPhoneにクッと差し込んで、ポケットに戻す。
+
+もう何も持たなくていい ✨
+
+ケーブルも、充電器も、いらない。
+
+小さくてシンプルだからこそ、
+
+4000件超のレビューで支持されてる理由が分かる 🎁
+
+#モバイルバッテリー #iPhone充電 #ギフト #コンパクト #便利グッズ #プレゼント #ケーブルレス #ガジェット">文章だけコピー</button>
+      <a class="btn" href="https://item.rakuten.co.jp/anker/a1645/?rafcid=wsc_i_ra_a88aa8c5-81c2-4fe7-90c5-6641bf4f6500" target="_blank" rel="noopener">楽天市場</a>
+    </div>
+    <div class="done-row">
+      <label><input type="checkbox"> ROOMに投稿した</label>
+    </div>
+  </article>
+  <footer>
+    <p>「文章をコピーしてROOMで開く」を押すと、紹介文がクリップボードに入り、
+       ROOMの投稿画面がその商品で開きます。コメント欄に貼り付け、内容を確認して投稿してください。</p>
+  </footer>
+</div>
+<script>
+  var STORAGE_KEY = "room-done-2026-11-26";
+
+  function readDone() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+    catch (e) { return {}; }
+  }
+  function writeDone(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    catch (e) { /* プライベートウィンドウ等では保存できない。表示は続行する。 */ }
+  }
+  function updateProgress() {
+    var total = document.querySelectorAll(".card").length;
+    var done = document.querySelectorAll(".card.done").length;
+    var el = document.getElementById("progress");
+    if (el) { el.textContent = total ? "投稿済み " + done + " / " + total : ""; }
+  }
+  function fallbackCopy(text, onDone) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); onDone(); } catch (e) { /* コピー不可 */ }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var state = readDone();
+
+    document.querySelectorAll(".card").forEach(function (card) {
+      var key = card.getAttribute("data-key");
+      var box = card.querySelector("input[type=checkbox]");
+      if (state[key]) {
+        card.classList.add("done");
+        if (box) { box.checked = true; }
+      }
+      if (box) {
+        box.addEventListener("change", function () {
+          var s = readDone();
+          if (box.checked) { s[key] = 1; card.classList.add("done"); }
+          else { delete s[key]; card.classList.remove("done"); }
+          writeDone(s);
+          updateProgress();
+        });
+      }
+    });
+
+    function copyPitch(el, onDone) {
+      var text = el.getAttribute("data-pitch") || "";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // await しない。ここで待つと a要素のネイティブ遷移がブロックされうる。
+        navigator.clipboard.writeText(text).then(onDone, function () {
+          fallbackCopy(text, onDone);
+        });
+      } else {
+        fallbackCopy(text, onDone);
+      }
+    }
+
+    function flash(el, message) {
+      var original = el.textContent;
+      el.textContent = message;
+      el.classList.add("copied");
+      setTimeout(function () {
+        el.textContent = original;
+        el.classList.remove("copied");
+      }, 1600);
+    }
+
+    document.querySelectorAll("button.copy").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyPitch(btn, function () { flash(btn, "コピーしました"); });
+      });
+    });
+
+    // ROOMの投稿画面を開くリンク。preventDefault しないので遷移はそのまま走り、
+    // 開いた先で貼り付けるだけで済むようクリップボードに文章を入れておく。
+    document.querySelectorAll("a.post").forEach(function (link) {
+      link.addEventListener("click", function () {
+        copyPitch(link, function () {});
+      });
+    });
+
+    updateProgress();
+  });
+</script>
+</body>
+</html>
